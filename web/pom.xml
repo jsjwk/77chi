@@ -17,7 +17,7 @@
 	</build>
 
 	<dependencies>
-		<!-- jetty -->
+		<!-- jetty 	-->
 		<dependency>
 			<groupId>org.mortbay.jetty</groupId>
 			<artifactId>jetty</artifactId>
@@ -37,7 +37,7 @@
 			<version>7.2.2.v20101205</version>
 			<optional>true</optional>
 		</dependency>
-		<!-- jar依赖 -->
+		
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-access</artifactId>
@@ -63,14 +63,18 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>3.0.2.RELEASE</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
 			<version>3.0.2.RELEASE</version>
 		</dependency>
+		<!-- sina sae error
+		-->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
 			<version>2.5</version>
 		</dependency>
 		<dependency>
@@ -83,6 +87,7 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.6.8</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>javassist</groupId>
 			<artifactId>javassist</artifactId>
@@ -124,12 +129,6 @@
 			<version>0.9.1.2</version>
 		</dependency>
 		<dependency>
-			<groupId>net.sf.json-lib</groupId>
-			<artifactId>json-lib</artifactId>
-			<version>2.3</version>
-			<classifier>jdk13</classifier>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>3.0.2.RELEASE</version>
@@ -154,21 +153,16 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		<!-- apache validator -->
 		<dependency>
 			<groupId>commons-validator</groupId>
 			<artifactId>commons-validator</artifactId>
 			<version>1.4.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>jdom</groupId>
 			<artifactId>jdom</artifactId>
 			<version>1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>dnsjava</groupId>
-			<artifactId>dnsjava</artifactId>
-			<version>2.1.1</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>

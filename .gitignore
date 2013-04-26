@@ -4,3 +4,7 @@
 *.jar
 *.war
 *.ear
+/web/target
+/web/.classpath
+/web/.project
+/web/.settings
