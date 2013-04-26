@@ -1,1 +1,5 @@
 https://github.com/jsjwk/77chi
+http://115.28.34.252:8080/77chi/index.do
+
+
+mvn install:install-file -DgroupId=com.taobao.sdk -DartifactId=standard -Dversion=20130424 -Dpackaging=jar -Dfile=/opt/apps_install/standard-20130424.ja
