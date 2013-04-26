@@ -11,7 +11,7 @@
 <body>
 <h1>77chi项目-敬请期待</h1>
 
-<a href="/test/index.do">demo示例</a>
+<a href="<%=request.getContextPath() %>/test/index.do">demo示例</a>
 
 </body>
 </html>
