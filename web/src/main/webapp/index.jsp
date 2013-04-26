@@ -11,21 +11,7 @@
 <body>
 <h1>77chi项目-敬请期待</h1>
 
-<table>
-	<tr>
-		<td></td>
-		<td></td>
-	</tr>
+<a href="/test/index.do">demo示例</a>
 
-	<c:if test="${listTaobaokeItem ne null}">
-		<c:forEach items="${listTaobaokeItem }" var="taobaokeItem">
-			<tr>
-				<td>${taobaokeItem.title }</td>
-				<td><img alt="" src="${taobaokeItem.picUrl }"> </td>
-			</tr>
-		</c:forEach>
-	</c:if>
-
-</table>
 </body>
 </html>
