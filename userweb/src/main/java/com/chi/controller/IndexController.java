@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.chi.util.WebConstatVar;
+import com.chi.constant.ConstatVar;
 import com.taobao.api.ApiException;
 import com.taobao.api.DefaultTaobaoClient;
 import com.taobao.api.TaobaoClient;
@@ -35,7 +35,7 @@ public class IndexController extends UserBaseController {
     @RequestMapping("/test/index.do")
     public String index(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, ApiException
     {
-	TaobaoClient client = new DefaultTaobaoClient(WebConstatVar.URL, WebConstatVar.APPKEY, WebConstatVar.SECRET);
+	TaobaoClient client = new DefaultTaobaoClient(ConstatVar.URL, ConstatVar.APPKEY, ConstatVar.SECRET);
 	// 查询淘宝客推广商品
 	TaobaokeItemsGetRequest req = new TaobaokeItemsGetRequest();
 	req.setFields("num_iid,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume");

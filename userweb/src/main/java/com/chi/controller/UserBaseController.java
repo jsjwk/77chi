@@ -15,7 +15,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
 
-import com.chi.util.WebConstatVar;
+import com.chi.constant.ConstatVar;
+
 
 
 public class UserBaseController {
@@ -192,6 +193,6 @@ public class UserBaseController {
     
     public void setErrorMessage(HttpServletRequest request,String msg)
     {
-    	request.setAttribute(WebConstatVar.MESSAGE, msg);
+    	request.setAttribute(ConstatVar.MESSAGE, msg);
     }
 }
