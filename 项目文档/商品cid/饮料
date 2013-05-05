@@ -1,0 +1,38 @@
+一级分类的【茶/咖啡/冲饮】50026316下面的子分类
+
+<?xml version="1.0" encoding="utf-8"?>
+<itemcats_get_response>
+    <item_cats list="true">
+        <item_cat>
+            <cid>50026397</cid>
+            <is_parent>true</is_parent>
+            <name>茶叶</name>
+            <parent_cid>50026316</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026398</cid>
+            <is_parent>true</is_parent>
+            <name>饮料/乳品</name>
+            <parent_cid>50026316</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50003860</cid>
+            <is_parent>false</is_parent>
+            <name>天然粉粉食品</name>
+            <parent_cid>50026316</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50009857</cid>
+            <is_parent>true</is_parent>
+            <name>藕粉/麦片/冲饮品</name>
+            <parent_cid>50026316</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>210605</cid>
+            <is_parent>true</is_parent>
+            <name>速溶咖啡/咖啡豆/粉</name>
+            <parent_cid>50026316</parent_cid>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+<!--top049170.cm4-->

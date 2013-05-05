@@ -1,0 +1,154 @@
+一级分类的【奶粉/辅食/营养品/零食】35下面的子分类
+一级分类的【孕妇装/孕产妇用品/营养】50022517下面的子分类
+
+----------------------------------------------------------
+1、一级分类的【奶粉/辅食/营养品/零食】35下面的子分类 
+
+<?xml version="1.0" encoding="utf-8"?>
+<itemcats_get_response>
+    <item_cats list="true">
+        <item_cat>
+            <cid>211104</cid>
+            <is_parent>false</is_parent>
+            <name>婴幼儿牛奶粉</name>
+            <parent_cid>35</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50016094</cid>
+            <is_parent>true</is_parent>
+            <name>特殊配方奶粉</name>
+            <parent_cid>35</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50014813</cid>
+            <is_parent>false</is_parent>
+            <name>其它</name>
+            <parent_cid>35</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50018596</cid>
+            <is_parent>false</is_parent>
+            <name>婴幼儿调味品</name>
+            <parent_cid>35</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50018801</cid>
+            <is_parent>true</is_parent>
+            <name>婴幼儿辅食</name>
+            <parent_cid>35</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50018808</cid>
+            <is_parent>true</is_parent>
+            <name>婴幼儿营养品</name>
+            <parent_cid>35</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50018807</cid>
+            <is_parent>false</is_parent>
+            <name>婴幼儿零食</name>
+            <parent_cid>35</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50018184</cid>
+            <is_parent>false</is_parent>
+            <name>婴幼儿羊奶粉</name>
+            <parent_cid>35</parent_cid>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+<!--top175184.cm3-->
+
+--------------------------------------------------
+2、一级分类的【孕妇装/孕产妇用品/营养】50022517下面的子分类
+
+<?xml version="1.0" encoding="utf-8"?>
+<itemcats_get_response>
+    <item_cats list="true">
+        <item_cat>
+            <cid>50012374</cid>
+            <is_parent>true</is_parent>
+            <name>防辐射</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50012354</cid>
+            <is_parent>true</is_parent>
+            <name>孕妇装</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50023573</cid>
+            <is_parent>false</is_parent>
+            <name>孕妇裤/托腹裤</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50012314</cid>
+            <is_parent>true</is_parent>
+            <name>产妇帽/孕妇袜/孕妇鞋</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50023613</cid>
+            <is_parent>true</is_parent>
+            <name>家居服/哺乳装/秋衣裤</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50016687</cid>
+            <is_parent>true</is_parent>
+            <name>哺乳文胸/内裤/产检裤</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50023660</cid>
+            <is_parent>true</is_parent>
+            <name>束缚带/产妇瘦身塑体衣/盆骨矫正带</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50005961</cid>
+            <is_parent>false</is_parent>
+            <name>妈咪包/袋</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50011864</cid>
+            <is_parent>false</is_parent>
+            <name>早孕检测</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50006000</cid>
+            <is_parent>true</is_parent>
+            <name>妈妈产前产后用品</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50010392</cid>
+            <is_parent>false</is_parent>
+            <name>孕产妇奶粉</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026457</cid>
+            <is_parent>true</is_parent>
+            <name>孕产妇护肤/洗护/祛纹</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026460</cid>
+            <is_parent>true</is_parent>
+            <name>孕产妇营养品</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026471</cid>
+            <is_parent>true</is_parent>
+            <name>月子营养</name>
+            <parent_cid>50022517</parent_cid>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+<!--top049185.cm4-->

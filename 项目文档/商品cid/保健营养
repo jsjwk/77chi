@@ -1,0 +1,184 @@
+一级分类的【传统滋补营养品】50020275下面的子分类
+一级分类的【保健品/膳食营养补充剂】50026800下面的子分类
+
+---------------------------------------------------------
+1、一级分类的【传统滋补营养品】50020275下面的子分类
+
+<?xml version="1.0" encoding="utf-8"?>
+<itemcats_get_response>
+    <item_cats list="true">
+        <item_cat>
+            <cid>50020280</cid>
+            <is_parent>false</is_parent>
+            <name>其他品牌保健品</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50015218</cid>
+            <is_parent>true</is_parent>
+            <name>药食同源食品</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008044</cid>
+            <is_parent>false</is_parent>
+            <name>燕窝</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50005945</cid>
+            <is_parent>true</is_parent>
+            <name>参类保健品</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50005773</cid>
+            <is_parent>true</is_parent>
+            <name>蜂蜜/蜂产品</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008046</cid>
+            <is_parent>false</is_parent>
+            <name>冬虫夏草</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50015134</cid>
+            <is_parent>true</is_parent>
+            <name>鹿茸</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50015194</cid>
+            <is_parent>true</is_parent>
+            <name>灵芝</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50015207</cid>
+            <is_parent>true</is_parent>
+            <name>枸杞及其制品</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50015211</cid>
+            <is_parent>true</is_parent>
+            <name>雪蛤/林蛙油</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50015219</cid>
+            <is_parent>true</is_parent>
+            <name>阿胶膏方</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50009980</cid>
+            <is_parent>false</is_parent>
+            <name>三七</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50009979</cid>
+            <is_parent>false</is_parent>
+            <name>山药</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50012186</cid>
+            <is_parent>false</is_parent>
+            <name>石斛/枫斗</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50020296</cid>
+            <is_parent>true</is_parent>
+            <name>其他传统滋补品</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50050143</cid>
+            <is_parent>true</is_parent>
+            <name>新资源食品</name>
+            <parent_cid>50020275</parent_cid>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+<!--top175183.cm3-->
+
+--------------------------------------------------------
+2、一级分类的【保健品/膳食营养补充剂】50026800下面的子分类
+
+<?xml version="1.0" encoding="utf-8"?>
+<itemcats_get_response>
+    <item_cats list="true">
+        <item_cat>
+            <cid>50026802</cid>
+            <is_parent>true</is_parent>
+            <name>维生素/矿物质</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026803</cid>
+            <is_parent>true</is_parent>
+            <name>海洋生物类</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026804</cid>
+            <is_parent>true</is_parent>
+            <name>菌/菇/微生物发酵</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026805</cid>
+            <is_parent>true</is_parent>
+            <name>蛋白质/氨基酸</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026806</cid>
+            <is_parent>true</is_parent>
+            <name>膳食纤维/碳水化合物</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026807</cid>
+            <is_parent>true</is_parent>
+            <name>植物精华/提取物</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026808</cid>
+            <is_parent>true</is_parent>
+            <name>动物精华/提取物</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026809</cid>
+            <is_parent>false</is_parent>
+            <name>保健饮品</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50026810</cid>
+            <is_parent>true</is_parent>
+            <name>功能复合型膳食营养补充剂</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50050227</cid>
+            <is_parent>true</is_parent>
+            <name>脂肪酸/脂类</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50050237</cid>
+            <is_parent>false</is_parent>
+            <name>其他</name>
+            <parent_cid>50026800</parent_cid>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+<!--top050051.cm4-->
