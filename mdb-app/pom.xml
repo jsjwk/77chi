@@ -1,0 +1,174 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.bb</groupId>
+	<artifactId>mdb_app</artifactId>
+	<packaging>war</packaging>
+	<version>1.0-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.bb.component</groupId>
+			<artifactId>bb-component</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<!-- json-simple -->
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bb.tools</groupId>
+			<artifactId>tools-common</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<!-- junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.9</version>
+		</dependency>
+		<!-- servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.3</version>
+		</dependency>
+		<!-- paoding-rose -->
+		<dependency>
+			<groupId>net.paoding</groupId>
+			<artifactId>paoding-rose</artifactId>
+			<version>1.0-stable</version>
+		</dependency>
+		<!-- paoding-rose-scanning -->
+		<dependency>
+			<groupId>net.paoding</groupId>
+			<artifactId>paoding-rose-scanning</artifactId>
+			<version>1.0-stable</version>
+			<classifier>stable</classifier>
+		</dependency>
+		<!-- commons-collections -->
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>3.2.1</version>
+		</dependency>
+		<!-- commons-fileupload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		<!-- commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.0.1</version>
+		</dependency>
+		<!-- spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>2.5.6.SEC02</version>
+		</dependency>
+		<!-- mongo -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.7.3</version>
+		</dependency>
+		<!-- morphia -->
+		<dependency>
+			<groupId>com.google.code</groupId>
+			<artifactId>morphia</artifactId>
+			<version>0.99</version>
+		</dependency>
+		<!-- jstl -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<!-- renren sdk -->
+		<dependency>
+			<groupId>com.renren.api.client</groupId>
+			<artifactId>api-client-sdk</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<!-- renren SMS -->
+		<dependency>
+			<groupId>com.xiaonei</groupId>
+			<artifactId>renren-wap-smsis-client</artifactId>
+			<version>2.02.LAN</version>
+		</dependency>
+		<!-- gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>1.7.2</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<!-- 资源编码UTF-8 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+
+			<!-- 使用1.6级别编译；编码为UTF-8编码；只编译指定的位置 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<verbose>true</verbose>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Rose>*</Rose>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<!-- 忽略test -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<skipTests>true</skipTests>
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+			</plugin>
+		</plugins>
+		<outputDirectory>src/main/webapp/WEB-INF/classes</outputDirectory>
+		<testOutputDirectory>src/main/webapp/WEB-INF/classes</testOutputDirectory>
+	</build>
+</project>
