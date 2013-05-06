@@ -1,0 +1,62 @@
+一级分类的【零食/坚果/特产】50002766下面的子分类
+
+<?xml version="1.0" encoding="utf-8"?>
+<itemcats_get_response>
+    <item_cats list="true">
+        <item_cat>
+            <cid>50013061</cid>
+            <is_parent>true</is_parent>
+            <name>蜜饯/枣类/梅/果干</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50012981</cid>
+            <is_parent>true</is_parent>
+            <name>山核桃/坚果/炒货</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008613</cid>
+            <is_parent>true</is_parent>
+            <name>牛肉干/猪肉脯/肉类熟食</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50010550</cid>
+            <is_parent>true</is_parent>
+            <name>饼干/膨化</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008055</cid>
+            <is_parent>false</is_parent>
+            <name>巧克力/DIY巧克力</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50016091</cid>
+            <is_parent>true</is_parent>
+            <name>糖果零食/果冻/布丁</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50009556</cid>
+            <is_parent>true</is_parent>
+            <name>鱿鱼丝/鱼干/海味即食</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008430</cid>
+            <is_parent>true</is_parent>
+            <name>奶酪/乳制品/</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50552001</cid>
+            <is_parent>true</is_parent>
+            <name>糕点/点心</name>
+            <parent_cid>50002766</parent_cid>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+<!--top176186.cm3-->

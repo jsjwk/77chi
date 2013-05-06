@@ -1,0 +1,27 @@
+二级分类的【新鲜水果/水果制品】50050725下面的子分类（此二级分类在一级分类【水产肉类/新鲜蔬果/熟食】50050359）
+
+<?xml version="1.0" encoding="utf-8"?>
+<itemcats_get_response>
+    <item_cats list="true">
+        <item_cat>
+            <cid>50050726</cid>
+            <is_parent>true</is_parent>
+            <name>新鲜水果</name>
+            <parent_cid>50050725</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50016819</cid>
+            <is_parent>false</is_parent>
+            <name>冻干水果</name>
+            <parent_cid>50050725</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50009898</cid>
+            <is_parent>false</is_parent>
+            <name>水果罐头</name>
+            <parent_cid>50050725</parent_cid>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+<!--top050057.cm4-->
+

@@ -1,0 +1,56 @@
+一级分类的【酒类】50008141下面的子分类
+
+<?xml version="1.0" encoding="utf-8"?>
+<itemcats_get_response>
+    <item_cats list="true">
+        <item_cat>
+            <cid>50008142</cid>
+            <is_parent>false</is_parent>
+            <name>威士忌/进口烈酒</name>
+            <parent_cid>50008141</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50013003</cid>
+            <is_parent>false</is_parent>
+            <name>葡萄酒</name>
+            <parent_cid>50008141</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008144</cid>
+            <is_parent>false</is_parent>
+            <name>国产白酒</name>
+            <parent_cid>50008141</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008147</cid>
+            <is_parent>false</is_parent>
+            <name>黄酒</name>
+            <parent_cid>50008141</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008145</cid>
+            <is_parent>false</is_parent>
+            <name>药酒</name>
+            <parent_cid>50008141</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008146</cid>
+            <is_parent>false</is_parent>
+            <name>啤酒</name>
+            <parent_cid>50008141</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50008148</cid>
+            <is_parent>false</is_parent>
+            <name>其他酒类</name>
+            <parent_cid>50008141</parent_cid>
+        </item_cat>
+        <item_cat>
+            <cid>50514003</cid>
+            <is_parent>true</is_parent>
+            <name>进口烈酒</name>
+            <parent_cid>50008141</parent_cid>
+        </item_cat>
+    </item_cats>
+</itemcats_get_response>
+<!--top049173.cm4-->

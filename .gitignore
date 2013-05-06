@@ -1,10 +1,2 @@
-*.class
-
-# Package Files #
-*.jar
-*.war
-*.ear
-/web/target
-/web/.classpath
-/web/.project
-/web/.settings
+/userweb/target
+/common/target
