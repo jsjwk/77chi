@@ -45,11 +45,17 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>2.7.3</version>
 		</dependency>
-		<!-- morphia -->
+		<!-- morphia 
 		<dependency>
 			<groupId>com.google.code</groupId>
 			<artifactId>morphia</artifactId>
 			<version>0.99</version>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>com.google.code.maven-play-plugin.com.google.code.morphia</groupId>
+			<artifactId>morphia</artifactId>
+			<version>1.00-20110403</version>
 		</dependency>
 		<!-- log4j -->
 		<dependency>

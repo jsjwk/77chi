@@ -49,19 +49,21 @@
 			<artifactId>servlet-api</artifactId>
 			<version>2.3</version>
 		</dependency>
-		<!-- paoding-rose -->
+		<!-- paoding-rose 
 		<dependency>
 			<groupId>net.paoding</groupId>
 			<artifactId>paoding-rose</artifactId>
 			<version>1.0-stable</version>
 		</dependency>
-		<!-- paoding-rose-scanning -->
+		-->
+		<!-- paoding-rose-scanning
 		<dependency>
 			<groupId>net.paoding</groupId>
 			<artifactId>paoding-rose-scanning</artifactId>
 			<version>1.0-stable</version>
 			<classifier>stable</classifier>
 		</dependency>
+		 -->
 		<!-- commons-collections -->
 		<dependency>
 			<groupId>commons-collections</groupId>
@@ -92,11 +94,17 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>2.7.3</version>
 		</dependency>
-		<!-- morphia -->
+		<!-- morphia 
 		<dependency>
 			<groupId>com.google.code</groupId>
 			<artifactId>morphia</artifactId>
 			<version>0.99</version>
+		</dependency>
+		-->
+		<dependency>
+			<groupId>com.google.code.maven-play-plugin.com.google.code.morphia</groupId>
+			<artifactId>morphia</artifactId>
+			<version>1.00-20110403</version>
 		</dependency>
 		<!-- jstl -->
 		<dependency>
@@ -104,18 +112,20 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		<!-- renren sdk -->
+		<!-- renren sdk 
 		<dependency>
 			<groupId>com.renren.api.client</groupId>
 			<artifactId>api-client-sdk</artifactId>
 			<version>2.0</version>
 		</dependency>
-		<!-- renren SMS -->
+		-->
+		<!-- renren SMS 
 		<dependency>
 			<groupId>com.xiaonei</groupId>
 			<artifactId>renren-wap-smsis-client</artifactId>
 			<version>2.02.LAN</version>
 		</dependency>
+		-->
 		<!-- gson -->
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
