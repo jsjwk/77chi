@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #Wed May 08 20:48:25 CST 2013
+=======
+#Thu May 09 17:35:44 CST 2013
+>>>>>>> 6fc8ad52bd7c2d5007ed8853eb9c706c84c4cd40
 eclipse.preferences.version=1
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6

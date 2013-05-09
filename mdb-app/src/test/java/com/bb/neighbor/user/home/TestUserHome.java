@@ -2,6 +2,7 @@ package com.bb.neighbor.user.home;
 
 import org.junit.Test;
 
+import com.bb.mongo.utils.SequenceUtil;
 import com.bb.neighbor.common.StatusConstants;
 import com.bb.neighbor.user.model.UserInfo;
 import com.google.code.morphia.query.Query;
@@ -10,13 +11,13 @@ import com.google.code.morphia.query.UpdateOperations;
 public class TestUserHome {
 	private UserHome userHome = new UserHome();
 
-	 @Test
-	 public void testInsertUser(){
-	 UserInfo ui = new UserInfo();
-	 ui.setId(1);
-	 ui.setUserName("xiaoqiang");
-	 userHome.save(ui);
-	 }
+	@Test
+	public void testInsertUser() {
+		UserInfo ui = new UserInfo();
+		ui.setId(SequenceUtil.getId(SequenceUtil.USERINFO_ID_VALUE));
+		ui.setUserName("dabao");
+		userHome.save(ui);
+	}
 
 	@Test
 	public void testUpdateUser() {

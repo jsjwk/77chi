@@ -3,6 +3,13 @@
     <wb-module deploy-name="mdb_app">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="mdb_component-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mdb_component/mdb_component">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mdb_common-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/mdb_common/mdb_common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="java-output-path" value="/mdb_app/src/main/webapp/WEB-INF/classes"/>
         <property name="context-root" value="mdb_app"/>
     </wb-module>
