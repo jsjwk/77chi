@@ -7,7 +7,7 @@
 		<version>1.0</version>
 	</parent>
 	<groupId>com.77chi</groupId>
-	<artifactId>userweb</artifactId>
+	<artifactId>77chi-userweb</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
 

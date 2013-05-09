@@ -6,7 +6,7 @@
     <version>1.0</version>
   </parent>
   <groupId>com.77chi</groupId>
-  <artifactId>admin</artifactId>
+  <artifactId>77chi-admin</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
 </project>

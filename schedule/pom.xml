@@ -7,7 +7,7 @@
 		<version>1.0</version>
 	</parent>
 	<groupId>com.77chi</groupId>
-	<artifactId>schedule</artifactId>
+	<artifactId>77chi-schedule</artifactId>
 	<version>1.0</version>
 
 	<dependencies>
