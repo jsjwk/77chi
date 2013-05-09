@@ -42,11 +42,11 @@
 	</build>
 
 	<modules>
-		<module>mdb-common</module>
-		<module>common</module>
-		<module>userweb</module>
-		<module>admin</module>
-		<module>schedule</module>
+		<module>77chi-mdb-common</module>
+		<module>77chi-common</module>
+		<module>77chi-userweb</module>
+		<module>77chi-admin</module>
+		<module>77chi-schedule</module>
 	</modules>
 
 </project>
