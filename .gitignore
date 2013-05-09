@@ -17,3 +17,11 @@ target
 /schedule/target
 /schedule/.project
 /schedule/.classpath
+/common/.classpath
+/mdb-app/.classpath
+/mdb-app/.project
+/mdb-app/.settings
+/mdb-common/.classpath
+/mdb-common/.project
+/mdb-common/.settings
+/mdb-component/.classpath
