@@ -8,3 +8,12 @@
 /admin/target
 target
 /*
+.settings
+target
+/userweb/target
+target
+/userweb/.classpath
+/userweb/.project
+/schedule/target
+/schedule/.project
+/schedule/.classpath
