@@ -2,9 +2,12 @@ package com.chi.dao.mongo;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.stereotype.Repository;
 
+import com.bb.mongo.core.BasicDAO;
+import com.bb.mongo.core.MongoConstants;
 import com.chi.dao.TaobaokeItemDao;
 import com.chi.po.TaobaokeItemDetailVo;
 import com.chi.po.TaobaokeItemVo;
@@ -20,27 +23,20 @@ import com.mongodb.WriteResult;
  * @author Administrator
  *
  */
-//@Repository(value = "taobaokeItemDao")
-public class TaobaokeItemMongoDaoImpl implements TaobaokeItemDao {
+@Repository(value = "taobaokeItemDao")
+public class TaobaokeItemMongoDao2Impl extends BasicDAO<TaobaokeItemVo,String> implements TaobaokeItemDao {
+
+	protected TaobaokeItemMongoDao2Impl() {
+		super(TaobaokeItemVo.class, MongoConstants.CONFIG);
+	}
 
 	@Override
 	public boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo) 
 	{
 		Long numIid = taobaokeItemVo.getTaobaokeItem().getNumIid();
-		String jsonStr = null;
-		try {
-			jsonStr = JsonUtils.getJSONString(taobaokeItemVo);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		
-		BasicDBObject object = new BasicDBObject();
-		object.put("numIid", numIid);
-		object.put("taobaokeItemVo", jsonStr);
-
-		DBCollection collection = MongoDBUtil.getCollection("item");
-		WriteResult wr = collection.insert(object);
-		
+		taobaokeItemVo.setNumIid(UUID.randomUUID().getLeastSignificantBits());
+		System.out.println("=========="+taobaokeItemVo);
+		save(taobaokeItemVo);
 		return true;
 	}
 

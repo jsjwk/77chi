@@ -3,6 +3,7 @@ package com.chi.po;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.google.code.morphia.annotations.Id;
 import com.taobao.api.domain.TaobaokeItem;
 
 /**
@@ -19,6 +20,9 @@ public class TaobaokeItemVo implements Serializable {
 		this.taobaokeItem = taobaokeItem;
 	}
 
+	@Id
+	private Long numIid;
+	
 	/**
 	 * 淘宝客商品
 	 */
@@ -41,6 +45,14 @@ public class TaobaokeItemVo implements Serializable {
 	 * 更新时间
 	 */
 	private Date updateTime;
+
+	public Long getNumIid() {
+		return numIid;
+	}
+
+	public void setNumIid(Long numIid) {
+		this.numIid = numIid;
+	}
 
 	public TaobaokeItem getTaobaokeItem() {
 		return taobaokeItem;
@@ -80,6 +92,25 @@ public class TaobaokeItemVo implements Serializable {
 
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("TaobaokeItemVo [numIid=");
+		builder.append(numIid);
+		builder.append(", taobaokeItem=");
+		builder.append(taobaokeItem);
+		builder.append(", cid=");
+		builder.append(cid);
+		builder.append(", overseasItem=");
+		builder.append(overseasItem);
+		builder.append(", createTime=");
+		builder.append(createTime);
+		builder.append(", updateTime=");
+		builder.append(updateTime);
+		builder.append("]");
+		return builder.toString();
 	}
 
 }

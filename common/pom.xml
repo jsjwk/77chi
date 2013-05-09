@@ -13,6 +13,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>com.77chi</groupId>
+			<artifactId>mdb-common</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-access</artifactId>
 			<version>0.9.21</version>
