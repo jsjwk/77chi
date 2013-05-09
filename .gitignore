@@ -1,2 +1,9 @@
 /userweb/target
 /common/target
+/.settings
+/.project
+/admin/.classpath
+/admin/.project
+/admin/target
+/admin/target
+target
