@@ -26,4 +26,8 @@ public class ConstatVar {
 	public static String WEIBO_APPKEY = "3461084792";
 	public static String WEIBO_SECRET = "ad539de0f34104552728dffbebd8fb10";
 	
+	//QQ的APPKEY、SECRET
+	public static String QQ_APPKEY = "100444066";
+	public static String QQ_SECRET = "abed51fe45624775ffb5e9c4498d251f";
+	
 }
