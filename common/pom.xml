@@ -14,7 +14,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.77chi</groupId>
-			<artifactId>mdb-common</artifactId>
+			<artifactId>77chi-mdb-common</artifactId>
 			<version>1.0</version>
 		</dependency>
 		<dependency>

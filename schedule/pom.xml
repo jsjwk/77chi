@@ -13,7 +13,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.77chi</groupId>
-			<artifactId>common</artifactId>
+			<artifactId>77chi-common</artifactId>
 			<version>1.0</version>
 		</dependency>
 	</dependencies>
