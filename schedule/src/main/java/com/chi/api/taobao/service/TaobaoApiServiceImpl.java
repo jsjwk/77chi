@@ -28,7 +28,7 @@ public class TaobaoApiServiceImpl implements TaobaoApiService {
 	@Override
 	public List<TaobaokeItem> getTaobaokeItems(Long cid,Long pageNo,Long pageSize) throws ApiException 
 	{
-		TaobaoClient client = new DefaultTaobaoClient(ConstatVar.URL, ConstatVar.APPKEY, ConstatVar.SECRET);
+		TaobaoClient client = new DefaultTaobaoClient(ConstatVar.TAOBAO_API_URL, ConstatVar.TAOBAO_API_APPKEY, ConstatVar.TAOBAO_API_SECRET);
 		// 查询淘宝客推广商品
 		TaobaokeItemsGetRequest req = new TaobaokeItemsGetRequest();
 		req.setFields("num_iid,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume");
@@ -84,7 +84,7 @@ public class TaobaoApiServiceImpl implements TaobaoApiService {
 	@Override
 	public List<TaobaokeItemDetail> getTaobaokeItemDetail(String NumIids) throws ApiException 
 	{
-		TaobaoClient client = new DefaultTaobaoClient(ConstatVar.URL, ConstatVar.APPKEY, ConstatVar.SECRET);
+		TaobaoClient client = new DefaultTaobaoClient(ConstatVar.TAOBAO_API_URL, ConstatVar.TAOBAO_API_APPKEY, ConstatVar.TAOBAO_API_SECRET);
 		TaobaokeItemsDetailGetRequest detailRequest = new TaobaokeItemsDetailGetRequest();
 		detailRequest.setFields("num_iid,cid,detail_url,title,type,desc,props_name,created,auction_point,volume,is_xinpin,food_security,locality_life,item_weight,item_size,num,valid_thru,location,list_time,delist_time,price,post_fee,express_fee,ems_fee,has_discount,freight_payer,modified,approve_status,item_imgs,score,is_taobao,violation");
 //		detailRequest.setFields("num_iid,detail_url,skus");
@@ -108,7 +108,7 @@ public class TaobaoApiServiceImpl implements TaobaoApiService {
 	@Override
 	public List<ItemCat> getItemCat(Long parentCid) throws ApiException 
 	{
-		TaobaoClient client = new DefaultTaobaoClient(ConstatVar.URL, ConstatVar.APPKEY, ConstatVar.SECRET);
+		TaobaoClient client = new DefaultTaobaoClient(ConstatVar.TAOBAO_API_URL, ConstatVar.TAOBAO_API_APPKEY, ConstatVar.TAOBAO_API_SECRET);
 		ItemcatsGetRequest req = new ItemcatsGetRequest();
 		req.setFields("cid,parent_cid,name,is_parent");
 		// 设置父类目为0，则获取的是跟目录下面的类目

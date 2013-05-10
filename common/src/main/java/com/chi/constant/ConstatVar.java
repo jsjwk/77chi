@@ -4,8 +4,9 @@ public class ConstatVar {
 
 //	private static boolean platform = System.getProperty("os.name").toUpperCase().indexOf("WINDOWS") != -1;
 	//Test
-    private static boolean platform = System.getProperty("os.name").toUpperCase().indexOf("WINDOWS") == -1;
+    	private static boolean platform = System.getProperty("os.name").toUpperCase().indexOf("WINDOWS") == -1;
     	
+    	//消息常量
 	public static String MESSAGE = "message";
 	
 	public static String PRODUCT_URL = "http://gw.api.taobao.com/router/rest";
@@ -16,8 +17,13 @@ public class ConstatVar {
 	public static String TEST_APPKEY = "test";
 	public static String TEST_SECRET = "test";
 	
-	public static String URL = platform ? TEST_URL:PRODUCT_URL;
-	public static String APPKEY = platform ? TEST_APPKEY:PRODUCT_APPKEY;
-	public static String SECRET = platform ? TEST_SECRET:PRODUCT_SECRET;
+	//淘宝API的URL、APPKEY、SECRET
+	public static String TAOBAO_API_URL = platform ? TEST_URL:PRODUCT_URL;
+	public static String TAOBAO_API_APPKEY = platform ? TEST_APPKEY:PRODUCT_APPKEY;
+	public static String TAOBAO_API_SECRET = platform ? TEST_SECRET:PRODUCT_SECRET;
+	
+	//新浪微博的APPKEY、SECRET
+	public static String WEIBO_APPKEY = "3461084792";
+	public static String WEIBO_SECRET = "ad539de0f34104552728dffbebd8fb10";
 	
 }

@@ -1,18 +1,212 @@
-0    DEBUG [2013-05-09 17:20:08]  Request:
-0    DEBUG [2013-05-09 17:20:08]  POSThttps://api.weibo.com/oauth2/access_token
-1215 DEBUG [2013-05-09 17:20:09]  Response:
-1215 DEBUG [2013-05-09 17:20:09]  https StatusCode:200
-1215 DEBUG [2013-05-09 17:20:09]  Server:nginx/1.2.0
-1215 DEBUG [2013-05-09 17:20:09]  Date:Thu, 09 May 2013 09:20:11 GMT
-1215 DEBUG [2013-05-09 17:20:09]  Content-Type:text/plain;charset=UTF-8
-1215 DEBUG [2013-05-09 17:20:09]  Content-Length:154
-1215 DEBUG [2013-05-09 17:20:09]  Connection:keep-alive
-1215 DEBUG [2013-05-09 17:20:09]  Pragma:No-cache
-1215 DEBUG [2013-05-09 17:20:09]  Cache-Control:no-cache
-1215 DEBUG [2013-05-09 17:20:09]  Expires:Thu, 01 Jan 1970 00:00:00 GMT
-1215 DEBUG [2013-05-09 17:20:09]  Api-Server-IP:10.75.25.114
-1215 DEBUG [2013-05-09 17:20:09]  X-Varnish:4220338413
-1215 DEBUG [2013-05-09 17:20:09]  Age:0
-1215 DEBUG [2013-05-09 17:20:09]  Via:1.1 varnish
-1217 DEBUG [2013-05-09 17:20:09]  {"access_token":"2.00NRteRCQQ3OmD0abcce42414jYNBB","remind_in":"121875","expires_in":121875,"uid":"2093208983","scope":"ad539de0f34104552728dffbebd8fb10"}
+426  DEBUG [2013-05-10 16:17:45]  Creating shared instance of singleton bean 'loginController'
+426  DEBUG [2013-05-10 16:17:45]  Creating instance of bean 'loginController'
+427  DEBUG [2013-05-10 16:17:45]  Eagerly caching bean 'loginController' to allow for resolving potential circular references
+429  DEBUG [2013-05-10 16:17:45]  Finished creating instance of bean 'loginController'
+429  DEBUG [2013-05-10 16:17:45]  Creating shared instance of singleton bean 'registerController'
+429  DEBUG [2013-05-10 16:17:45]  Creating instance of bean 'registerController'
+430  DEBUG [2013-05-10 16:17:45]  Eagerly caching bean 'registerController' to allow for resolving potential circular references
+432  DEBUG [2013-05-10 16:17:45]  Finished creating instance of bean 'registerController'
+433  DEBUG [2013-05-10 16:17:45]  Creating shared instance of singleton bean 'taobaokeItemDao'
+433  DEBUG [2013-05-10 16:17:45]  Creating instance of bean 'taobaokeItemDao'
+603  DEBUG [2013-05-10 16:17:45]  Eagerly caching bean 'taobaokeItemDao' to allow for resolving potential circular references
+608  DEBUG [2013-05-10 16:17:45]  Finished creating instance of bean 'taobaokeItemDao'
+608  DEBUG [2013-05-10 16:17:45]  Creating shared instance of singleton bean 'springJDBCDaoSupport'
+608  DEBUG [2013-05-10 16:17:45]  Creating instance of bean 'springJDBCDaoSupport'
+610  DEBUG [2013-05-10 16:17:45]  Found init method on class [com.chi.dao.SpringJDBCDaoSupport]: public void com.chi.dao.SpringJDBCDaoSupport.initDataSource()
+613  DEBUG [2013-05-10 16:17:45]  Found init method on class [com.chi.dao.SpringJDBCDaoSupport]: org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement@826c8995
+616  DEBUG [2013-05-10 16:17:45]  Found injected element on class [com.chi.dao.SpringJDBCDaoSupport]: ResourceElement for private javax.sql.DataSource com.chi.dao.SpringJDBCDaoSupport.dataSource
+616  DEBUG [2013-05-10 16:17:45]  Eagerly caching bean 'springJDBCDaoSupport' to allow for resolving potential circular references
+622  DEBUG [2013-05-10 16:17:45]  Processing injected method of bean 'springJDBCDaoSupport': ResourceElement for private javax.sql.DataSource com.chi.dao.SpringJDBCDaoSupport.dataSource
+623  DEBUG [2013-05-10 16:17:45]  Creating shared instance of singleton bean 'chiDataSource'
+623  DEBUG [2013-05-10 16:17:45]  Creating instance of bean 'chiDataSource'
+633  INFO  [2013-05-10 16:17:45]  MLog clients using log4j logging.
+670  INFO  [2013-05-10 16:17:46]  Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+690  DEBUG [2013-05-10 16:17:46]  MBean: com.mchange.v2.c3p0:type=PooledDataSource[2s5tfk8u139kra01n4xz22|174e73d] registered.
+701  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'chiDataSource' to allow for resolving potential circular references
+746  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'chiDataSource'
+746  DEBUG [2013-05-10 16:17:46]  Invoking init method on bean 'springJDBCDaoSupport': public void com.chi.dao.SpringJDBCDaoSupport.initDataSource()
+751  DEBUG [2013-05-10 16:17:46]  Invoking afterPropertiesSet() on bean with name 'springJDBCDaoSupport'
+751  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'springJDBCDaoSupport'
+751  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'chiDataSource'
+752  DEBUG [2013-05-10 16:17:46]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@10d553f]
+752  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'lifecycleProcessor'
+753  DEBUG [2013-05-10 16:17:46]  Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+753  INFO  [2013-05-10 16:17:46]  Root WebApplicationContext: initialization completed in 752 ms
+755  DEBUG [2013-05-10 16:17:46]  Initializing filter 'Set Character Encoding'
+760  DEBUG [2013-05-10 16:17:46]  Filter 'Set Character Encoding' configured successfully
+800  DEBUG [2013-05-10 16:17:46]  Initializing servlet 'userweb'
+801  INFO  [2013-05-10 16:17:46]  FrameworkServlet 'userweb': initialization started
+801  DEBUG [2013-05-10 16:17:46]  Servlet with name 'userweb' will try to create custom WebApplicationContext context of class 'org.springframework.web.context.support.XmlWebApplicationContext', using parent context [Root WebApplicationContext: startup date [Fri May 10 16:17:45 CST 2013]; root of context hierarchy]
+802  INFO  [2013-05-10 16:17:46]  Refreshing WebApplicationContext for namespace 'userweb-servlet': startup date [Fri May 10 16:17:46 CST 2013]; parent: Root WebApplicationContext
+803  INFO  [2013-05-10 16:17:46]  Loading XML bean definitions from ServletContext resource [/WEB-INF/userweb-servlet.xml]
+804  DEBUG [2013-05-10 16:17:46]  Using JAXP provider [org.apache.xerces.jaxp.DocumentBuilderFactoryImpl]
+805  DEBUG [2013-05-10 16:17:46]  Loading schema mappings from [META-INF/spring.schemas]
+806  DEBUG [2013-05-10 16:17:46]  Loaded schema mappings: {http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd}
+807  DEBUG [2013-05-10 16:17:46]  Found XML schema [http://www.springframework.org/schema/beans/spring-beans-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-2.5.xsd
+818  DEBUG [2013-05-10 16:17:46]  Found XML schema [http://www.springframework.org/schema/context/spring-context-2.5.xsd] in classpath: org/springframework/context/config/spring-context-2.5.xsd
+819  DEBUG [2013-05-10 16:17:46]  Found XML schema [http://www.springframework.org/schema/tool/spring-tool-2.5.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-2.5.xsd
+822  DEBUG [2013-05-10 16:17:46]  Loading bean definitions
+823  DEBUG [2013-05-10 16:17:46]  Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+824  DEBUG [2013-05-10 16:17:46]  Looking for matching resources in directory tree [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller]
+824  DEBUG [2013-05-10 16:17:46]  Searching directory [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller] for files matching pattern [J:/JavaFile/77chi/userweb/target/classes/com/chi/controller/**/*.class]
+825  DEBUG [2013-05-10 16:17:46]  Resolved location pattern [classpath*:com/chi/controller/**/*.class] to resources [file [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller\IndexController.class], file [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller\LoginController.class], file [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller\RegisterController.class], file [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller\UserBaseController.class]]
+826  DEBUG [2013-05-10 16:17:46]  Identified candidate component class: file [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller\IndexController.class]
+826  DEBUG [2013-05-10 16:17:46]  Identified candidate component class: file [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller\LoginController.class]
+827  DEBUG [2013-05-10 16:17:46]  Identified candidate component class: file [J:\JavaFile\77chi\userweb\target\classes\com\chi\controller\RegisterController.class]
+828  DEBUG [2013-05-10 16:17:46]  Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0]
+828  DEBUG [2013-05-10 16:17:46]  Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+828  DEBUG [2013-05-10 16:17:46]  Loaded 10 bean definitions from location pattern [/WEB-INF/userweb-servlet.xml]
+828  DEBUG [2013-05-10 16:17:46]  Bean factory for WebApplicationContext for namespace 'userweb-servlet': org.springframework.beans.factory.support.DefaultListableBeanFactory@a9e1af: defining beans [indexController,loginController,registerController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,multipartResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b0c258
+833  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+833  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+833  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+833  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+837  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+838  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+838  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+838  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+838  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+839  DEBUG [2013-05-10 16:17:46]  Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@c46396]
+839  DEBUG [2013-05-10 16:17:46]  Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@16626e3]
+839  DEBUG [2013-05-10 16:17:46]  Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@183405f]
+839  INFO  [2013-05-10 16:17:46]  Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a9e1af: defining beans [indexController,loginController,registerController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,org.springframework.web.servlet.view.InternalResourceViewResolver#0,multipartResolver]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@1b0c258
+839  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'indexController'
+839  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'indexController'
+840  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'indexController' to allow for resolving potential circular references
+840  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'indexController'
+840  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'loginController'
+840  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'loginController'
+841  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'loginController' to allow for resolving potential circular references
+841  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'loginController'
+841  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'registerController'
+841  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'registerController'
+841  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'registerController' to allow for resolving potential circular references
+841  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'registerController'
+841  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+841  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+841  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+841  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+841  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+842  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+899  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0' to allow for resolving potential circular references
+910  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+910  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+910  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+915  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+922  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+922  DEBUG [2013-05-10 16:17:46]  Creating shared instance of singleton bean 'multipartResolver'
+922  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'multipartResolver'
+929  DEBUG [2013-05-10 16:17:46]  Eagerly caching bean 'multipartResolver' to allow for resolving potential circular references
+933  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'multipartResolver'
+933  DEBUG [2013-05-10 16:17:46]  Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@72d54a]
+933  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'lifecycleProcessor'
+933  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'multipartResolver'
+933  DEBUG [2013-05-10 16:17:46]  Using MultipartResolver [org.springframework.web.multipart.commons.CommonsMultipartResolver@110f19b]
+935  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+937  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+937  DEBUG [2013-05-10 16:17:46]  Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@14f686d]
+938  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+943  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+943  DEBUG [2013-05-10 16:17:46]  Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@10a52e5]
+945  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+956  DEBUG [2013-05-10 16:17:46]  Looking for URL mappings in application context: WebApplicationContext for namespace 'userweb-servlet': startup date [Fri May 10 16:17:46 CST 2013]; parent: Root WebApplicationContext
+956  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'indexController': no URL paths identified
+956  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'loginController': no URL paths identified
+956  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'registerController': no URL paths identified
+956  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'multipartResolver': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'servletConfig': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'messageSource': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'applicationEventMulticaster': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'lifecycleProcessor': no URL paths identified
+957  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+957  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+966  DEBUG [2013-05-10 16:17:46]  Looking for URL mappings in application context: WebApplicationContext for namespace 'userweb-servlet': startup date [Fri May 10 16:17:46 CST 2013]; parent: Root WebApplicationContext
+970  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'indexController'
+970  INFO  [2013-05-10 16:17:46]  Mapped URL path [/test/index.do] onto handler [com.chi.controller.IndexController@106d63c]
+970  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'loginController'
+970  INFO  [2013-05-10 16:17:46]  Mapped URL path [/login.do] onto handler [com.chi.controller.LoginController@1db05df]
+970  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'registerController'
+970  INFO  [2013-05-10 16:17:46]  Mapped URL path [/preReg.do] onto handler [com.chi.controller.RegisterController@5ea088]
+970  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'registerController'
+970  INFO  [2013-05-10 16:17:46]  Mapped URL path [/weiboReg.do] onto handler [com.chi.controller.RegisterController@5ea088]
+970  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+970  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'multipartResolver': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'servletConfig': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'messageSource': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'applicationEventMulticaster': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Rejected bean name 'lifecycleProcessor': no URL paths identified
+971  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping'
+971  DEBUG [2013-05-10 16:17:46]  No HandlerMappings found in servlet 'userweb': using default
+971  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0'
+973  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+982  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver'
+983  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+986  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver'
+986  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+990  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver'
+990  DEBUG [2013-05-10 16:17:46]  No HandlerExceptionResolvers found in servlet 'userweb': using default
+991  DEBUG [2013-05-10 16:17:46]  Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+993  DEBUG [2013-05-10 16:17:46]  Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+993  DEBUG [2013-05-10 16:17:46]  Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@14de8cb]
+993  DEBUG [2013-05-10 16:17:46]  Returning cached instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+993  DEBUG [2013-05-10 16:17:46]  Published WebApplicationContext of servlet 'userweb' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.userweb]
+993  INFO  [2013-05-10 16:17:46]  FrameworkServlet 'userweb': initialization completed in 192 ms
+993  DEBUG [2013-05-10 16:17:46]  Servlet 'userweb' configured successfully
+13170 DEBUG [2013-05-10 16:17:58]  DispatcherServlet with name 'userweb' determining Last-Modified value for [/preReg.do]
+13172 DEBUG [2013-05-10 16:17:58]  Mapping [/preReg.do] to handler 'com.chi.controller.RegisterController@5ea088'
+13174 DEBUG [2013-05-10 16:17:58]  Last-Modified value for [/preReg.do] is: -1
+13176 DEBUG [2013-05-10 16:17:58]  DispatcherServlet with name 'userweb' processing GET request for [/preReg.do]
+13185 DEBUG [2013-05-10 16:17:58]  Invoking request handler method: public void com.chi.controller.RegisterController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException,com.taobao.api.ApiException
+13212 DEBUG [2013-05-10 16:17:58]  Null ModelAndView returned to DispatcherServlet with name 'userweb': assuming HandlerAdapter completed request handling
+13212 DEBUG [2013-05-10 16:17:58]  Successfully completed request
+31645 DEBUG [2013-05-10 16:18:17]  DispatcherServlet with name 'userweb' determining Last-Modified value for [/weiboReg.do]
+31645 DEBUG [2013-05-10 16:18:17]  Mapping [/weiboReg.do] to handler 'com.chi.controller.RegisterController@5ea088'
+31645 DEBUG [2013-05-10 16:18:17]  Last-Modified value for [/weiboReg.do] is: -1
+31645 DEBUG [2013-05-10 16:18:17]  DispatcherServlet with name 'userweb' processing GET request for [/weiboReg.do]
+31646 DEBUG [2013-05-10 16:18:17]  Invoking request handler method: public java.lang.String com.chi.controller.RegisterController.weiboReg(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException,com.taobao.api.ApiException
+31705 DEBUG [2013-05-10 16:18:17]  Request:
+31705 DEBUG [2013-05-10 16:18:17]  POSThttps://api.weibo.com/oauth2/access_token
+33082 DEBUG [2013-05-10 16:18:18]  Response:
+33082 DEBUG [2013-05-10 16:18:18]  https StatusCode:200
+33082 DEBUG [2013-05-10 16:18:18]  Server:nginx/1.2.0
+33082 DEBUG [2013-05-10 16:18:18]  Date:Fri, 10 May 2013 08:18:21 GMT
+33082 DEBUG [2013-05-10 16:18:18]  Content-Type:text/plain;charset=UTF-8
+33082 DEBUG [2013-05-10 16:18:18]  Content-Length:111
+33082 DEBUG [2013-05-10 16:18:18]  Connection:keep-alive
+33082 DEBUG [2013-05-10 16:18:18]  Pragma:No-cache
+33082 DEBUG [2013-05-10 16:18:18]  Cache-Control:no-cache
+33082 DEBUG [2013-05-10 16:18:18]  Expires:Thu, 01 Jan 1970 00:00:00 GMT
+33082 DEBUG [2013-05-10 16:18:18]  Api-Server-IP:10.75.2.83
+33083 DEBUG [2013-05-10 16:18:18]  X-Varnish:317583690
+33083 DEBUG [2013-05-10 16:18:18]  Age:0
+33083 DEBUG [2013-05-10 16:18:18]  Via:1.1 varnish
+33154 DEBUG [2013-05-10 16:18:18]  {"access_token":"2.00NRteRCQQ3OmD0abcce42414jYNBB","remind_in":"124898","expires_in":124898,"uid":"2093208983"}
 
+33271 DEBUG [2013-05-10 16:18:18]  Null ModelAndView returned to DispatcherServlet with name 'userweb': assuming HandlerAdapter completed request handling
+33271 DEBUG [2013-05-10 16:18:18]  Successfully completed request
+5091454 DEBUG [2013-05-10 17:42:36]  DispatcherServlet with name 'userweb' determining Last-Modified value for [/preReg.do]
+5091454 DEBUG [2013-05-10 17:42:36]  Mapping [/preReg.do] to handler 'com.chi.controller.RegisterController@5ea088'
+5091454 DEBUG [2013-05-10 17:42:36]  Last-Modified value for [/preReg.do] is: -1
+5091454 DEBUG [2013-05-10 17:42:36]  DispatcherServlet with name 'userweb' processing GET request for [/preReg.do]
+5091455 DEBUG [2013-05-10 17:42:36]  Invoking request handler method: public void com.chi.controller.RegisterController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException,com.taobao.api.ApiException
+5091455 DEBUG [2013-05-10 17:42:36]  Null ModelAndView returned to DispatcherServlet with name 'userweb': assuming HandlerAdapter completed request handling
+5091455 DEBUG [2013-05-10 17:42:36]  Successfully completed request
