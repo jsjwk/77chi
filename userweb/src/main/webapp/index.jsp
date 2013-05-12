@@ -12,6 +12,8 @@
 <h1>77chi项目-敬请期待</h1>
 
 <a href="<%=request.getContextPath() %>/test/index.do">demo示例</a>
+<br/>
+<a href="<%=request.getContextPath() %>/login.jsp">登陆</a>
 
 </body>
 </html>
