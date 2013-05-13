@@ -28,3 +28,4 @@ target
 /mdb-common/bin/*
 /mdb-component/.classpath
 /mdb-component/.project
+/userweb/weibo.log
