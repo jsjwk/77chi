@@ -10,9 +10,8 @@ public class MongoConstants {
 	
 	// 配置文件server.properties
 	public static final String FILENAME = "/server.properties";
-	public static final String METADATA = "master";
-	public static final String CONFIG = "config";
-	public static final String AGENT = "agent";
+	public static final String CHI_ITEM = "chi_item";
+	//public static final String CONFIG = "config";
 
 	public static final String CURRENTIDVALUE = "currentIdValue";
 	

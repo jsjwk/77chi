@@ -1,8 +1,5 @@
 package com.chi.dao;
 
-import java.util.List;
-
-import com.chi.po.TaobaokeItemDetailVo;
 import com.chi.po.TaobaokeItemVo;
 
 /**
@@ -21,11 +18,4 @@ public interface TaobaokeItemDao {
      */
     boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo);
     
-    /**
-     * 存入淘宝客商品详细信息
-     * @param taobaokeItemDetailVo
-     * @return
-     */
-    boolean batchInsertTaobaokeItemDetailVo(List<TaobaokeItemDetailVo> listTaobaokeItemDetailVo);
-
 }

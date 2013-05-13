@@ -7,7 +7,7 @@ import com.bb.neighbor.user.model.UserInfo;
 public class UserDAO extends BasicDAO<UserInfo, String> {
 
 	private UserDAO() {
-		super(UserInfo.class, MongoConstants.METADATA);
+		super(UserInfo.class, MongoConstants.CHI_ITEM);
 	}
 
 	private static UserDAO dao;

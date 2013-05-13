@@ -10,7 +10,7 @@ public class SequenceDAO extends BasicDAO<Sequence, String> {
 	private static SequenceDAO dao;
 
 	private SequenceDAO() {
-		super(Sequence.class, MongoConstants.CONFIG);
+		super(Sequence.class, MongoConstants.CHI_ITEM);
 	}
 
 	public static SequenceDAO getInstance() {

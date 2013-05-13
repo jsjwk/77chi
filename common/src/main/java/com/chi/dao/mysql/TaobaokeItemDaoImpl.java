@@ -1,23 +1,13 @@
 package com.chi.dao.mysql;
 
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.sql.Types;
-import java.util.List;
 
 import org.apache.commons.lang.StringEscapeUtils;
-import org.springframework.jdbc.core.BatchPreparedStatementSetter;
-import org.springframework.stereotype.Repository;
 
 import com.chi.dao.SpringJDBCDaoSupport;
 import com.chi.dao.TaobaokeItemDao;
-import com.chi.po.TaobaokeItemDetailVo;
 import com.chi.po.TaobaokeItemVo;
-import com.taobao.api.domain.Item;
-import com.taobao.api.domain.ItemImg;
 import com.taobao.api.domain.TaobaokeItem;
-import com.taobao.api.domain.TaobaokeItemDetail;
 
 //@Repository(value = "taobaokeItemDao")
 public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements TaobaokeItemDao {
@@ -41,6 +31,9 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
 		return n > 0 ? true : false;
 	}
 
+	/*
+	 * 
+	 * 
 	@Override
 	public boolean batchInsertTaobaokeItemDetailVo(final List<TaobaokeItemDetailVo> listTaobaokeItemDetailVo) 
 	{
@@ -109,6 +102,6 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
 		}
 		return num>0;
 	}
-
+	 */
 	
 }

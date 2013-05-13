@@ -3,52 +3,72 @@ package com.chi.po;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.google.code.morphia.annotations.Id;
 import com.taobao.api.domain.TaobaokeItemDetail;
 
 public class TaobaokeItemDetailVo implements Serializable {
 
-	private static final long serialVersionUID = 2471350883100485517L;
+    private static final long serialVersionUID = 2471350883100485517L;
 
-	public TaobaokeItemDetailVo(TaobaokeItemDetail taobaokeItemDetail) {
-		super();
-		this.taobaokeItemDetail = taobaokeItemDetail;
-	}
+    public TaobaokeItemDetailVo(TaobaokeItemDetail taobaokeItemDetail) {
+	super();
+	this.taobaokeItemDetail = taobaokeItemDetail;
+    }
 
-	/**
-	 * 详细
-	 */
-	private TaobaokeItemDetail taobaokeItemDetail;
-	/**
-	 * 创建时间
-	 */
-	private Date createTime;
-	/**
-	 * 更新时间
-	 */
-	private Date updateTime;
+    @Id
+    private Long numIid;
+    
+    /**
+     * 详细
+     */
+    private TaobaokeItemDetail taobaokeItemDetail;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
 
-	public TaobaokeItemDetail getTaobaokeItemDetail() {
-		return taobaokeItemDetail;
-	}
+    public Long getNumIid()
+    {
+        return numIid;
+    }
 
-	public void setTaobaokeItemDetail(TaobaokeItemDetail taobaokeItemDetail) {
-		this.taobaokeItemDetail = taobaokeItemDetail;
-	}
+    public void setNumIid(Long numIid)
+    {
+        this.numIid = numIid;
+    }
 
-	public Date getCreateTime() {
-		return createTime;
-	}
+    public TaobaokeItemDetail getTaobaokeItemDetail()
+    {
+	return taobaokeItemDetail;
+    }
 
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
-	}
+    public void setTaobaokeItemDetail(TaobaokeItemDetail taobaokeItemDetail)
+    {
+	this.taobaokeItemDetail = taobaokeItemDetail;
+    }
 
-	public Date getUpdateTime() {
-		return updateTime;
-	}
+    public Date getCreateTime()
+    {
+	return createTime;
+    }
 
-	public void setUpdateTime(Date updateTime) {
-		this.updateTime = updateTime;
-	}
+    public void setCreateTime(Date createTime)
+    {
+	this.createTime = createTime;
+    }
+
+    public Date getUpdateTime()
+    {
+	return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime)
+    {
+	this.updateTime = updateTime;
+    }
 
 }
