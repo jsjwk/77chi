@@ -41,6 +41,12 @@
 			<version>7.2.2.v20101205</version>
 			<optional>true</optional>
 		</dependency>
+		<!-- qq sdk -->
+		<dependency>
+			<groupId>com.qq</groupId>
+			<artifactId>oauth-sdk</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 
 	<properties>
