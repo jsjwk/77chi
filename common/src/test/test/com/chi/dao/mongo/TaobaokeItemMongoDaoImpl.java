@@ -51,6 +51,13 @@ public class TaobaokeItemMongoDaoImpl implements TaobaokeItemDao {
 	    return null;
 	}
 
+	@Override
+	public Long countItems()
+	{
+	    // TODO Auto-generated method stub
+	    return null;
+	}
+
 	/*
 	 * 
 	 * 

@@ -34,12 +34,14 @@ public class TaobaokeItemMongoDaoImpl extends BasicDAO<TaobaokeItemVo, String> i
     @Override
     public List<TaobaokeItemVo> findAllItems()
     {
-	System.out.println(this.find());
-	System.out.println(this.findIds());
-	System.out.println(this.findList());
-	Query<TaobaokeItemVo> query = this.createQuery();
-	System.out.println(this.count(query));
 	return findList();
+    }
+
+    @Override
+    public Long countItems()
+    {
+	Query<TaobaokeItemVo> query = this.createQuery();
+	return this.count(query);
     }
 
 }

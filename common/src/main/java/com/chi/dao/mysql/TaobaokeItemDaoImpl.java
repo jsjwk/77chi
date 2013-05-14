@@ -39,6 +39,13 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
 	    return null;
 	}
 
+	@Override
+	public Long countItems()
+	{
+	    // TODO Auto-generated method stub
+	    return null;
+	}
+
 	/*
 	 * 
 	 * 
