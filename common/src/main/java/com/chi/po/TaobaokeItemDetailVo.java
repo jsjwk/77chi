@@ -3,12 +3,18 @@ package com.chi.po;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.google.code.morphia.annotations.Entity;
 import com.google.code.morphia.annotations.Id;
 import com.taobao.api.domain.TaobaokeItemDetail;
 
+@Entity(value = "taobaokeItemDetailVo", noClassnameStored = true)
 public class TaobaokeItemDetailVo implements Serializable {
 
     private static final long serialVersionUID = 2471350883100485517L;
+
+    public TaobaokeItemDetailVo() {
+	super();
+    }
 
     public TaobaokeItemDetailVo(TaobaokeItemDetail taobaokeItemDetail) {
 	super();

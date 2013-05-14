@@ -44,6 +44,13 @@ public class TaobaokeItemMongoDaoImpl implements TaobaokeItemDao {
 		return true;
 	}
 
+	@Override
+	public List<TaobaokeItemVo> findAllItems()
+	{
+	    // TODO Auto-generated method stub
+	    return null;
+	}
+
 	/*
 	 * 
 	 * 

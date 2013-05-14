@@ -1,6 +1,7 @@
 package com.chi.dao.mysql;
 
 import java.sql.Types;
+import java.util.List;
 
 import org.apache.commons.lang.StringEscapeUtils;
 
@@ -29,6 +30,13 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
 		int[] argTypes = new int[] { Types.BIGINT, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,Types.VARCHAR,Types.VARCHAR,Types.VARCHAR,Types.VARCHAR,Types.BIGINT,Types.VARCHAR,Types.BIGINT,Types.BIGINT,Types.VARCHAR,Types.TIMESTAMP,Types.TIMESTAMP };
 		int n = this.getJdbcTemplate().update(sql, args,argTypes);
 		return n > 0 ? true : false;
+	}
+
+	@Override
+	public List<TaobaokeItemVo> findAllItems()
+	{
+	    // TODO Auto-generated method stub
+	    return null;
 	}
 
 	/*

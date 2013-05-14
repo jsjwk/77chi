@@ -1,5 +1,7 @@
 package com.chi.dao;
 
+import java.util.List;
+
 import com.chi.po.TaobaokeItemVo;
 
 /**
@@ -17,5 +19,7 @@ public interface TaobaokeItemDao {
      * @return
      */
     boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo);
+    
+    List<TaobaokeItemVo> findAllItems();
     
 }

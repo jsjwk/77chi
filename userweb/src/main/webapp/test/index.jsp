@@ -181,10 +181,10 @@
 			<c:if test="${listTaobaokeItem ne null}">
 			<c:forEach items="${listTaobaokeItem }" var="taobaokeItem">
 				<li class="col4">
-					<a href="${taobaokeItem.clickUrl }"><img src="${taobaokeItem.picUrl }" alt="" class="full-image product-image" /></a>
-					<p class="product-title"><a href="${taobaokeItem.clickUrl }">${taobaokeItem.title }</a></p>
-					<p class="product-price">${taobaokeItem.price }</p>
-					<p class="product-button clearfix"><a href="${taobaokeItem.clickUrl }" class="button2">点击详情 &raquo;</a></p>
+					<a href="${taobaokeItem.taobaokeItem.clickUrl }"><img src="${taobaokeItem.taobaokeItem.picUrl }" alt="" class="full-image product-image" /></a>
+					<p class="product-title"><a href="${taobaokeItem.taobaokeItem.clickUrl }">${taobaokeItem.taobaokeItem.title }</a></p>
+					<p class="product-price">${taobaokeItem.taobaokeItem.price }</p>
+					<p class="product-button clearfix"><a href="${taobaokeItem.taobaokeItem.clickUrl }" class="button2">点击详情 &raquo;</a></p>
 				</li>
 			</c:forEach>
 			</c:if>

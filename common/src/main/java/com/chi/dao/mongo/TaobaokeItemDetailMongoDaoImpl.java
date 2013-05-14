@@ -27,7 +27,6 @@ public class TaobaokeItemDetailMongoDaoImpl extends BasicDAO<TaobaokeItemDetailV
     {
 	/*
 	 * 
-	 * 
 	List<DBObject> listBasicDBObject = new ArrayList<DBObject>();
 	for (TaobaokeItemDetailVo detailVo : listTaobaokeItemDetailVo)
 	{
@@ -51,8 +50,14 @@ public class TaobaokeItemDetailMongoDaoImpl extends BasicDAO<TaobaokeItemDetailV
 	WriteResult wr = collection.insert(listBasicDBObject);
 	 */
 	
+	for (TaobaokeItemDetailVo detailVo : listTaobaokeItemDetailVo)
+	{
+	    //save支持主键冲突自动更新
+	    ds.save(detailVo);
+	}
 	
-	ds.insert(listTaobaokeItemDetailVo);
+	//insert是可以传入批量的，但是不支持主键冲突更新
+	//ds.insert(listTaobaokeItemDetailVo);
 	return true;
     }
 

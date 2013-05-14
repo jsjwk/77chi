@@ -38,6 +38,8 @@ public class Task1 {
 	for (TaobaokeItem taobaokeItem : listTaobaokeItem)
 	{
 	    TaobaokeItemVo vo = new TaobaokeItemVo(taobaokeItem);
+	    Long numIid = taobaokeItem.getNumIid();
+	    vo.setNumIid(numIid);
 	    vo.setCid(cid);
 	    vo.setCreateTime(now);
 	    vo.setUpdateTime(now);
@@ -47,9 +49,6 @@ public class Task1 {
 	    numIidsList.add(taobaokeItem.getNumIid());
 	}
 
-	/**
-		 * 
-		 */
 	List<TaobaokeItemDetailVo> listTaobaokeItemDetailVo = new ArrayList<TaobaokeItemDetailVo>();
 	StringBuilder numIidBuilder = new StringBuilder();
 	for (int i = 1; i <= numIidsList.size(); i++)

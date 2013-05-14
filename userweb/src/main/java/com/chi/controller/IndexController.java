@@ -3,6 +3,7 @@ package com.chi.controller;
 import java.io.IOException;
 import java.util.List;
 
+import javax.annotation.Resource;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -10,13 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.chi.constant.ConstatVar;
+import com.chi.po.TaobaokeItemVo;
+import com.chi.service.TaobaokeItemService;
 import com.taobao.api.ApiException;
-import com.taobao.api.DefaultTaobaoClient;
-import com.taobao.api.TaobaoClient;
-import com.taobao.api.domain.TaobaokeItem;
-import com.taobao.api.request.TaobaokeItemsGetRequest;
-import com.taobao.api.response.TaobaokeItemsGetResponse;
 
 /**
  * 账户信息
@@ -27,33 +24,18 @@ import com.taobao.api.response.TaobaokeItemsGetResponse;
 @Controller(value = "indexController")
 public class IndexController extends UserBaseController {
 
+    @Resource(name="taobaokeItemService")
+    private TaobaokeItemService taobaokeItemService;
+    
     /**
      * 进入用户信息页面
      * 
      * @throws ApiException
      */
     @RequestMapping("/test/index.do")
-    public String index(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, ApiException
+    public String index(HttpServletRequest request, HttpServletResponse response)
     {
-	TaobaoClient client = new DefaultTaobaoClient(ConstatVar.TAOBAO_API_URL, ConstatVar.TAOBAO_API_APPKEY, ConstatVar.TAOBAO_API_SECRET);
-	// 查询淘宝客推广商品
-	TaobaokeItemsGetRequest req = new TaobaokeItemsGetRequest();
-	req.setFields("num_iid,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume");
-	req.setNick("wk11766988");
-	// req.setPid(123456L);
-	// req.setKeyword("芒果");
-	req.setCid(50013063L);
-	req.setStartPrice("1");
-	req.setEndPrice("99");
-	TaobaokeItemsGetResponse itemsGetResponse = client.execute(req);
-
-	System.out.println(itemsGetResponse.getBody());
-	List<TaobaokeItem> listTaobaokeItem = itemsGetResponse.getTaobaokeItems();
-	// for (TaobaokeItem taobaokeItem : listTaobaokeItem) {
-	//
-	// System.out.println(taobaokeItem.getClickUrl());
-	// }
-
+	List<TaobaokeItemVo> listTaobaokeItem = taobaokeItemService.findAllItems();
 	request.setAttribute("listTaobaokeItem", listTaobaokeItem);
 
 	return "test/index";
