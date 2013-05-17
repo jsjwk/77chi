@@ -13,7 +13,6 @@
 
 	<build>
 		<finalName>77chi-userweb</finalName>
-		<pluginManagement>
 			<plugins>
 				<plugin>
 					<groupId>org.mortbay.jetty</groupId>
@@ -30,7 +29,6 @@
 					</configuration>
 				</plugin>
 			</plugins>
-		</pluginManagement>
 	</build>
 
 	<dependencies>
