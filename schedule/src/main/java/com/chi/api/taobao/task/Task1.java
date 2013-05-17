@@ -30,6 +30,8 @@ public class Task1 {
 
 	public static void main(String[] args) throws ApiException 
 	{
+	    /*
+	     * 
 		//获取[保健营养]并且保存
 		getItemsAndStore(50020275L);
 		getItemsAndStore(50026800L);
@@ -49,6 +51,7 @@ public class Task1 {
 		
 		//获取[休闲零食]并且保存
 		getItemsAndStore(50002766L);
+	     */
 		
 		//获取[饮料]并且保存
 		getItemsAndStore(50026316L);
