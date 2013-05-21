@@ -19,12 +19,26 @@ import com.taobao.api.ApiException;
 import com.taobao.api.domain.TaobaokeItem;
 import com.taobao.api.domain.TaobaokeItemDetail;
 
+/**
+ * 
+ * itemType
+ * 饮料 - 1
+ * 保健营养 - 2
+ * 进口食品 - 3
+ * 酒类 - 4
+ * 母婴食品 - 5
+ * 水果 - 6
+ * 休闲零食 - 7
+ * 
+ * @author Administrator
+ *
+ */
 public class Task1 {
 
 	private static ApplicationContext context = new ClassPathXmlApplicationContext("classpath:/spring-schedule.xml");
 	private static TaobaoApiService taobaoApiService = (TaobaoApiService) context.getBean("taobaoApiService");
-	private static TaobaokeItemDao taobaokeItemDao = (TaobaokeItemDao) context.getBean("taobaokeItemDao");
-	private static TaobaokeItemDetailDao taobaokeItemDetailDao = (TaobaokeItemDetailDao) context.getBean("taobaokeItemDetailDao");
+	private static TaobaokeItemDao mongoTaobaokeItemDao = (TaobaokeItemDao) context.getBean("mongoTaobaokeItemDao");
+	private static TaobaokeItemDetailDao mongoTaobaokeItemDetailDao = (TaobaokeItemDetailDao) context.getBean("mongoTaobaokeItemDetailDao");
 
 	private static final Logger LOG = LoggerFactory.getLogger(Task1.class);
 
@@ -32,30 +46,29 @@ public class Task1 {
 	{
 	    /*
 	     * 
+	     */
+		//获取[饮料]并且保存
+		getItemsAndStore(50026316L,1);
+		
 		//获取[保健营养]并且保存
-		getItemsAndStore(50020275L);
-		getItemsAndStore(50026800L);
+		getItemsAndStore(50020275L,2);
+		getItemsAndStore(50026800L,2);
 		
 		//获取[进口食品]并且保存
 		
 		
 		//获取[酒类]并且保存
-		getItemsAndStore(50008141L);
+		getItemsAndStore(50008141L,4);
 		
 		//获取[母婴食品]并且保存
-		getItemsAndStore(35L);
-		getItemsAndStore(50022517L);
+		getItemsAndStore(35L,5);
+		getItemsAndStore(50022517L,5);
 		
 		//获取[水果]并且保存
-		getItemsAndStore(50050725L);
+		getItemsAndStore(50050725L,6);
 		
 		//获取[休闲零食]并且保存
-		getItemsAndStore(50002766L);
-	     */
-		
-		//获取[饮料]并且保存
-		getItemsAndStore(50026316L);
-		
+		getItemsAndStore(50002766L,7);
 	}
 
 	/**
@@ -63,7 +76,7 @@ public class Task1 {
 	 * @param cid
 	 * @throws ApiException
 	 */
-	private static void getItemsAndStore(Long cid) throws ApiException 
+	private static void getItemsAndStore(Long cid,int itemType) throws ApiException 
 	{
 		Date now = new Date();
 		// 获取淘宝客商品
@@ -73,13 +86,15 @@ public class Task1 {
 		{
 			TaobaokeItemVo vo = new TaobaokeItemVo(taobaokeItem);
 			Long numIid = taobaokeItem.getNumIid();
+			vo.setItemType(itemType);
 			vo.setNumIid(numIid);
+			// vo.setNumIid(UUID.randomUUID().getLeastSignificantBits());
 			vo.setCid(cid);
 			vo.setCreateTime(now);
 			vo.setUpdateTime(now);
 			vo.setOverseasItem("false");
 			// 存储商品基本信息
-			taobaokeItemDao.insertTaobaokeItemVo(vo);
+			mongoTaobaokeItemDao.insertTaobaokeItemVo(vo);
 			numIidsList.add(taobaokeItem.getNumIid());
 		}
 
@@ -95,8 +110,9 @@ public class Task1 {
 				for (TaobaokeItemDetail taobaokeItemDetail : listTaobaokeItemDetail) 
 				{
 					TaobaokeItemDetailVo taobaokeItemDetailVo = new TaobaokeItemDetailVo(taobaokeItemDetail);
-					// taobaokeItemDetailVo.setNumIid(taobaokeItemDetail.getItem().getNumIid());
-					taobaokeItemDetailVo.setNumIid(UUID.randomUUID().getLeastSignificantBits());
+					taobaokeItemDetailVo.setItemType(itemType);
+					taobaokeItemDetailVo.setNumIid(taobaokeItemDetail.getItem().getNumIid());
+					//taobaokeItemDetailVo.setNumIid(UUID.randomUUID().getLeastSignificantBits());
 					taobaokeItemDetailVo.setCreateTime(now);
 					taobaokeItemDetailVo.setUpdateTime(now);
 					listTaobaokeItemDetailVo.add(taobaokeItemDetailVo);
@@ -106,7 +122,7 @@ public class Task1 {
 		}
 
 		// 存储详细信息
-		taobaokeItemDetailDao.batchInsertTaobaokeItemDetailVo(listTaobaokeItemDetailVo);
+		mongoTaobaokeItemDetailDao.batchInsertTaobaokeItemDetailVo(listTaobaokeItemDetailVo);
 	}
 
 }

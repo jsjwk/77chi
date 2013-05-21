@@ -4,13 +4,14 @@ import java.sql.Types;
 import java.util.List;
 
 import org.apache.commons.lang.StringEscapeUtils;
+import org.springframework.stereotype.Repository;
 
 import com.chi.dao.SpringJDBCDaoSupport;
 import com.chi.dao.TaobaokeItemDao;
 import com.chi.po.TaobaokeItemVo;
 import com.taobao.api.domain.TaobaokeItem;
 
-//@Repository(value = "taobaokeItemDao")
+@Repository(value = "taobaokeItemDao")
 public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements TaobaokeItemDao {
 	// 可以在这里重载一个setDataSource
 
@@ -18,8 +19,7 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
 	public boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo) 
 	{
 		TaobaokeItem taobaokeItem = taobaokeItemVo.getTaobaokeItem();
-		
-		String sql = "INSERT IGNORE  INTO "
+		String sql = "INSERT IGNORE INTO "
 				+ "taobaoke_item(num_iid,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume,cid,overseas_item,create_time,update_time) " 
 				+" VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		Object[] args = new Object[] { taobaokeItem.getNumIid(), StringEscapeUtils.escapeSql(taobaokeItem.getTitle()),
@@ -44,6 +44,24 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
 	{
 	    // TODO Auto-generated method stub
 	    return null;
+	}
+
+	@Override
+	public TaobaokeItemVo getItemByNumIid(Long numIid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<TaobaokeItemVo> findItemsByCid(Long cid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<TaobaokeItemVo> findItemsByItemType(int itemType) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	/*

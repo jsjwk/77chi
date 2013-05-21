@@ -16,17 +16,16 @@ import com.google.code.morphia.query.Query;
  * @author Administrator
  * 
  */
-@Repository(value = "taobaokeItemDao")
-public class TaobaokeItemMongoDaoImpl extends BasicDAO<TaobaokeItemVo, String> implements TaobaokeItemDao {
+@Repository(value = "mongoTaobaokeItemDao")
+public class MongoTaobaokeItemDaoImpl extends BasicDAO<TaobaokeItemVo, Long> implements TaobaokeItemDao {
 
-    protected TaobaokeItemMongoDaoImpl() {
+    protected MongoTaobaokeItemDaoImpl() {
 	super(TaobaokeItemVo.class, MongoConstants.CHI_ITEM);
     }
 
     @Override
     public boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo)
     {
-	// taobaokeItemVo.setNumIid(UUID.randomUUID().getLeastSignificantBits());
 	this.save(taobaokeItemVo);
 	return true;
     }
@@ -43,5 +42,27 @@ public class TaobaokeItemMongoDaoImpl extends BasicDAO<TaobaokeItemVo, String> i
 	Query<TaobaokeItemVo> query = this.createQuery();
 	return this.count(query);
     }
+
+	@Override
+	public TaobaokeItemVo getItemByNumIid(Long numIid) 
+	{
+		return this.get(numIid);
+	}
+
+	@Override
+	public List<TaobaokeItemVo> findItemsByCid(Long cid) 
+	{
+		Query<TaobaokeItemVo> query = this.createQuery();
+		query.filter("cid", cid);
+		return this.findList(query);
+	}
+
+	@Override
+	public List<TaobaokeItemVo> findItemsByItemType(int itemType) 
+	{
+		Query<TaobaokeItemVo> query = this.createQuery();
+		query.filter("itemType", itemType);
+		return this.findList(query);
+	}
 
 }

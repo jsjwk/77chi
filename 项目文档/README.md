@@ -9,9 +9,10 @@ mvn install:install-file -DgroupId=com.qq -DartifactId=oauth-sdk -Dversion=1.0 -
 
 window7下面启动mongodb
 mongod --dbpath D:\mongodb-win32-i386-2.4.3\DB
-./mongod --dbpath=/opt/data/
+./mongod --dbpath /opt/mongo_data/
 
 aws ip:
 54.245.76.14
 
 54.245.76.14 mongo.77chi.com
+10.10.126.116

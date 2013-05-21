@@ -28,6 +28,7 @@ public class TaobaoApiServiceImpl implements TaobaoApiService {
 	@Override
 	public List<TaobaokeItem> getTaobaokeItems(Long cid,Long pageNo,Long pageSize) throws ApiException 
 	{
+		LOG.info("ConstatVar.TAOBAO_API_URL:"+ConstatVar.TAOBAO_API_URL);
 		TaobaoClient client = new DefaultTaobaoClient(ConstatVar.TAOBAO_API_URL, ConstatVar.TAOBAO_API_APPKEY, ConstatVar.TAOBAO_API_SECRET);
 		// 查询淘宝客推广商品
 		TaobaokeItemsGetRequest req = new TaobaokeItemsGetRequest();

@@ -23,7 +23,12 @@ public class TaobaokeItemDetailVo implements Serializable {
 
     @Id
     private Long numIid;
-    
+	
+    /**
+	 * 77chi的商品类别
+	 */
+	private int itemType;
+	
     /**
      * 详细
      */
@@ -76,5 +81,13 @@ public class TaobaokeItemDetailVo implements Serializable {
     {
 	this.updateTime = updateTime;
     }
+
+	public int getItemType() {
+		return itemType;
+	}
+
+	public void setItemType(int itemType) {
+		this.itemType = itemType;
+	}
 
 }

@@ -20,8 +20,35 @@ public interface TaobaokeItemDao {
      */
     boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo);
     
+    /**
+     * 所有的商品
+     * @return
+     */
     List<TaobaokeItemVo> findAllItems();
     
+    /**
+     * 获取某个类别所有的商品
+     * @return
+     */
+    public List<TaobaokeItemVo> findItemsByCid(Long cid);
+    
+    /**
+     * 所有的商品个数
+     * @return
+     */
     Long countItems();
+    
+    /**
+     * 根据numIid获取商品
+     * @param numIid
+     * @return
+     */
+    public TaobaokeItemVo getItemByNumIid(Long numIid);
+    
+    /**
+     * 获取某个77chi类别所有的商品
+     * @return
+     */
+    public List<TaobaokeItemVo> findItemsByItemType(int itemType);
     
 }

@@ -30,6 +30,11 @@ public class TaobaokeItemVo implements Serializable {
 	private Long numIid;
 	
 	/**
+	 * 77chi的商品类别
+	 */
+	private int itemType;
+	
+	/**
 	 * 淘宝客商品
 	 */
 	private TaobaokeItem taobaokeItem;
@@ -100,11 +105,21 @@ public class TaobaokeItemVo implements Serializable {
 		this.updateTime = updateTime;
 	}
 
+	public int getItemType() {
+		return itemType;
+	}
+
+	public void setItemType(int itemType) {
+		this.itemType = itemType;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("TaobaokeItemVo [numIid=");
 		builder.append(numIid);
+		builder.append(", itemType=");
+		builder.append(itemType);
 		builder.append(", taobaokeItem=");
 		builder.append(taobaokeItem);
 		builder.append(", cid=");

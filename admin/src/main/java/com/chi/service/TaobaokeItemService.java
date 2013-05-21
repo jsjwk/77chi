@@ -1,11 +1,14 @@
 package com.chi.service;
 
-import java.util.List;
-
 import com.chi.po.TaobaokeItemVo;
+
 
 public interface TaobaokeItemService {
 
-    public List<TaobaokeItemVo> findAllItems();
-    
+    /**
+     * 保存一个TaobaokeItemVo
+     * @param taobaokeItemVo
+     * @return
+     */
+    public boolean save(TaobaokeItemVo taobaokeItemVo);
 }

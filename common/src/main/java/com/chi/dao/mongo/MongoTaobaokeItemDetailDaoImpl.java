@@ -15,10 +15,10 @@ import com.chi.po.TaobaokeItemDetailVo;
  * @author Administrator
  * 
  */
-@Repository(value = "taobaokeItemDetailDao")
-public class TaobaokeItemDetailMongoDaoImpl extends BasicDAO<TaobaokeItemDetailVo, String> implements TaobaokeItemDetailDao {
+@Repository(value = "mongoTaobaokeItemDetailDao")
+public class MongoTaobaokeItemDetailDaoImpl extends BasicDAO<TaobaokeItemDetailVo, String> implements TaobaokeItemDetailDao {
 
-    protected TaobaokeItemDetailMongoDaoImpl() {
+    protected MongoTaobaokeItemDetailDaoImpl() {
 	super(TaobaokeItemDetailVo.class, MongoConstants.CHI_ITEM);
     }
 

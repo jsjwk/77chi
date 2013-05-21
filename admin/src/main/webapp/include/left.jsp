@@ -5,11 +5,26 @@
 			<div class="span2 main-menu-span">
 				<div class="well nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li class="nav-header hidden-tablet">审核面板</li>
-						<li><a class="ajax-link" href="index.jsp"><i class="icon-align-justify"></i><span class="hidden-tablet"> 饮料</span></a></li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 零食</span></a></li>
+						<li class="nav-header hidden-tablet">抓取的Mongo数据</li>
+						<li class="active"><a class="ajax-link" href="/index.do?itemType=1"><i class="icon-align-justify"></i><span class="hidden-tablet"> 饮料</span></a></li>
+						<li><a class="ajax-link" href="/index.do?itemType=2"><i class="icon-align-justify"></i><span class="hidden-tablet"> 保健营养</span></a></li>
+						<li><a class="ajax-link" href="/index.do?itemType=2"><i class="icon-align-justify"></i><span class="hidden-tablet"> 进口食品</span></a></li>
+						<li><a class="ajax-link" href="/index.do?itemType=4"><i class="icon-align-justify"></i><span class="hidden-tablet"> 酒类</span></a></li>
+						<li><a class="ajax-link" href="/index.do?itemType=5"><i class="icon-align-justify"></i><span class="hidden-tablet"> 母婴食品</span></a></li>
+						<li><a class="ajax-link" href="/index.do?itemType=6"><i class="icon-align-justify"></i><span class="hidden-tablet"> 水果</span></a></li>
+						<li><a class="ajax-link" href="/index.do?itemType=7"><i class="icon-align-justify"></i><span class="hidden-tablet"> 休闲零食</span></a></li>
 						
-						<li class="nav-header hidden-tablet">Sample Section</li>
+						<li class="nav-header hidden-tablet">线上DB</li>
+						<li><a class="ajax-link" href="index.jsp"><i class="icon-align-justify"></i><span class="hidden-tablet"> 饮料</span></a></li>
+						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 保健营养</span></a></li>
+						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 进口食品</span></a></li>
+						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 酒类</span></a></li>
+						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 母婴食品</span></a></li>
+						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 水果</span></a></li>
+						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 休闲零食</span></a></li>
+						
+
+						<li class="nav-header hidden-tablet">Backup</li>
 						<li><a class="ajax-link" href="index.html"><i class="icon-home"></i><span class="hidden-tablet"> Dashboard</span></a></li>
 						<li><a class="ajax-link" href="ui.html"><i class="icon-eye-open"></i><span class="hidden-tablet"> UI Features</span></a></li>
 						<li><a class="ajax-link" href="form.html"><i class="icon-edit"></i><span class="hidden-tablet"> Forms</span></a></li>
