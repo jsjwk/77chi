@@ -1,68 +1,78 @@
 package com.chi.dao.mysql;
 
 import java.sql.Types;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang.StringEscapeUtils;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.chi.dao.SpringJDBCDaoSupport;
-import com.chi.dao.TaobaokeItemDao;
+import com.chi.po.MongoTaobaokeItemVo;
 import com.chi.po.TaobaokeItemVo;
-import com.taobao.api.domain.TaobaokeItem;
 
 @Repository(value = "taobaokeItemDao")
 public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements TaobaokeItemDao {
-	// 可以在这里重载一个setDataSource
+    // 可以在这里重载一个setDataSource
 
-	@Override
-	public boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo) 
-	{
-		TaobaokeItem taobaokeItem = taobaokeItemVo.getTaobaokeItem();
-		String sql = "INSERT IGNORE INTO "
-				+ "taobaoke_item(num_iid,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume,cid,overseas_item,create_time,update_time) " 
-				+" VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-		Object[] args = new Object[] { taobaokeItem.getNumIid(), StringEscapeUtils.escapeSql(taobaokeItem.getTitle()),
-				taobaokeItem.getNick(), taobaokeItem.getPicUrl(), taobaokeItem.getPrice(), taobaokeItem.getClickUrl(), 
-				taobaokeItem.getCommission(),taobaokeItem.getCommissionRate(),taobaokeItem.getCommissionNum(),taobaokeItem.getCommissionVolume(),
-				taobaokeItem.getShopClickUrl(),taobaokeItem.getSellerCreditScore(),taobaokeItem.getItemLocation(),taobaokeItem.getVolume(),
-				taobaokeItemVo.getCid(),taobaokeItemVo.getOverseasItem(),taobaokeItemVo.getCreateTime(),taobaokeItemVo.getUpdateTime()};
-		int[] argTypes = new int[] { Types.BIGINT, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,Types.VARCHAR,Types.VARCHAR,Types.VARCHAR,Types.VARCHAR,Types.BIGINT,Types.VARCHAR,Types.BIGINT,Types.BIGINT,Types.VARCHAR,Types.TIMESTAMP,Types.TIMESTAMP };
-		int n = this.getJdbcTemplate().update(sql, args,argTypes);
-		return n > 0 ? true : false;
-	}
+    private static final String TABLE_NAME = "taobaoke_item";
+    
+    @Override
+    public boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo)
+    {
+	String sql = "INSERT IGNORE INTO "
+		+ TABLE_NAME 
+		+ "(num_iid,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume,cid,overseas_item,create_time,update_time) "
+		+ " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	Object[] args = new Object[] { taobaokeItemVo.getNumIid(), StringEscapeUtils.escapeSql(taobaokeItemVo.getTitle()), taobaokeItemVo.getNick(), taobaokeItemVo.getPicUrl(), taobaokeItemVo.getPrice(),
+		taobaokeItemVo.getClickUrl(), taobaokeItemVo.getCommission(), taobaokeItemVo.getCommissionRate(), taobaokeItemVo.getCommissionNum(), taobaokeItemVo.getCommissionVolume(),
+		taobaokeItemVo.getShopClickUrl(), taobaokeItemVo.getSellerCreditScore(), taobaokeItemVo.getItemLocation(), taobaokeItemVo.getVolume(), taobaokeItemVo.getCid(),
+		taobaokeItemVo.getOverseasItem(), taobaokeItemVo.getCreateTime(), taobaokeItemVo.getUpdateTime() };
+	int[] argTypes = new int[] { Types.BIGINT, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
+		Types.VARCHAR, Types.BIGINT, Types.VARCHAR, Types.BIGINT, Types.BIGINT, Types.VARCHAR, Types.TIMESTAMP, Types.TIMESTAMP };
+	int n = this.getJdbcTemplate().update(sql, args, argTypes);
+	return n > 0 ? true : false;
+    }
 
-	@Override
-	public List<TaobaokeItemVo> findAllItems()
-	{
-	    // TODO Auto-generated method stub
-	    return null;
-	}
+    @Override
+    public List<TaobaokeItemVo> findAllItems()
+    {
+	// TODO Auto-generated method stub
+	return null;
+    }
 
-	@Override
-	public Long countItems()
-	{
-	    // TODO Auto-generated method stub
-	    return null;
-	}
+    @Override
+    public Long countItems()
+    {
+	// TODO Auto-generated method stub
+	return null;
+    }
 
-	@Override
-	public TaobaokeItemVo getItemByNumIid(Long numIid) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public MongoTaobaokeItemVo getItemByNumIid(Long numIid)
+    {
+	// TODO Auto-generated method stub
+	return null;
+    }
 
-	@Override
-	public List<TaobaokeItemVo> findItemsByCid(Long cid) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public List<TaobaokeItemVo> findItemsByCid(Long cid)
+    {
+	// TODO Auto-generated method stub
+	return null;
+    }
 
-	@Override
-	public List<TaobaokeItemVo> findItemsByItemType(int itemType) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    @Override
+    public List<TaobaokeItemVo> findItemsByItemType(int itemType)
+    {
+	String sql = "select * from " + TABLE_NAME + " where item_type=? order by update_time desc ";
+	Object[] args = new Object[]{itemType};
+	int[] argTypes = new int[]{Types.INTEGER};
+	List<TaobaokeItemVo> list = this.getJdbcTemplate().query(sql, args, argTypes, ParameterizedBeanPropertyRowMapper.newInstance(TaobaokeItemVo.class));
+	return list==null?new ArrayList<TaobaokeItemVo>():list;
+    }
+    
+    
 
 	/*
 	 * 
@@ -136,5 +146,5 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
 		return num>0;
 	}
 	 */
-	
+    
 }

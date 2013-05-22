@@ -8,15 +8,15 @@ import com.google.code.morphia.annotations.Id;
 import com.taobao.api.domain.TaobaokeItemDetail;
 
 @Entity(value = "taobaokeItemDetailVo", noClassnameStored = true)
-public class TaobaokeItemDetailVo implements Serializable {
+public class MongoTaobaokeItemDetailVo implements Serializable {
 
     private static final long serialVersionUID = 2471350883100485517L;
 
-    public TaobaokeItemDetailVo() {
+    public MongoTaobaokeItemDetailVo() {
 	super();
     }
 
-    public TaobaokeItemDetailVo(TaobaokeItemDetail taobaokeItemDetail) {
+    public MongoTaobaokeItemDetailVo(TaobaokeItemDetail taobaokeItemDetail) {
 	super();
 	this.taobaokeItemDetail = taobaokeItemDetail;
     }

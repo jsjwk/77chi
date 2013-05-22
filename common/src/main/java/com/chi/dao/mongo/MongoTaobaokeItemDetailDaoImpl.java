@@ -6,8 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.bb.mongo.core.BasicDAO;
 import com.bb.mongo.core.MongoConstants;
-import com.chi.dao.TaobaokeItemDetailDao;
-import com.chi.po.TaobaokeItemDetailVo;
+import com.chi.po.MongoTaobaokeItemDetailVo;
 
 /**
  * TaobaokeItemDao的Mongo实现
@@ -16,14 +15,14 @@ import com.chi.po.TaobaokeItemDetailVo;
  * 
  */
 @Repository(value = "mongoTaobaokeItemDetailDao")
-public class MongoTaobaokeItemDetailDaoImpl extends BasicDAO<TaobaokeItemDetailVo, String> implements TaobaokeItemDetailDao {
+public class MongoTaobaokeItemDetailDaoImpl extends BasicDAO<MongoTaobaokeItemDetailVo, String> implements MongoTaobaokeItemDetailDao {
 
     protected MongoTaobaokeItemDetailDaoImpl() {
-	super(TaobaokeItemDetailVo.class, MongoConstants.CHI_ITEM);
+	super(MongoTaobaokeItemDetailVo.class, MongoConstants.CHI_ITEM);
     }
 
     @Override
-    public boolean batchInsertTaobaokeItemDetailVo(List<TaobaokeItemDetailVo> listTaobaokeItemDetailVo)
+    public boolean batchInsertTaobaokeItemDetailVo(List<MongoTaobaokeItemDetailVo> listTaobaokeItemDetailVo)
     {
 	/*
 	 * 
@@ -50,7 +49,7 @@ public class MongoTaobaokeItemDetailDaoImpl extends BasicDAO<TaobaokeItemDetailV
 	WriteResult wr = collection.insert(listBasicDBObject);
 	 */
 	
-	for (TaobaokeItemDetailVo detailVo : listTaobaokeItemDetailVo)
+	for (MongoTaobaokeItemDetailVo detailVo : listTaobaokeItemDetailVo)
 	{
 	    //save支持主键冲突自动更新
 	    ds.save(detailVo);

@@ -5,8 +5,6 @@ import java.sql.Types;
 import org.apache.commons.lang.StringEscapeUtils;
 import org.springframework.stereotype.Repository;
 
-import com.chi.dao.SpringJDBCDaoSupport;
-import com.chi.dao.UserInfoDao;
 import com.chi.po.UserInfo;
 
 @Repository(value = "userInfoDao")

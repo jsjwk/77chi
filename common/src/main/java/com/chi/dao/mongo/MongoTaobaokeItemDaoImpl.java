@@ -6,8 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.bb.mongo.core.BasicDAO;
 import com.bb.mongo.core.MongoConstants;
-import com.chi.dao.TaobaokeItemDao;
-import com.chi.po.TaobaokeItemVo;
+import com.chi.po.MongoTaobaokeItemVo;
 import com.google.code.morphia.query.Query;
 
 /**
@@ -17,21 +16,21 @@ import com.google.code.morphia.query.Query;
  * 
  */
 @Repository(value = "mongoTaobaokeItemDao")
-public class MongoTaobaokeItemDaoImpl extends BasicDAO<TaobaokeItemVo, Long> implements TaobaokeItemDao {
+public class MongoTaobaokeItemDaoImpl extends BasicDAO<MongoTaobaokeItemVo, Long> implements MongoTaobaokeItemDao {
 
     protected MongoTaobaokeItemDaoImpl() {
-	super(TaobaokeItemVo.class, MongoConstants.CHI_ITEM);
+	super(MongoTaobaokeItemVo.class, MongoConstants.CHI_ITEM);
     }
 
     @Override
-    public boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo)
+    public boolean insertTaobaokeItemVo(MongoTaobaokeItemVo mongoTaobaokeItemVo)
     {
-	this.save(taobaokeItemVo);
+	this.save(mongoTaobaokeItemVo);
 	return true;
     }
 
     @Override
-    public List<TaobaokeItemVo> findAllItems()
+    public List<MongoTaobaokeItemVo> findAllItems()
     {
 	return findList();
     }
@@ -39,30 +38,37 @@ public class MongoTaobaokeItemDaoImpl extends BasicDAO<TaobaokeItemVo, Long> imp
     @Override
     public Long countItems()
     {
-	Query<TaobaokeItemVo> query = this.createQuery();
+	Query<MongoTaobaokeItemVo> query = this.createQuery();
 	return this.count(query);
     }
 
-	@Override
-	public TaobaokeItemVo getItemByNumIid(Long numIid) 
-	{
-		return this.get(numIid);
-	}
+    @Override
+    public MongoTaobaokeItemVo getItemByNumIid(Long numIid)
+    {
+	return this.get(numIid);
+    }
 
-	@Override
-	public List<TaobaokeItemVo> findItemsByCid(Long cid) 
-	{
-		Query<TaobaokeItemVo> query = this.createQuery();
-		query.filter("cid", cid);
-		return this.findList(query);
-	}
+    @Override
+    public List<MongoTaobaokeItemVo> findItemsByCid(Long cid)
+    {
+	Query<MongoTaobaokeItemVo> query = this.createQuery();
+	query.filter("cid", cid);
+	return this.findList(query);
+    }
 
-	@Override
-	public List<TaobaokeItemVo> findItemsByItemType(int itemType) 
-	{
-		Query<TaobaokeItemVo> query = this.createQuery();
-		query.filter("itemType", itemType);
-		return this.findList(query);
-	}
+    @Override
+    public List<MongoTaobaokeItemVo> findItemsByItemType(int itemType)
+    {
+	Query<MongoTaobaokeItemVo> query = this.createQuery();
+	query.filter("itemType", itemType);
+	return this.findList(query);
+    }
+
+    @Override
+    public boolean deleteItemByNumIid(Long numIid)
+    {
+	this.deleteById(numIid);
+	return true;
+    }
 
 }

@@ -1,18 +1,10 @@
 package test.com.chi.dao.mongo;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.springframework.stereotype.Repository;
-
-import com.chi.dao.TaobaokeItemDao;
-import com.chi.po.TaobaokeItemDetailVo;
-import com.chi.po.TaobaokeItemVo;
+import com.chi.po.MongoTaobaokeItemVo;
 import com.chi.util.JsonUtils;
 import com.chi.util.MongoDBUtil;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
-import com.mongodb.DBObject;
 import com.mongodb.WriteResult;
 
 /**
@@ -21,15 +13,14 @@ import com.mongodb.WriteResult;
  *
  */
 //@Repository(value = "taobaokeItemDao")
-public class TaobaokeItemMongoDaoImpl implements TaobaokeItemDao {
+public class TaobaokeItemMongoDaoImpl{
 
-	@Override
-	public boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo) 
+	public boolean insertTaobaokeItemVo(MongoTaobaokeItemVo mongoTaobaokeItemVo) 
 	{
-		Long numIid = taobaokeItemVo.getTaobaokeItem().getNumIid();
+		Long numIid = mongoTaobaokeItemVo.getTaobaokeItem().getNumIid();
 		String jsonStr = null;
 		try {
-			jsonStr = JsonUtils.getJSONString(taobaokeItemVo);
+			jsonStr = JsonUtils.getJSONString(mongoTaobaokeItemVo);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -44,19 +35,6 @@ public class TaobaokeItemMongoDaoImpl implements TaobaokeItemDao {
 		return true;
 	}
 
-	@Override
-	public List<TaobaokeItemVo> findAllItems()
-	{
-	    // TODO Auto-generated method stub
-	    return null;
-	}
-
-	@Override
-	public Long countItems()
-	{
-	    // TODO Auto-generated method stub
-	    return null;
-	}
 
 	/*
 	 * 

@@ -4,7 +4,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.chi.dao.UserInfoDao;
+import com.chi.dao.mysql.UserInfoDao;
 import com.chi.po.UserInfo;
 
 @Service(value="userInfoService")

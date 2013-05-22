@@ -1,4 +1,4 @@
-package com.chi.dao;
+package com.chi.dao.mysql;
 
 import com.chi.po.UserInfo;
 

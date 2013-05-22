@@ -3,7 +3,6 @@ package com.chi.api.taobao.task;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,10 +10,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.chi.api.taobao.service.TaobaoApiService;
-import com.chi.dao.TaobaokeItemDao;
-import com.chi.dao.TaobaokeItemDetailDao;
-import com.chi.po.TaobaokeItemDetailVo;
-import com.chi.po.TaobaokeItemVo;
+import com.chi.dao.mongo.MongoTaobaokeItemDao;
+import com.chi.dao.mongo.MongoTaobaokeItemDetailDao;
+import com.chi.po.MongoTaobaokeItemDetailVo;
+import com.chi.po.MongoTaobaokeItemVo;
 import com.taobao.api.ApiException;
 import com.taobao.api.domain.TaobaokeItem;
 import com.taobao.api.domain.TaobaokeItemDetail;
@@ -37,8 +36,8 @@ public class Task1 {
 
 	private static ApplicationContext context = new ClassPathXmlApplicationContext("classpath:/spring-schedule.xml");
 	private static TaobaoApiService taobaoApiService = (TaobaoApiService) context.getBean("taobaoApiService");
-	private static TaobaokeItemDao mongoTaobaokeItemDao = (TaobaokeItemDao) context.getBean("mongoTaobaokeItemDao");
-	private static TaobaokeItemDetailDao mongoTaobaokeItemDetailDao = (TaobaokeItemDetailDao) context.getBean("mongoTaobaokeItemDetailDao");
+	private static MongoTaobaokeItemDao mongoTaobaokeItemDao = (MongoTaobaokeItemDao) context.getBean("mongoTaobaokeItemDao");
+	private static MongoTaobaokeItemDetailDao mongoTaobaokeItemDetailDao = (MongoTaobaokeItemDetailDao) context.getBean("mongoTaobaokeItemDetailDao");
 
 	private static final Logger LOG = LoggerFactory.getLogger(Task1.class);
 
@@ -84,7 +83,7 @@ public class Task1 {
 		List<Long> numIidsList = new ArrayList<Long>();
 		for (TaobaokeItem taobaokeItem : listTaobaokeItem) 
 		{
-			TaobaokeItemVo vo = new TaobaokeItemVo(taobaokeItem);
+			MongoTaobaokeItemVo vo = new MongoTaobaokeItemVo(taobaokeItem);
 			Long numIid = taobaokeItem.getNumIid();
 			vo.setItemType(itemType);
 			vo.setNumIid(numIid);
@@ -98,7 +97,7 @@ public class Task1 {
 			numIidsList.add(taobaokeItem.getNumIid());
 		}
 
-		List<TaobaokeItemDetailVo> listTaobaokeItemDetailVo = new ArrayList<TaobaokeItemDetailVo>();
+		List<MongoTaobaokeItemDetailVo> listTaobaokeItemDetailVo = new ArrayList<MongoTaobaokeItemDetailVo>();
 		StringBuilder numIidBuilder = new StringBuilder();
 		for (int i = 1; i <= numIidsList.size(); i++) 
 		{
@@ -109,13 +108,13 @@ public class Task1 {
 				List<TaobaokeItemDetail> listTaobaokeItemDetail = taobaoApiService.getTaobaokeItemDetail(numIidBuilder.deleteCharAt(numIidBuilder.length() - 1).toString());
 				for (TaobaokeItemDetail taobaokeItemDetail : listTaobaokeItemDetail) 
 				{
-					TaobaokeItemDetailVo taobaokeItemDetailVo = new TaobaokeItemDetailVo(taobaokeItemDetail);
-					taobaokeItemDetailVo.setItemType(itemType);
-					taobaokeItemDetailVo.setNumIid(taobaokeItemDetail.getItem().getNumIid());
+					MongoTaobaokeItemDetailVo mongoTaobaokeItemDetailVo = new MongoTaobaokeItemDetailVo(taobaokeItemDetail);
+					mongoTaobaokeItemDetailVo.setItemType(itemType);
+					mongoTaobaokeItemDetailVo.setNumIid(taobaokeItemDetail.getItem().getNumIid());
 					//taobaokeItemDetailVo.setNumIid(UUID.randomUUID().getLeastSignificantBits());
-					taobaokeItemDetailVo.setCreateTime(now);
-					taobaokeItemDetailVo.setUpdateTime(now);
-					listTaobaokeItemDetailVo.add(taobaokeItemDetailVo);
+					mongoTaobaokeItemDetailVo.setCreateTime(now);
+					mongoTaobaokeItemDetailVo.setUpdateTime(now);
+					listTaobaokeItemDetailVo.add(mongoTaobaokeItemDetailVo);
 				}
 				numIidBuilder.delete(0, numIidBuilder.length() - 1);
 			}

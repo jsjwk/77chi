@@ -1,7 +1,8 @@
-package com.chi.dao;
+package com.chi.dao.mysql;
 
 import java.util.List;
 
+import com.chi.po.MongoTaobaokeItemVo;
 import com.chi.po.TaobaokeItemVo;
 
 /**
@@ -15,7 +16,7 @@ public interface TaobaokeItemDao {
 
     /**
      * 存入淘宝客商品基本信息
-     * @param taobaokeItemVo
+     * @param mongoTaobaokeItemVo
      * @return
      */
     boolean insertTaobaokeItemVo(TaobaokeItemVo taobaokeItemVo);
@@ -43,7 +44,7 @@ public interface TaobaokeItemDao {
      * @param numIid
      * @return
      */
-    public TaobaokeItemVo getItemByNumIid(Long numIid);
+    public MongoTaobaokeItemVo getItemByNumIid(Long numIid);
     
     /**
      * 获取某个77chi类别所有的商品

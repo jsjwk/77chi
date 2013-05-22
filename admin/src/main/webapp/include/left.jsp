@@ -6,22 +6,22 @@
 				<div class="well nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
 						<li class="nav-header hidden-tablet">抓取的Mongo数据</li>
-						<li class="active"><a class="ajax-link" href="/index.do?itemType=1"><i class="icon-align-justify"></i><span class="hidden-tablet"> 饮料</span></a></li>
-						<li><a class="ajax-link" href="/index.do?itemType=2"><i class="icon-align-justify"></i><span class="hidden-tablet"> 保健营养</span></a></li>
-						<li><a class="ajax-link" href="/index.do?itemType=2"><i class="icon-align-justify"></i><span class="hidden-tablet"> 进口食品</span></a></li>
-						<li><a class="ajax-link" href="/index.do?itemType=4"><i class="icon-align-justify"></i><span class="hidden-tablet"> 酒类</span></a></li>
-						<li><a class="ajax-link" href="/index.do?itemType=5"><i class="icon-align-justify"></i><span class="hidden-tablet"> 母婴食品</span></a></li>
-						<li><a class="ajax-link" href="/index.do?itemType=6"><i class="icon-align-justify"></i><span class="hidden-tablet"> 水果</span></a></li>
-						<li><a class="ajax-link" href="/index.do?itemType=7"><i class="icon-align-justify"></i><span class="hidden-tablet"> 休闲零食</span></a></li>
+						<li ><a class="ajax-link" href="/showMongoItems.do?itemType=1"><i class="icon-align-justify"></i><span class="hidden-tablet"> 饮料</span></a></li>
+						<li><a class="ajax-link" href="/showMongoItems.do?itemType=2"><i class="icon-align-justify"></i><span class="hidden-tablet"> 保健营养</span></a></li>
+						<li><a class="ajax-link" href="/showMongoItems.do?itemType=3"><i class="icon-align-justify"></i><span class="hidden-tablet"> 进口食品</span></a></li>
+						<li><a class="ajax-link" href="/showMongoItems.do?itemType=4"><i class="icon-align-justify"></i><span class="hidden-tablet"> 酒类</span></a></li>
+						<li><a class="ajax-link" href="/showMongoItems.do?itemType=5"><i class="icon-align-justify"></i><span class="hidden-tablet"> 母婴食品</span></a></li>
+						<li><a class="ajax-link" href="/showMongoItems.do?itemType=6"><i class="icon-align-justify"></i><span class="hidden-tablet"> 水果</span></a></li>
+						<li><a class="ajax-link" href="/showMongoItems.do?itemType=7"><i class="icon-align-justify"></i><span class="hidden-tablet"> 休闲零食</span></a></li>
 						
-						<li class="nav-header hidden-tablet">线上DB</li>
-						<li><a class="ajax-link" href="index.jsp"><i class="icon-align-justify"></i><span class="hidden-tablet"> 饮料</span></a></li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 保健营养</span></a></li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 进口食品</span></a></li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 酒类</span></a></li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 母婴食品</span></a></li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 水果</span></a></li>
-						<li><a class="ajax-link" href="table.html"><i class="icon-align-justify"></i><span class="hidden-tablet"> 休闲零食</span></a></li>
+						<li class="nav-header hidden-tablet">线上数据</li>
+						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=1"><i class="icon-align-justify"></i><span class="hidden-tablet"> 饮料</span></a></li>
+						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=2"><i class="icon-align-justify"></i><span class="hidden-tablet"> 保健营养</span></a></li>
+						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=3"><i class="icon-align-justify"></i><span class="hidden-tablet"> 进口食品</span></a></li>
+						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=4"><i class="icon-align-justify"></i><span class="hidden-tablet"> 酒类</span></a></li>
+						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=5"><i class="icon-align-justify"></i><span class="hidden-tablet"> 母婴食品</span></a></li>
+						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=6"><i class="icon-align-justify"></i><span class="hidden-tablet"> 水果</span></a></li>
+						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=7"><i class="icon-align-justify"></i><span class="hidden-tablet"> 休闲零食</span></a></li>
 						
 
 						<li class="nav-header hidden-tablet">Backup</li>

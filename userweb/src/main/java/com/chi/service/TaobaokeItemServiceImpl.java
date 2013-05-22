@@ -6,7 +6,7 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.chi.dao.TaobaokeItemDao;
+import com.chi.dao.mysql.TaobaokeItemDao;
 import com.chi.po.TaobaokeItemVo;
 
 @Service(value="taobaokeItemService")
