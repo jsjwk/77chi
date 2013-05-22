@@ -46,7 +46,7 @@
 			<div class="row-fluid sortable">		
 				<div class="box span12">
 					<div class="box-header well" data-original-title>
-						<h2><i class="icon-user"></i> 饮料</h2>
+						<h2><i class="icon-user"></i> 商品基本参数</h2>
 						<div class="box-icon">
 							<a href="#" class="btn btn-setting btn-round"><i class="icon-cog"></i></a>
 							<a href="#" class="btn btn-minimize btn-round"><i class="icon-chevron-up"></i></a>
@@ -54,53 +54,128 @@
 						</div>
 					</div>
 					<div class="box-content">
-						<div>
-							<a href="/selectTypeAllItems.do?itemType=${itemType }" class="btn btn-success"><i class="icon-shopping-cart icon-white"></i> 点击此处将本分类下所有数据全部上线</a>
-							<a href="javascript:select_item('select_items');" class="btn btn-small btn-info"><i class="icon-info-sign icon-white"></i> 将选中商品上线</a>
-							<br/>
-							<br/>
-						</div>
 						<table class="table table-striped table-bordered bootstrap-datatable datatable">
 						  <thead>
 							  <tr>
-								  <th><input type="checkbox" id="all_checkbox" name="all_checkbox" onchange="changeOpearation();">全选 </th>
-								  <th>商品ID</th>
-								  <th>商品名称</th>
-								  <th>价格</th>
-								  <th>类目id</th>
-								  <th>Actions</th>
+								  <th>参数名称</th>
+								  <th>参数值</th>
 							  </tr>
 						  </thead>   
 						  <tbody>
 						  
-						  <c:if test="${listTaobaokeItem ne null}">
-							<c:forEach items="${listTaobaokeItem }" var="taobaokeItem">
+						  <c:if test="${taobaokeItem ne null}">
 							<tr>
-								<td>
-								<input type="checkbox" name="checkbox_block" onclick="changeClickStatus();" value="${taobaokeItem.numIid }">
-								</td>
+								<td>numIid </td>
 								<td>${taobaokeItem.numIid }</td>
-								<td class="center">${taobaokeItem.taobaokeItem.title }</td>
-								<td class="center">${taobaokeItem.taobaokeItem.price }</td>
-								<td class="center">
-									<span class="label label-success">${taobaokeItem.cid }</span>
-								</td>
-								<td class="center">
-									<a target="_blank"  class="btn btn-success"  href="${taobaokeItem.taobaokeItem.clickUrl }">
-										<i class="icon-zoom-in icon-white"></i>  
-										查看                                            
-									</a>
-									<a class="btn btn-info" href="javascript:select_item(${taobaokeItem.numIid });">
-										<i class="icon-edit icon-white"></i>  
-										上线                                            
-									</a>
-									<a class="btn btn-danger" href="#">
-										<i class="icon-trash icon-white"></i> 
-										删除
-									</a>
-								</td>
 							</tr>
-							</c:forEach>
+							<tr>
+								<td>cid</td>
+								<td>${taobaokeItem.cid }</td>
+							</tr>
+							<tr>
+								<td>createTime</td>
+								<td>${taobaokeItem.createTime }</td>
+							</tr>
+							<tr>
+								<td>itemType</td>
+								<td>${taobaokeItem.itemType }</td>
+							</tr>
+							<tr>
+								<td>overseasItem</td>
+								<td>${taobaokeItem.overseasItem }</td>
+							</tr>
+							<tr>
+								<td>updateTime</td>
+								<td>${taobaokeItem.updateTime }</td>
+							</tr>
+							<tr>
+								<td>clickUrl</td>
+								<td>${taobaokeItem.clickUrl }</td>
+							</tr>
+							<tr>
+								<td>commission</td>
+								<td>${taobaokeItem.commission }</td>
+							</tr>
+							<tr>
+								<td>commissionNum</td>
+								<td>${taobaokeItem.commissionNum }</td>
+							</tr>
+							<tr>
+								<td>commissionRate</td>
+								<td>${taobaokeItem.commissionRate }</td>
+							</tr>
+							<tr>
+								<td>commissionVolume</td>
+								<td>${taobaokeItem.commissionVolume }</td>
+							</tr>
+							<tr>
+								<td>couponEndTime</td>
+								<td>${taobaokeItem.couponEndTime }</td>
+							</tr>
+							<tr>
+								<td>couponPrice</td>
+								<td>${taobaokeItem.couponPrice }</td>
+							</tr>
+							<tr>
+								<td>couponRate</td>
+								<td>${taobaokeItem.couponRate }</td>
+							</tr>
+							<tr>
+								<td>couponStartTime</td>
+								<td>${taobaokeItem.couponStartTime }</td>
+							</tr>
+							<tr>
+								<td>itemLocation</td>
+								<td>${taobaokeItem.itemLocation }</td>
+							</tr>
+							<tr>
+								<td>keywordClickUrl</td>
+								<td>${taobaokeItem.keywordClickUrl }</td>
+							</tr>
+							<tr>
+								<td>nick</td>
+								<td>${taobaokeItem.nick }</td>
+							</tr>
+							<tr>
+								<td>picUrl</td>
+								<td>${taobaokeItem.picUrl }</td>
+							</tr>
+							<tr>
+								<td>price</td>
+								<td>${taobaokeItem.price }</td>
+							</tr>
+							<tr>
+								<td>promotionPrice</td>
+								<td>${taobaokeItem.promotionPrice }</td>
+							</tr>
+							<tr>
+								<td>sellerCreditScore</td>
+								<td>${taobaokeItem.sellerCreditScore }</td>
+							</tr>
+							<tr>
+								<td>sellerId</td>
+								<td>${taobaokeItem.sellerId }</td>
+							</tr>
+							<tr>
+								<td>shopClickUrl</td>
+								<td>${taobaokeItem.shopClickUrl }</td>
+							</tr>
+							<tr>
+								<td>shopType</td>
+								<td>${taobaokeItem.shopType }</td>
+							</tr>
+							<tr>
+								<td>taobaokeCatClickUrl</td>
+								<td>${taobaokeItem.taobaokeCatClickUrl }</td>
+							</tr>
+							<tr>
+								<td>title</td>
+								<td>${taobaokeItem.title }</td>
+							</tr>
+							<tr>
+								<td>volume</td>
+								<td>${taobaokeItem.volume }</td>
+							</tr>
 							</c:if>
 							
 						  </tbody>
@@ -141,13 +216,10 @@
    <script type="text/javascript">
     
     /*全选与全取消*/
-    function Opearation(bool_val, checkboxType) 
-    {
-    	$('input[type=checkbox]').each(function() 
-    	{
+    function Opearation(bool_val, checkboxType) {
+    	$('input[name=' + checkboxType + ']').each(function() {
     		$(this).attr("checked", bool_val);
     	});
-    	
     }
 
     function changeOpearation()
@@ -178,10 +250,11 @@
     function select_item(numIid)
     {
     	numIids = numIid;
-    	ajaxUsedItem();
+    	ajaxDeleteItem();
     }
 
-    function ajaxUsedItem()
+    //删除商品
+    function ajaxDeleteItem()
     {
     	if(numIids=="select_items")
     	{
@@ -200,7 +273,7 @@
     		alert("请选择选项.");
     		return false;
     	}
-    	var surl = "/ajaxUsedItem.do";
+    	var surl = "/ajaxDeleteItem.do";
     	$.ajax({
     		type : "POST",
     		timeout : 20000,

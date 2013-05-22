@@ -27,4 +27,16 @@ public class TaobaokeItemServiceImpl implements TaobaokeItemService {
 	return taobaokeItemDao.findItemsByItemType(itemType);
     }
 
+    @Override
+    public boolean deleteItemByNumIid(Long numIid)
+    {
+	return taobaokeItemDao.deleteItemByNumIid(numIid);
+    }
+
+    @Override
+    public TaobaokeItemVo getItemByNumIid(Long numIid)
+    {
+	return taobaokeItemDao.getItemByNumIid(numIid);
+    }
+
 }

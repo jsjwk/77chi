@@ -20,4 +20,19 @@ public interface TaobaokeItemService {
      * @return
      */
     public List<TaobaokeItemVo> listTaobaokeItemVoByType(int itemType);
+    
+    /**
+     * 根据numIid删除某个商品
+     * @param numIid
+     * @return
+     */
+    public boolean deleteItemByNumIid(Long numIid);
+    
+    /**
+     * 根据numIid获取商品
+     * @param numIid
+     * @return
+     */
+    public TaobaokeItemVo getItemByNumIid(Long numIid);
+    
 }

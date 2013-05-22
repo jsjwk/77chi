@@ -30,7 +30,7 @@ public class MongoDataController extends UserBaseController {
     @Resource(name = "taobaokeItemService")
     private TaobaokeItemService taobaokeItemService;
 
-
+    
     @RequestMapping("/showMongoItems.do")
     public String showMongoItems(HttpServletRequest request, HttpServletResponse response)
     {
@@ -45,10 +45,42 @@ public class MongoDataController extends UserBaseController {
 	}
 	List<MongoTaobaokeItemVo> listTaobaokeItem = mongoTaobaokeItemService.findItemsByItemType(itemType);
 	request.setAttribute("listTaobaokeItem", listTaobaokeItem);
-
+	
 	return "item_mongo";
     }
 
+    /**
+     * 将此类型下面所有的商品上线
+     * @throws IOException 
+     */
+    @RequestMapping("/selectTypeAllItems.do")
+    public void selectTypeAllItems(HttpServletRequest request, HttpServletResponse response) throws IOException
+    {
+	int itemType = 1;
+	try
+	{
+	    itemType = Integer.parseInt(request.getParameter("itemType"));
+	} catch (Exception e)
+	{
+	}
+	List<MongoTaobaokeItemVo> listTaobaokeItem = mongoTaobaokeItemService.findItemsByItemType(itemType);
+	for (MongoTaobaokeItemVo mongoTaobaokeItemVo : listTaobaokeItem)
+	{
+	    TaobaokeItemVo taobaokeItemVo = new  TaobaokeItemVo(mongoTaobaokeItemVo);
+	    boolean flag = taobaokeItemService.save(taobaokeItemVo);
+	    if (flag)
+	    {
+		mongoTaobaokeItemService.deleteItemByNumIid(mongoTaobaokeItemVo.getNumIid());
+	    }
+	}
+	
+	response.sendRedirect("/showMongoItems.do?itemType="+itemType);
+	return;
+    }
+
+    /**
+     * 选择商品放入mysql
+     */
     @RequestMapping("/ajaxUsedItem.do")
     public void ajaxUsedItem(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {

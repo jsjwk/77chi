@@ -8,7 +8,6 @@ import org.apache.commons.lang.StringEscapeUtils;
 import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.chi.po.MongoTaobaokeItemVo;
 import com.chi.po.TaobaokeItemVo;
 
 @Repository(value = "taobaokeItemDao")
@@ -37,29 +36,36 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
     @Override
     public List<TaobaokeItemVo> findAllItems()
     {
-	// TODO Auto-generated method stub
-	return null;
+	String sql = "select * from " + TABLE_NAME + " order by update_time desc ";
+	List<TaobaokeItemVo> list = this.getJdbcTemplate().query(sql, ParameterizedBeanPropertyRowMapper.newInstance(TaobaokeItemVo.class));
+	return list==null?new ArrayList<TaobaokeItemVo>():list;
     }
 
     @Override
     public Long countItems()
     {
-	// TODO Auto-generated method stub
-	return null;
+	String sql = "select count(*) from " + TABLE_NAME;
+	return this.getJdbcTemplate().queryForLong(sql);
     }
 
     @Override
-    public MongoTaobaokeItemVo getItemByNumIid(Long numIid)
+    public TaobaokeItemVo getItemByNumIid(Long numIid)
     {
-	// TODO Auto-generated method stub
-	return null;
+	String sql = "select * from " + TABLE_NAME + " where num_iid=? order by update_time desc ";
+	Object[] args = new Object[]{numIid};
+	int[] argTypes = new int[]{Types.BIGINT};
+	TaobaokeItemVo vo =  this.getJdbcTemplate().queryForObject(sql, args, argTypes, ParameterizedBeanPropertyRowMapper.newInstance(TaobaokeItemVo.class));
+	return vo;
     }
 
     @Override
     public List<TaobaokeItemVo> findItemsByCid(Long cid)
     {
-	// TODO Auto-generated method stub
-	return null;
+	String sql = "select * from " + TABLE_NAME + " where cid=? order by update_time desc ";
+	Object[] args = new Object[]{cid};
+	int[] argTypes = new int[]{Types.BIGINT};
+	List<TaobaokeItemVo> list = this.getJdbcTemplate().query(sql, args, argTypes, ParameterizedBeanPropertyRowMapper.newInstance(TaobaokeItemVo.class));
+	return list==null?new ArrayList<TaobaokeItemVo>():list;
     }
 
     @Override
@@ -70,6 +76,16 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
 	int[] argTypes = new int[]{Types.INTEGER};
 	List<TaobaokeItemVo> list = this.getJdbcTemplate().query(sql, args, argTypes, ParameterizedBeanPropertyRowMapper.newInstance(TaobaokeItemVo.class));
 	return list==null?new ArrayList<TaobaokeItemVo>():list;
+    }
+
+    @Override
+    public boolean deleteItemByNumIid(Long numIid)
+    {
+	String sql = "delete from " + TABLE_NAME + " where num_iid=?";
+	Object[] args = new Object[]{numIid};
+	int[] argTypes = new int[]{Types.BIGINT};
+	int n = this.getJdbcTemplate().update(sql, args, argTypes);
+	return n>0;
     }
     
     

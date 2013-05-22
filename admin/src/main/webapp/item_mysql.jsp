@@ -72,21 +72,21 @@
 							<tr>
 								<td><input type="checkbox" name="checkbox_block" onclick="changeClickStatus();"></td>
 								<td>${taobaokeItem.numIid }</td>
-								<td class="center">${taobaokeItem.taobaokeItem.title }</td>
-								<td class="center">${taobaokeItem.taobaokeItem.price }</td>
+								<td class="center">${taobaokeItem.title }</td>
+								<td class="center">${taobaokeItem.price }</td>
 								<td class="center">
 									<span class="label label-success">${taobaokeItem.cid }</span>
 								</td>
 								<td class="center">
-									<a target="_blank"  class="btn btn-success"  href="${taobaokeItem.taobaokeItem.clickUrl }">
+									<a target="_blank" class="btn btn-success"  href="${taobaokeItem.clickUrl }">
 										<i class="icon-zoom-in icon-white"></i>  
 										查看                                            
 									</a>
-									<a class="btn btn-info" href="javascript:select_item(${taobaokeItem.numIid });">
+									<a target="_blank" class="btn btn-info" href="/viewItemParam.do?numIid=${taobaokeItem.numIid }">
 										<i class="icon-edit icon-white"></i>  
-										上线                                            
+										看参数                                          
 									</a>
-									<a class="btn btn-danger" href="#">
+									<a class="btn btn-danger" href="javascript:select_item(${taobaokeItem.numIid });">
 										<i class="icon-trash icon-white"></i> 
 										删除
 									</a>
@@ -167,10 +167,11 @@
     function select_item(numIid)
     {
     	numIids = numIid;
-    	ajaxUsedItem();
+    	ajaxDeleteItem();
     }
 
-    function ajaxUsedItem()
+    //删除商品
+    function ajaxDeleteItem()
     {
     	if(numIids=="select_items")
     	{
@@ -189,7 +190,7 @@
     		alert("请选择选项.");
     		return false;
     	}
-    	var surl = "/ajaxUsedItem.do";
+    	var surl = "/ajaxDeleteItem.do";
     	$.ajax({
     		type : "POST",
     		timeout : 20000,

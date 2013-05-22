@@ -2,7 +2,6 @@ package com.chi.dao.mysql;
 
 import java.util.List;
 
-import com.chi.po.MongoTaobaokeItemVo;
 import com.chi.po.TaobaokeItemVo;
 
 /**
@@ -44,12 +43,19 @@ public interface TaobaokeItemDao {
      * @param numIid
      * @return
      */
-    public MongoTaobaokeItemVo getItemByNumIid(Long numIid);
+    public TaobaokeItemVo getItemByNumIid(Long numIid);
     
     /**
      * 获取某个77chi类别所有的商品
      * @return
      */
     public List<TaobaokeItemVo> findItemsByItemType(int itemType);
+    
+    /**
+     * 根据numIid删除某个商品
+     * @param numIid
+     * @return
+     */
+    public boolean deleteItemByNumIid(Long numIid);
     
 }
