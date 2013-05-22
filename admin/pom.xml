@@ -58,6 +58,11 @@
 			<version>7.2.2.v20101205</version>
 			<optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
 	</dependencies>
 
 	<properties>

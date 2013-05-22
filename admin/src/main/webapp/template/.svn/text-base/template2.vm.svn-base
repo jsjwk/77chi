@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>$atlas.getAtlasName() - 多玩网页游戏webgame门户 - 最新|网页游戏大全 - http://web.duowan.com</title>
+<!--{[模板=09-meat]}-->
+	<meta name="keywords" content="网页游戏,赛尔号,多玩网页游戏,webgame,赛尔号精灵,赛尔号秘籍,最新网页游戏,魔兽世界,赛尔号 精灵,奇妙之旅,免费网页游戏,账号,新手卡,vip,礼包,游戏论坛,游戏攻略,游戏公会,有奖活动,网页游戏新闻,资讯,业界,平台,评测,水煮江山,美眉梦工场,昆仑世界,华山论剑,多玩歪侠传,封神无敌,部落战争,乐土,龙战,剑侠情缘,兵临城下,变型金刚,牧场Onweb,纵横天下,武林三国,猫游记,弹弹堂,天书奇谈,妖魔道,星空,龙与乡巴佬,三国风云,萌之战争,热血三国,魔力学堂,天空左岸,英雄之城,网页兽血,魔兽战争,篮球经理,足球经理,摩尔庄园,海底世界,龙城领主,皮卡堂,修真,幻境2,中华小当家,云之秘境,谜奇国度,商业大亨,快乐女声,音乐叉叉,梦境庄园,娜娜米米,坦克大战,神魔令,混沌决,黑暗契约,武林英雄,海战英豪," />
+	<meta name="description" content="多玩网页游戏,是国内最大最全的网页游戏webgame资讯门户网站,提供最新网页游戏相关报道和免费网页游戏第一手资料。http://web.duowan.com/" />
+	<meta name="Robots" content="all"/>
+<link rel="stylesheet" type="text/css" href="http://www.duowan.com/public/s/i/base.css" />
+        <link href="http://web.duowan.com/s/i09/master.css" rel="stylesheet" type="text/css" />
+	<link href="http://web.duowan.com/s/i09/main.css" rel="stylesheet" type="text/css" />
+		<style type="text/css"> 
+.rollBox{width:704px;overflow:hidden;padding:12px 0 5px 6px;} 
+.rollBox .LeftBotton{height:52px;width:19px;background:url(http://web.duowan.com/s/i09/picpageli-p.gif) no-repeat 0 0;overflow:hidden;float:left;display:inline;margin:25px 0 0 0;cursor:pointer;} 
+.rollBox .RightBotton{height:52px;width:20px;background:url(http://web.duowan.com/s/i09/picpageli-n.gif) no-repeat 0 0;overflow:hidden;float:left;display:inline;margin:25px 0 0 0;cursor:pointer;} 
+.rollBox .Cont{width:663px;overflow:hidden;float:left;} 
+.rollBox .ScrCont{width:10000000px;} 
+.rollBox .Cont .pic{width:132px;float:left;text-align:center;} 
+.rollBox .Cont .pic img{padding:4px;background:#fff;border:1px solid #ccc;display:block;margin:0 auto;} 
+.rollBox .Cont .pic p{line-height:26px;color:#505050;} 
+.rollBox .Cont a:link,.rollBox .Cont a:visited{color:#626466;text-decoration:none;} 
+.rollBox .Cont a:hover{color:#f00;text-decoration:underline;} 
+.rollBox #List1,.rollBox #List2{float:left;} 
+</style>
+<base target="_blank" />
+
+<!--{[模板=09-meat]} end-->
+	<link rel="stylesheet" type="text/css" href="http://www.duowan.com/public/s/i/base.css" />
+        <link href="http://web.duowan.com/s/i09/master.css" rel="stylesheet" type="text/css" />
+	<link href="http://web.duowan.com/s/i09/main.css" rel="stylesheet" type="text/css" />
+	<link href="main1202.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--{[包含=/public/s/g_nav.html]}-->
+<div id="gNav">
+<div class="gNav">
+<div class="line">
+<a href="http://www.duowan.com"><h1 id="logo">多玩游戏</h1></a>
+<ul>
+<li><a href="http://www.duowan.com/">多玩</a>|</li>
+<li><a href="http://news.duowan.com/">业界</a>|</li>
+<li><a href="http://newgame.duowan.com/">新游</a>|</li>
+<li><a href="http://gh.duowan.com/">公会</a>|</li>
+<li><a href="http://bbs.duowan.com/">论坛</a>|</li>
+<li><a href="http://yy.duowan.com/">YY</a>|</li>
+<li><a href="http://tv.duowan.com/">电玩</a>|</li>
+<li><a href="http://dl.duowan.com/">下载</a>|</li>
+<li><a href="http://xyx.duowan.com/">小游戏</a>|</li>
+<li><a href="http://pc.duowan.com/">单机游戏</a>|</li>
+<li><a href="http://web.duowan.com/">网页游戏</a>|</li>
+<li><a href="http://txt.duowan.com" title="读书小说">读书小说</a>|</li>
+<li><a href="http://comic.duowan.com/" title="原创漫画">多玩漫画</a>|</li>
+<li><a href="http://www.ofcard.com/index.jsp?username=duowan">点卡</a>|</li>
+<li><a href="http://www.duoee.com/powerleveling" title="角色代练">角色代练</a></li>
+</ul>
+<div id="loginBtn"><a href="http://udb.duowan.com/login.jsp">通行证登录</a></div>
+</div>
+<a href="http://yy.duowan.com/s/api/download.html" class="yy-download"><img src="/public/s/i/124804390395.gif" alt="" title=""/></a>
+</div>
+</div><!-- gNav -->
+<script language="javascript" type="text/javascript" src="http://www.duowan.com/public/s/top_gg.js"></script>
+
+
+<!--{[包含=/public/s/g_nav.html]} end-->
+<div id="part" class="part-1202">
+<div id="c" class="c1">
+<!--{[模板=09-header]}-->
+	<div id="top">
+		<h1><a title="多玩网页游戏频道" href="http://web.duowan.com"><img src="/s/i09/logo.jpg" alt="多玩网页游戏" /></a></h1>
+		<div class="navList">
+			<ul class="nav1">
+			<li><a href="http://web.duowan.com" title="首页">首页</a></li>
+			<li><a href="http://web.duowan.com/zhao" title="找游戏">找游戏</a></li>
+			<li><a href="http://web.duowan.com/0906/m_109863905442.html" title="领账号">领账号</a></li>
+			<li><a href="http://web.duowan.com/0906/m_109101297935.html" title="游戏大全">游戏大全</a></li>
+			<li><a href="http://bbs.duowan.com/forum-642-1.html" title="论坛">论坛</a></li>
+			<li><a href="http://yaoguo.duowan.com/" title="本站游戏运营">本站游戏运营</a></li>
+			<li><a href="http://web.duowan.com/tag/110210224706.html" title="最新开服">最新开服</a></li>
+			<li><a href="http://web.duowan.com/tag/89309369470.html" title="厂商动态">厂商动态</a></li>
+			<div class="clearfix"></div>
+			</ul>
+			<ul class="nav2">
+			<li><a href="$data.getTagRelatedUrl($channelid,"评测",$cooperate)" title="新游评测">新游评测</a></li>
+			<li><a href="$data.getTagRelatedUrl($channelid,"话题",$cooperate)" title="劲爆话题">劲爆话题</a></li>
+			<li><a href="$data.getTagRelatedUrl($channelid,"游戏图片",$cooperate)" title="热辣图片">热辣图片</a></li>
+			<li><a href="http://web.duowan.com/0912/125923289410.html" title="一周新游">一周新游</a></li>
+			<li><a href="http://web.duowan.com/TestTime/" title="测试时间表">测试时间表</a></li>
+			<li><a href="$data.getTagRelatedUrl($channelid,"攻略秘籍",$cooperate)" title="攻略秘籍">攻略秘籍</a></li>
+			<li><a href="$data.getTagRelatedUrl($channelid,"海外",$cooperate)" title="海外游戏">海外游戏</a></li>
+			<div class="clearfix"></div>
+			</ul>
+		</div><!--nav-->
+
+<script type="text/javascript">
+//添加收藏夹
+function addbookmark()
+{
+    var nome_sito = "多玩网页游戏频道";
+    var url_sito = "http://web.duowan.com";
+    if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt
+        (navigator.appVersion) >= 4))
+        window.external.AddFavorite(url_sito, nome_sito);
+    else if (navigator.appName == "Netscape")
+        window.sidebar.addPanel(nome_sito, url_sito, '');
+    else
+        alert("对不起!您不能收藏该页面!");
+}
+</script>	
+		<div class="setting">
+			<a href="javascript:void(0)" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://web.duowan.com/');" 
+
+target="_self" title="设为首页">设为首页</a>
+			<a href="javascript:void(0)" onClick="addbookmark()" target="_self" title="加入收藏">加入收藏</a>
+			<a href="http://web.duowan.com/company/" title="厂商黄页">厂商黄页</a>
+			<a href="http://web.duowan.com/0907/111090399347.html" title="游戏入库">游戏入库</a>		
+		</div><!--setting-->
+		
+		<div class="clearfix"></div>
+    </div><!--top-->
+  
+<div class="search">
+
+     <script>
+      function dealSearch(){
+	 var i =  document.getElementById("search_key").selectedIndex;
+	 var myid=document.getElementById("search_key").options[i].value;
+	 if(myid==2){
+         var ctitle= document.getElementById("ckeyword").value;
+         var channel= document.getElementById("channel").value;
+         var type= document.getElementById("type").value;
+           window.open("http://so.duowan.com/search.do?keyWord="+encodeURIComponent(ctitle)+"&channel="+channel+"&type="+type,"_blank");
+		} 
+	  	else{
+         var ctitle= document.getElementById("ckeyword").value;
+         if(null==ctitle || ""==ctitle)
+           window.open("http://web.duowan.com/0906/m_109101297935.html","_blank"); 
+         else
+           window.open("http://web.duowan.com/0906/m_109101297935.html?name="+ctitle,"_blank");   
+		}  
+      }
+     </script>
+
+	<div class="searchBox">
+	<form action="" >
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+			<td width="28%"><span class="searchTitle">游戏搜索</span></td>
+                                        <input type="hidden" id="channel" name="channel" value="webgame">
+                                        <input type="hidden" id="type" name="type" value="1"></td>
+                                        <td width="39%"><input type="text" name="name" id="ckeyword" class="searchTxt" value="" onKeyPress="if(event.keyCode==13){dealSearch(); return false; }" />
+			<td width="20%">
+			<select id="search_key" class="searchSelect">
+			<option value="1">游戏搜索</option>
+			<option value="2">全站搜索</option>
+			</select>
+			</td>
+			<td width="13%">
+			<input type="button" id="ckeyword" onclick="dealSearch(); return false;" class="searchBtn" /></td>
+			</tr>
+		</table>
+                <script language="javascript" >
+                    if (document.getElementById('ckeyword').value == '') 
+                        document.getElementById('ckeyword').value = '三十六计';
+                </script>
+	</form>
+	</div><!--R_search-->
+	<div class="fastestRising">
+	<strong>热门关键字：</strong>
+	<a href="http://web.duowan.com/0911/122049632748.html" title="烽火战国">烽火战国怎样点亮</a><a href="http://web.duowan.com/0912/123677991423.html" title="QQ农场">QQ农场</a><a href="http://web.duowan.com/51seer/" title="赛尔号">赛尔号</a><a href="http://web.duowan.com/51mole/" title="摩尔庄园">摩尔庄园</a><a href="http://web.duowan.com/yxzc/" title="英雄之城">英雄之城</a><a href="http://web.duowan.com/aobi/" title="奥比岛">奥比岛</a>
+	</div>
+
+</div><!--search-->
+
+
+
+<!--{[模板=09-header]} end-->
+</div>
+<div id="position"><span>你现在的位置：</span><a href="http://www.duowan.com/"> 多玩游戏</a> > <a href="http://web.duowan.com/">网页游戏频道</a> >$title</div>
+<div id="pageleft">
+<div class="leftbox"><div class="topbg">
+<div id="page_title">
+#if($atlas)  
+	#set($atlasName=$atlas.getAtlasName())
+	#set($atlasSource=$atlas.getAtlasSource())
+	#set($atlasInfo=$atlas.getAtlasInfo())
+	#set($createTime=$atlas.getCreateTime())
+#end
+#if($currentPic)
+	#set($picName=$currentPic.getPictureName())
+	#set($pictureUrl=$currentPic.getPictureUrl())
+#end
+<h1>$atlasName</h1>
+<div class="articleinfo"> 
+<span class="articledate">$createTime </span>  |  <span class="comment"><a href="#comment_top" id="first_comment_url" target="_self">图片像素：$picWidth:$picHeight</a></span>
+  |  <span>来源：$atlasSource</span>
+</div>
+</div><!--page_title-->
+<div id="text">
+<p> $atlasInfo </p>
+<div class="picpage">
+	<table>
+		<tr>
+			<td width="71"><div class="picpage-prve"><a href="$prveHtml" title="上一张" target="_parent"></a></div></td>
+			<td width="800"><div class="picpage-con"><a href="$nextHtml" target="_parent"> <img src="$pictureUrl" #if($picWidth) width="$picWidth" height="$picHeight" #end /></a></div></td>
+			<td width="71"><div class="picpage-next"><a href="$nextHtml" title="下一张" target="_parent"></a></div></td>
+		</tr>
+	</table>
+	<div class="pic-con-tit"> $picName </div>
+</div>
+<div class="picpage-list">
+<div class="rollBox"> 
+     <div class="LeftBotton" onmousedown="ISL_GoUp()" onmouseup="ISL_StopUp()" onmouseout="ISL_StopUp()"></div> 
+     <div class="Cont" id="ISL_Cont"> 
+      <div class="ScrCont"> 
+       <div id="List1"> 
+        
+        <!-- 图片列表 begin --> 
+        #foreach($p in $pictureList)
+         <div class="pic"> 
+          <a href="$picUtil.getDestHtmlURL($p)" target="_parent"><img src="$p.getPictureUrl()" width="109" height="87" alt="$p.getPictureName()" /></a> 
+         </div>      
+        #end  
+        <!-- 图片列表 end --> 
+         
+       </div> 
+       <div id="List2"></div> 
+      </div> 
+     </div> 
+     <div class="RightBotton" onmousedown="ISL_GoDown()" onmouseup="ISL_StopDown()" onmouseout="ISL_StopDown()"></div> 
+    </div>
+</div> 
+   </div>
+   
+<!--
+$content
+$split_line
+-->
+<div class="clearfix"></div>
+<div id="about">
+更多文章  <span ><a href="http://bbs.duowan.com/forum-642-1.html">【网页游戏论坛】</a></span>
+</div><!--about-->
+</div><!--text-->
+<input type="hidden" id="duowan.articleid" value="$articleid">
+<input type="hidden" id="duowan.channelid" value="$channelid">
+<input type="hidden" id="duowan.title" value="$title">
+<input type="hidden" id="duowan.url" value="$data.getUrl($articleid)">
+<!--{[模板=09-page表情系统]}-->
+<style>
+					#about_con_1{ margin:0 10px 5px ; width:650px; height:210px;}
+					#about_con_1 .left{width:528px;   height:214px; overflow:hidden; float:left; display:inline;}
+					#about_con_1 .left table{margin:0 0 0 0; width:505px;}
+					#face_title{font-weight:bold; margin:10px 0 0 15px; padding:0 height:15px; overflow:hidden; }
+					#face_title span{color:#e2044f;}
+					#ding{background:url(http://pic.duowan.com/news/0906/109167966330/109168013727.gif) no-repeat; height:97px;width:110px; text-align:center;  overflow:hidden;   padding-top:17px; float:left; display:inline; margin:90px 0 0 0;}
+					#ding span.nmb{font-family:微软雅黑,黑体;font-weight:normal;font-size:20px;font-weight:bold;}
+					#ding img{width:87px; height:27px; margin:12px auto; display:block; }
+					#ding span.btn{cursor:pointer;}
+				</style>
+				
+				<div id="about_con_1">
+							<script src="http://news.duowan.com/s/i/vote2.js" type="text/javascript"></script>
+							<script src="http://news.duowan.com/s/i/xpath2.js" type="text/javascript"></script>
+							<div class="left" id="face">			
+								<!--图片-->
+								<div id="face_title" class="pink">看完本文后有何评价?      已有<span id="sumWrite" style="height:15px;">0</span>人评价，点选表情后可看到其他玩家的表态。</div>
+								<input type="hidden" id="type" value="1"/>
+								<input type="hidden" id="articleId" value="123456789"/>
+								<input type="hidden" id="channelId" value="23456789"/>
+								<input type="hidden" id="tag" value="normal"/>
+								 <input type="hidden" id="title" value="errorTitle"/>
+								<input type="hidden" id="url" value="errorUrl"/>
+								<input type="hidden" id="encode" value="utf-8"/>
+
+								<table id="table1" width="475" style="margin:0 auto 5px;" border="0" cellspacing="0" cellpadding="0" >
+									<tr>
+										<td align="center" valign="bottom" style="height:80px;"><span id="span1">0</span><div id="xx1" style="width:14px; background:url(http://pic.duowan.com/news/0904/103644606323/103644627108.gif) repeat-y; border:1px solid #d1d1d1; height:0px; overflow:hidden;"></div></td>
+										<td align="center" valign="bottom"><span id="span2">0</span><div id="xx2" style="width:14px; background:url(http://pic.duowan.com/news/0904/103644606323/103644627108.gif) repeat-y; border:1px solid #d1d1d1; height:0px; overflow:hidden;"></div></td>
+										<td align="center" valign="bottom"><span id="span3">0</span><div id="xx3" style="width:14px; background:url(http://pic.duowan.com/news/0904/103644606323/103644627108.gif) repeat-y; border:1px solid #d1d1d1; height:0px; overflow:hidden;"></div></td>
+										<td align="center" valign="bottom"><span id="span4">0</span><div id="xx4" style="width:14px; background:url(http://pic.duowan.com/news/0904/103644606323/103644627108.gif) repeat-y; border:1px solid #d1d1d1; height:0px; overflow:hidden;"></div></td>
+										<td align="center" valign="bottom"><span id="span5">0</span><div id="xx5" style="width:14px; background:url(http://pic.duowan.com/news/0904/103644606323/103644627108.gif) repeat-y; border:1px solid #d1d1d1; height:0px; overflow:hidden;"></div></td>
+										<td align="center" valign="bottom"><span id="span6">0</span><div id="xx6" style="width:14px; background:url(http://pic.duowan.com/news/0904/103644606323/103644627108.gif) repeat-y; border:1px solid #d1d1d1; height:0px; overflow:hidden;"></div></td>
+										<td align="center" valign="bottom"><span id="span7">0</span><div id="xx7" style="width:14px; background:url(http://pic.duowan.com/news/0904/103644606323/103644627108.gif) repeat-y; border:1px solid #d1d1d1; height:0px; overflow:hidden;"></div></td>
+										<td align="center" valign="bottom"><span id="span8">0</span><div id="xx8" style="width:14px; background:url(http://pic.duowan.com/news/0904/103644606323/103644627108.gif) repeat-y; border:1px solid #d1d1d1; height:0px; overflow:hidden;"></div></td>
+								  </tr>
+								  <tr>
+									<td height="64"><a><img src="http://pic.duowan.com/news/0906/108555065134/108555985351.jpg" /></a></td>
+									<td><a><img src="http://pic3.duowan.com/news/0906/108555065134/108556008242.jpg" /></a></td>
+									<td><a><img src="http://pic4.duowan.com/news/0906/108555065134/108555996346.jpg" /></a></td>
+									<td><a><img src="http://pic.duowan.com/news/0906/109180918610/109180941340.jpg" /></a></td>
+									<td><a><img src="http://pic.duowan.com/news/0906/108555065134/108556032355.jpg" /></a></td>
+									<td><a><img src="http://pic.duowan.com/news/0906/108555065134/108555991101.jpg" /></a></td>
+									<td><a><img src="http://pic.duowan.com/news/0906/108555065134/108556014310.jpg" /></a></td>
+									<td><a><img src="http://pic.duowan.com/news/0906/108555065134/108556024698.jpg" /></a></td>
+								  </tr>
+								  <tr>
+									<td align="center"><a>恶心</a></td>
+									<td align="center"><a>愤怒</a></td>
+									<td align="center"><a>勥赞</a></td>
+									<td align="center"><a>路过</a></td>
+									<td align="center"><a>无聊</a></td>
+									<td align="center"><a>雷囧</a></td>
+									<td align="center"><a>关注</a></td>
+									<td align="center"><a>不知所云</a></td>
+								  </tr>
+								  <tr>
+									<td height="24" align="center"><input name="choice" type="radio" value="1" onClick="voteRadio(1,'face',0,0)"/></td>
+									<td align="center"><input name="choice" type="radio" value="2" onClick="voteRadio(2,'face',0,0)"/></td>
+									<td align="center"><input name="choice" type="radio" value="3" onClick="voteRadio(3,'face',0,0)"/></td>
+									<td align="center"><input name="choice" type="radio" value="4" onClick="voteRadio(4,'face',0,0)"/></td>
+									<td align="center"><input name="choice" type="radio" value="5" onClick="voteRadio(5,'face',0,0)"/></td>
+									<td align="center"><input name="choice" type="radio" value="6" onClick="voteRadio(6,'face',0,0)"/></td>
+									<td align="center"><input name="choice" type="radio" value="7" onClick="voteRadio(7,'face',0,0)"/></td>
+									<td align="center"><input name="choice" type="radio" value="8" onClick="voteRadio(8,'face',0,0)"/></td>
+								  </tr>
+								</table>
+						</div>
+					<!--left-->
+				<script language="javascript">
+				   getValue("face");
+				   voteRadio(8,'face',1,1);
+				</script>
+				<div id="ding">
+									<input type="hidden" id="type" value="2"/>
+									<input type="hidden" id="articleId" value="123456789"/> 
+									<input type="hidden" id="channelId" value="23456789"/>
+									<input type="hidden" id="tag" value="normal"/>
+									<input type="hidden" id="title" value="errorTitle"/>
+									<input type="hidden" id="url" value="errorUrl"/>
+									<input type="hidden" id="encode" value="utf-8"/>
+									<input type="radio" id="choice" value="1" style="display:none"/>
+									<span id="span1" class="nmb">0</span><span class="nmb">票</span>
+								   <span onclick="voteRadio(1,'ding',0,0)"　class="btn"><img src="http://pic.duowan.com/news/0904/103644606323/103644754650.gif"></span>
+									<span onclick='javascript:if(document.all){clipboardData.setData("Text",location.href);this.innerHTML="<span style=\"color:red\">[文章地址已复制]<strong></span>";}'  class="btn">[与更多人共享]</span>				</div>
+								<script language="javascript">
+									getValue("ding");
+														voteRadio(1,'ding',1,0);
+								</script>
+							<div class="clearfix"></div>
+				</div>
+
+<!--{[模板=09-page表情系统]} end-->
+<div class="clearfix"></div>
+</div>
+</div><!--leftbox-->
+<div class="leftbox" style="border-top:none;">
+<div class="zjhj_title"><h2>最新入库游戏</h2></div>
+<div class="more1"><a href="http://web.duowan.com/zhao">>>更多</a></div>
+#set ($list=$data.getPicList("游戏直通车",60,255,7))
+#foreach ($one in $list)
+#set ($taglink = $data.getRelatedUrl($one.getString("articleid")))
+<dl class="aboutpic">
+<dt><a href="$taglink"><img src="$one.getString("picurl")" alt="$one.getString("title")" width="115" height="90" /></a></dt>
+<dd><a href="$taglink" title="$one.getString("title")">$tools.substring($one.getString("title"),0,9)</a></dd>
+</dl>
+#end
+<div class="clearfix"></div>
+</div><!--leftbox-->
+<!--
+<div id="commentList">
+$comment
+</div>
+-->
+
+</div>
+<div class="clearfix"></div>
+<!--{[模板=09-底部导航]}-->
+<div id="partBtm">
+
+<h3>友情链接</h3>
+<div class="right">
+<div class="fri-link-1125">
+<a href="http://web.duowan.com/">网页游戏</a><a href="http://web.duowan.com/">网页游戏大全</a><a href="http://www.gamecheng.com">Game城</a><a href="http://news.4399.com/">4399网页游戏</a><a href="http://www.wangye2.com/">WangYe2网页游戏</a><a href="http://www.pcgames.com.cn/webgames/">PCgames网页游戏</a><a href="http://www.966.com/">966网页游戏</a><a href="http://www.37wan.com/">37wan网页游戏</a><a href="http://www.86wan.com">86wan网页游戏</a><a href="http://www.game5.com">跟我玩</a><a href="http://www.game518.com/">乐玩网</a><a href="http://www.57yx.com/">57游戏</a><a href="http://www.ceowan.com/">CEO玩网页游戏</a><a href="http://www.2366.com">2366网页游戏</a><a href="http://www.imanhua.com/">火影忍者</a><a href="http://www.5i.com/">5i网页游戏</a>
+</div>
+
+
+</div>
+<div class="r_more">
+<span><a href="http://www.duowan.com/s/link.html">[友情链接]</a></span><span><a href="http://web.duowan.com/0907/111090399347.html">[游戏入库]</a></span>
+</div>
+		</div><!--partBtm-->
+
+<!--{[模板=09-底部导航]} end-->
+</div><!--part -->
+<SCRIPT type=text/javascript>
+var _text = document.getElementById('text');
+function formatPic(){var _imgs = _text.getElementsByTagName("IMG");
+var _tabs = _text.getElementsByTagName("TABLE");
+for (i=0;i<_imgs.length;i++){if (_imgs[i].scrollWidth > 600){
+_imgs[i].width = "600";_imgs[i].onclick= showPic;_imgs[i].style.cursor="pointer";	_imgs[i].alt="点击放大";	}}
+for (i=0;i<_tabs.length;i++){if (_tabs[i].width > 600){_tabs[i].style.width = "600";}}}
+function showPic(){window.open("http://webgame.duowan.com/s/pic.html?"+this.src);}
+if (_text){window.onload = formatPic;}
+</SCRIPT>
+<!--{[模板=09-footer]}-->
+<div id="footer">
+<!--{[包含=/public/s/g_footer.html]}-->
+<a href="http://www.duowan.com/duowan/">关于多玩</a> | <a href="http://www.duowan.com/hr/">多玩招聘</a> | <a href="http://www.duowan.com/s/contact.html">联系多玩</a> | <a href="http://www.duowan.com/s/link.html">友情链接</a> | <a href="http://www.duowan.com/s/contact.html">广告热线：020-85521516</a> | <a href="http://www.duowan.com/s/contact.html">客服热线：020-85530553 转814/818</a> | <a href="http://www.gdca.gov.cn/">广东省通信管理局</a>
+<div class="copyRight">
+Copyright © 2005-2009  DuoWan.com [多玩游戏] ICP证编号：<a href="http://pic.duowan.com/newgame/0903/101133700609/101135064899.jpg">粤B2-20050785</a> | <a href="http://www.miibeian.gov.cn/">粤ICP备09075143号</a><br />
+网络文化经营许可证　编号：文网文〔2009〕266号　　国际互联网备案登记证书　　编号：穗公网监备案证第4401060100548号
+</div>
+<div align="right"><a href='http://guangzhou.cyberpolice.cn/netalarm/netalarm/Welcome.jsp?bano=4401060100548' target=_blank><img src=http://pic1.duowan.com/newgame/0811/91043715885/91043772924.gif border=0 galleryimg=no></a></div>
+<script src="http://www.duowan.com/duowan.js" type="text/javascript"></script>
+<script src="http://market.duowan.com/count03.js" type="text/javascript"></script>
+<script src="http://www.duowan.com/public/s/market_count.js" type="text/javascript"></script>
+
+
+<!--{[包含=/public/s/g_footer.html]} end-->
+</div><!-- footer -->
+<div style="display:none;">
+
+<script type="text/JavaScript" src="http://promote.duowan.com/client/f9898d091edd68df011edd7b1e630001.js"></script>
+
+</div>
+
+<!--{[模板=09-footer]} end-->
+
+<script language="javascript" type="text/javascript"> 
+<!--//--><![CDATA[//><!-- 
+//图片滚动列表 mengjia 070816 
+var Speed = 10; //速度(毫秒) 
+var Space = 5; //每次移动(px) 
+var PageWidth = 132; //翻页宽度 
+var fill = 0; //整体移位 
+var MoveLock = false; 
+var MoveTimeObj; 
+var Comp = 0; 
+var AutoPlayObj = null; 
+GetObj("List2").innerHTML = GetObj("List1").innerHTML; 
+GetObj('ISL_Cont').scrollLeft = fill; 
+GetObj("ISL_Cont").onmouseover = function(){clearInterval(AutoPlayObj);} 
+GetObj("ISL_Cont").onmouseout = function(){AutoPlay();} 
+AutoPlay(); 
+function GetObj(objName){if(document.getElementById){return eval('document.getElementById("'+objName+'")')}else{return eval('document.all.'+objName)}} 
+function AutoPlay(){ //自动滚动 
+clearInterval(AutoPlayObj); 
+AutoPlayObj = setInterval('ISL_GoDown();ISL_StopDown();',5000); //间隔时间 
+} 
+function ISL_GoUp(){ //上翻开始 
+if(MoveLock) return; 
+clearInterval(AutoPlayObj); 
+MoveLock = true; 
+MoveTimeObj = setInterval('ISL_ScrUp();',Speed); 
+} 
+function ISL_StopUp(){ //上翻停止 
+clearInterval(MoveTimeObj); 
+if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0){ 
+Comp = fill - (GetObj('ISL_Cont').scrollLeft % PageWidth); 
+CompScr(); 
+}else{ 
+MoveLock = false; 
+} 
+AutoPlay(); 
+} 
+function ISL_ScrUp(){ //上翻动作 
+if(GetObj('ISL_Cont').scrollLeft <= 0){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft + GetObj('List1').offsetWidth} 
+GetObj('ISL_Cont').scrollLeft -= Space ; 
+} 
+function ISL_GoDown(){ //下翻 
+clearInterval(MoveTimeObj); 
+if(MoveLock) return; 
+clearInterval(AutoPlayObj); 
+MoveLock = true; 
+ISL_ScrDown(); 
+MoveTimeObj = setInterval('ISL_ScrDown()',Speed); 
+} 
+function ISL_StopDown(){ //下翻停止 
+clearInterval(MoveTimeObj); 
+if(GetObj('ISL_Cont').scrollLeft % PageWidth - fill != 0 ){ 
+Comp = PageWidth - GetObj('ISL_Cont').scrollLeft % PageWidth + fill; 
+CompScr(); 
+}else{ 
+MoveLock = false; 
+} 
+AutoPlay(); 
+} 
+function ISL_ScrDown(){ //下翻动作 
+if(GetObj('ISL_Cont').scrollLeft >= GetObj('List1').scrollWidth){GetObj('ISL_Cont').scrollLeft = GetObj('ISL_Cont').scrollLeft - GetObj('List1').scrollWidth;} 
+GetObj('ISL_Cont').scrollLeft += Space ; 
+} 
+function CompScr(){ 
+var num; 
+if(Comp == 0){MoveLock = false;return;} 
+if(Comp < 0){ //上翻 
+if(Comp < -Space){ 
+   Comp += Space; 
+   num = Space; 
+}else{ 
+   num = -Comp; 
+   Comp = 0; 
+} 
+GetObj('ISL_Cont').scrollLeft -= num; 
+setTimeout('CompScr()',Speed); 
+}else{ //下翻 
+if(Comp > Space){ 
+   Comp -= Space; 
+   num = Space; 
+}else{ 
+   num = Comp; 
+   Comp = 0; 
+} 
+GetObj('ISL_Cont').scrollLeft += num; 
+setTimeout('CompScr()',Speed); 
+} 
+} 
+//--><!]]> 
+</script>
+</body>
+</html>

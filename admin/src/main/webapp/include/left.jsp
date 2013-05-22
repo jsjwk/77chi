@@ -23,6 +23,9 @@
 						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=6"><i class="icon-align-justify"></i><span class="hidden-tablet"> 水果</span></a></li>
 						<li><a class="ajax-link" href="/showMysqlItems.do?itemType=7"><i class="icon-align-justify"></i><span class="hidden-tablet"> 休闲零食</span></a></li>
 						
+						<li class="nav-header hidden-tablet">模版管理</li>
+						<li><a class="ajax-link" href="/indexVelocity.do"><i class="icon-edit"></i><span class="hidden-tablet"> 首页模版</span></a></li>
+
 
 						<li class="nav-header hidden-tablet">Backup</li>
 						<li><a class="ajax-link" href="/ui-demo/index.html"><i class="icon-home"></i><span class="hidden-tablet"> Dashboard</span></a></li>
