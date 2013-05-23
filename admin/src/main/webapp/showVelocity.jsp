@@ -56,7 +56,10 @@
 					<div class="box-content">
 						<form class="form-horizontal" action="/indexVelocity.do" method="post">
 						  <fieldset>
-							<legend>模版</legend>
+							<legend>
+							  <a href="javascript:flushPage(${itemType })" class="btn btn-success"><i class="icon-shopping-cart icon-white"></i>重新刷新生成此类别页面</a>
+							 </legend>
+							 
 							<div class="control-group">
 							  <label class="control-label" for="typeahead">模版名称 </label>
 							  <div class="controls">
@@ -128,6 +131,37 @@
 	</div><!--/.fluid-container-->
 
 	
-		
+<script>
+//刷新生成页面
+function flushPage(itemType)
+{
+	var surl = "/flushPage.do";
+	$.ajax({
+		type : "POST",
+		timeout : 20000,
+		url : surl,
+		dataType : "text",
+		data : "itemType=" + itemType,	
+		cache : false,
+		async : true,
+		global : false,
+		success : function(data) {
+			data = $.trim(data);
+			if (data == "success") {
+				//window.location.reload();
+				alert(data);
+			} else if (data == "error") {
+				alert('error');
+			}
+
+		},
+		error : function(t, v) {
+			alert("系统错误"+t+v);
+		}
+	});
+}
+
+</script>
+	
 </body>
 </html>

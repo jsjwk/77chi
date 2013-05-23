@@ -43,6 +43,8 @@ public class MongoDataController extends UserBaseController {
 	} catch (Exception e)
 	{
 	}
+	request.setAttribute("itemType", itemType);
+	
 	List<MongoTaobaokeItemVo> listTaobaokeItem = mongoTaobaokeItemService.findItemsByItemType(itemType);
 	request.setAttribute("listTaobaokeItem", listTaobaokeItem);
 	

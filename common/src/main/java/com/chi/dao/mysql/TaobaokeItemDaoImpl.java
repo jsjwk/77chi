@@ -21,13 +21,13 @@ public class TaobaokeItemDaoImpl extends SpringJDBCDaoSupport implements Taobaok
     {
 	String sql = "INSERT IGNORE INTO "
 		+ TABLE_NAME 
-		+ "(num_iid,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume,cid,overseas_item,create_time,update_time) "
-		+ " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-	Object[] args = new Object[] { taobaokeItemVo.getNumIid(), StringEscapeUtils.escapeSql(taobaokeItemVo.getTitle()), taobaokeItemVo.getNick(), taobaokeItemVo.getPicUrl(), taobaokeItemVo.getPrice(),
+		+ "(num_iid,item_type,title,nick,pic_url,price,click_url,commission,commission_rate,commission_num,commission_volume,shop_click_url,seller_credit_score,item_location,volume,cid,overseas_item,create_time,update_time) "
+		+ " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	Object[] args = new Object[] { taobaokeItemVo.getNumIid(),taobaokeItemVo.getItemType() ,StringEscapeUtils.escapeSql(taobaokeItemVo.getTitle()), taobaokeItemVo.getNick(), taobaokeItemVo.getPicUrl(), taobaokeItemVo.getPrice(),
 		taobaokeItemVo.getClickUrl(), taobaokeItemVo.getCommission(), taobaokeItemVo.getCommissionRate(), taobaokeItemVo.getCommissionNum(), taobaokeItemVo.getCommissionVolume(),
 		taobaokeItemVo.getShopClickUrl(), taobaokeItemVo.getSellerCreditScore(), taobaokeItemVo.getItemLocation(), taobaokeItemVo.getVolume(), taobaokeItemVo.getCid(),
 		taobaokeItemVo.getOverseasItem(), taobaokeItemVo.getCreateTime(), taobaokeItemVo.getUpdateTime() };
-	int[] argTypes = new int[] { Types.BIGINT, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
+	int[] argTypes = new int[] { Types.BIGINT,Types.INTEGER, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR, Types.VARCHAR,
 		Types.VARCHAR, Types.BIGINT, Types.VARCHAR, Types.BIGINT, Types.BIGINT, Types.VARCHAR, Types.TIMESTAMP, Types.TIMESTAMP };
 	int n = this.getJdbcTemplate().update(sql, args, argTypes);
 	return n > 0 ? true : false;

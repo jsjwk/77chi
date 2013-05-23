@@ -204,4 +204,21 @@ public class UserBaseController {
     {
 	request.setAttribute(ConstatVar.MESSAGE, msg);
     }
+
+    /**
+     * 获取模板路径
+     * 
+     * @param request
+     * @param passport
+     */
+    public static String getVmTemplatePath(HttpServletRequest request, String templateName, int itemType)
+    {
+	if (templateName == null || "".equals(templateName))
+	{
+	    templateName = "template.vm";
+	}
+	String path = request.getSession().getServletContext().getRealPath("template/" + itemType + "/" + templateName);
+	return path;
+    }
+
 }
