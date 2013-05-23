@@ -41,15 +41,15 @@
 	</bean>
 
 	<bean id="chiDataSource" parent="C3P0DataSourceFather">
+		<!-- 
 		<property name="jdbcUrl" value="jdbc:mysql://10.10.126.58:3306/77chi?useUnicode=true&amp;characterEncoding=utf8" /> 
 		<property name="user" value="root" />
 		<property name="password" value="123456789" />
+		-->
 		
-		<!-- 
-		<property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/77chi?useUnicode=true&amp;characterEncoding=utf8" /> 
+		<property name="jdbcUrl" value="jdbc:mysql://mysql.77chi.com:3306/77chi?useUnicode=true&amp;characterEncoding=utf8" /> 
 		<property name="user" value="root" /> 
 		<property name="password" value="123456789" />
-		-->
 	</bean>
 	
 	<!-- 

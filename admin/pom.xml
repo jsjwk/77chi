@@ -11,7 +11,7 @@
   <packaging>war</packaging>
   
   <build>
-		<finalName>77chi-userweb</finalName>
+		<finalName>77chi-admin</finalName>
 			<plugins>
 				<plugin>
 					<groupId>org.mortbay.jetty</groupId>

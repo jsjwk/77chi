@@ -16,3 +16,5 @@ aws ip:
 
 54.245.76.14 mongo.77chi.com
 10.10.126.116
+
+yum install zlib-devel wget openssl-devel pcre pcre-devel make gcc gcc-c++ curl-devel
