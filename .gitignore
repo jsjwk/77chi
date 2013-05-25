@@ -6,6 +6,7 @@ target
 /common/bin/*
 /common/.classpath
 /common/.project
+/common/target
 /admin/.classpath
 /admin/.project
 /admin/target/*
