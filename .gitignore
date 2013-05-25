@@ -29,3 +29,5 @@ target
 /mdb-component/.classpath
 /mdb-component/.project
 /userweb/weibo.log
+/admin/velocity.log
+/userweb/weibo.log.1
