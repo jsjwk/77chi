@@ -1,556 +1,648 @@
-﻿<!doctype html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-<title>零食_零食图片分享-堆糖网</title>
-<meta name="description" content="零食频道,这里有所有你想得到和想不到的零食图片，堆糖不是一个网站，是一种生活方式。">
-<meta name="keywords" content="零食,零食图片,零食最新图片,堆糖网,时尚生活">
-<link href="http://www.duitang.com/favicon.ico" rel="SHORTCUT ICON" />
-<link href="../css/public.css" rel="stylesheet" />
-<link href="../css/shop.css" rel="stylesheet" />
-<script>
-var USER = {},
-	BIND_SITES;
-
-</script>
-<script  src="../js/base.js" ></script>
-<script  src="../js/public.js" ></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/slide.css" />
+<script src="js/jquery.js"></script>
+<script src="js/script.js"></script>
+<script src="js/scroll.js"></script>
+<!--[if IE 6]> 
+	<script type="text/javascript" src="js/png.js" ></script>
+	
+	<script type="text/javascript">
+	DD_belatedPNG.fix('.shadow,.topNav h1,.shopCart,.login,.reg,.sBtn');
+	</script>
+	<![endif]-->
 </head>
+
 <body>
-<div id="header">
-  <div class="tbar" id="tbar">
-    <div class="inbar">
-      <div class="tools">
-        <div class="bar-lnk apps"><a href="#" rel="nofollow" class="apps-name">移动应用<u>&nbsp;</u></a><span class="apps-pa dn"><a href="/app/duitang/?from=top" rel="nofollow"><b class="ap-duitang">&nbsp;</b>堆糖</a><a href="/app/huabao/?from=top" rel="nofollow"><b class="ap-huabao">&nbsp;</b>堆糖画报</a><a href="/app/shopping/?from=top" rel="nofollow"><b class="ap-shop">&nbsp;</b>堆糖良品购</a><a href="/app/bizhi/?from=top" rel="nofollow"><b class="ap-bizhi">&nbsp;</b>爱疯了壁纸</a></span></div>
-        <a class="bar-lnk" href="/wap/" rel="nofollow">手机版</a><i class="bar-lnk">|</i><a class="bar-lnk" id="hd-co" href="/about/collectit/" rel="nofollow">收集工具</a></div>
-      <a id="m-reg" href="/reg/" onMouseDown="_gaq.push(['_trackPageview', '/_trc/nav/regbtn']);">注册</a><a id="m-r" href="javascript:;" onMouseDown="_gaq.push(['_trackPageview', '/_trc/nav/loginbtn']);">登录</a>
-      <div id="forlogin"></div>
-    </div>
-  </div>
-  <div class="nbar" id="nbar">
-    <div class="forbg">
-      <div class="nav">
-        <div id="logo"><a href="/">堆糖网</a></div>
-        <div class="menu"><a id="m-dm" href="/myhome/">关注动态</a><i>|</i><a id="m-z" href="/topics/">热门</a><a id="m-l" class="m" href="/category/life/">生活</a><a id="m-f" class="m" href="/category/fashion/">时尚</a><a id="m-i" class="m" href="/category/interest/">兴趣</a><i>|</i><a id="m-s" href="/shopping/">良品购</a><a id="m-tm" class="m" href="/shopping/temaihui/">特卖惠</a><i>|</i><a id="m-g" href="/group/">小组</a></div>
-        <div class="search">
-          <form id="navsch" action="/search/">
-            <div class="srch"><i>内容 / 商品 / 专辑 / 糖友</i>
-              <input name="kw" type="text" placeholder="内容 / 商品 / 专辑 / 糖友" autocomplete="off" />
-              <input type="hidden" name="type" value="feed"/>
-              <button type="submit">搜索</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div id="h-m-l" class="h-tip cs-w hd-sd"><i class="aow"><b>◆</b><u>◆</u></i>
-        <div><a href="/category/life/">生活主页</a><a href="/category/home/">家居杂物</a><a href="/category/diy/">手工DIY</a><a href="/category/food/">美食菜谱</a><a href="/category/travel/">旅游风景</a><a href="/category/plant/">植物多肉</a></div>
-      </div>
-      <div id="h-m-f" class="h-tip cs-w hd-sd"><i class="aow"><b>◆</b><u>◆</u></i>
-        <div><a href="/category/fashion/">时尚主页</a><a href="/category/clothes_accessories/">服装配饰</a><a href="/category/makeup/">美妆美容</a><a href="/category/hair/">美发造型</a><a href="/category/wedding/">婚纱婚礼</a><a href="/category/lookbook/">潮流街拍</a><a href="/category/vintage/">怀旧复古</a></div>
-      </div>
-      <div id="h-m-i" class="h-tip cs-w hd-sd"><i class="aow"><b>◆</b><u>◆</u></i>
-        <div><a href="/category/interest/">兴趣主页</a><a href="/category/celebrity/">人物明星</a><a href="/category/movie_music_books/">电影/音乐/书</a><a href="/category/comic/">动画漫画</a><a href="/category/painting/">插画绘画</a><a href="/category/wallpaper_avatar/">壁纸头像</a><a href="/category/design/">创意设计</a><a href="/category/moe/">搞笑萌物</a></div>
-      </div>
-    </div>
-    <div class="forbd">&nbsp;</div>
-    <div class="forld"></div>
-  </div>
+<!-- 头部结构 -->
+<div class="topNav">
+<h1><a href="list.html">七七美味，好吃的都在这里！</a></h1>
+<div class="navBox">
+<div class="searchBox"><div class="sText"></label><i>输入关键字</i><input type="text" id="nav-username" name="login_name" placeholder="输入关键字"></div>
+<input name="" type="button" class="sBtn"/>
 </div>
-<div id="content">
-  <div class="layer layer-full">
-    <div class="tube">
-      <div class="block mb0">
-        <div class="sh-catebar sh-corner ">
-          <ul class="clr">
-            <li>
-              <p class="fst-p"><a data-h="sh_c_1_0_服装" href="/shopping/clothes/">服装</a></p>
-              <p><a data-h="sh_c_1_1_西装,西服"   href="/blogs/category/西装/">西装</a></p>
-              <p><a data-h="sh_c_1_2_春装,薄外套,衬衫,长袖T,针织衫"   href="/blogs/category/春装/">春装</a></p>
-              <p><a data-h="sh_c_1_3_卫衣"   class="red"  href="/blogs/category/短裤/">短裤</a></p>
-              <p><a data-h="sh_c_1_4_牛仔裤"   href="/blogs/category/内衣内裤/">内衣内裤</a></p>
-              <p><a data-h="sh_c_1_5_针织衫"   class="red"  href="/blogs/category/半身裙/">半身裙</a></p>
-              <p><a data-h="sh_c_1_6_衬衫,衬衣"   href="/blogs/category/衬衫/">衬衫</a></p>
-              <p><a data-h="sh_c_1_7_vintage,古着"   href="/blogs/category/短袖T/">短袖T</a></p>
-              <p><a data-h="sh_c_1_8_连衣裙"   href="/blogs/category/连衣裙/">连衣裙</a></p>
-            </li>
-            <li>
-              <p class="fst-p"><a data-h="sh_c_2_0_配饰" href="/shopping/accessories/">配饰</a></p>
-              <p><a data-h="sh_c_2_1_发饰,发夹,发箍,发簪,头花"   href="/blogs/category/发饰/">发饰</a></p>
-              <p><a data-h="sh_c_2_2_帽子,毛线帽,贝雷帽,平顶帽"   class="red"  href="/blogs/category/墨镜/">墨镜</a></p>
-              <p><a data-h="sh_c_2_3_胸针"   class="red"  href="/blogs/category/连裤袜/">连裤袜</a></p>
-              <p><a data-h="sh_c_2_4_项链"   href="/blogs/category/项链/">项链</a></p>
-              <p><a data-h="sh_c_2_5_戒指,指环"   href="/blogs/category/戒指/">戒指</a></p>
-              <p><a data-h="sh_c_2_6_手镯,手链"   href="/blogs/category/手链/">手链</a></p>
-              <p><a data-h="sh_c_2_7_手表,怀表,腕表"   href="/blogs/category/手表/">手表</a></p>
-              <p><a data-h="sh_c_2_8_耳钉,耳坠,耳环"   href="/blogs/category/耳饰/">耳饰</a></p>
-            </li>
-            <li>
-              <p class="fst-p"><a data-h="sh_c_3_0_鞋子" href="/shopping/shoes/">鞋子</a></p>
-              <p><a data-h="sh_c_3_1_雨靴,雨鞋"   class="red"  href="/blogs/category/复古鞋/">复古鞋</a></p>
-              <p><a data-h="sh_c_3_2_单鞋,平底鞋,帆布鞋,系带鞋"   href="/blogs/category/平底鞋/">平底鞋</a></p>
-              <p><a data-h="sh_c_3_3_高跟,坡跟,细跟,粗跟"   href="/blogs/category/高跟鞋/">高跟鞋</a></p>
-              <p><a data-h="sh_c_3_4_婚鞋,高跟鞋"   href="/blogs/category/人字拖/">人字拖</a></p>
-              <p><a data-h="sh_c_3_5_及踝靴,中跟鞋,短靴"   class="red"  href="/blogs/category/鱼嘴鞋/">鱼嘴鞋</a></p>
-              <p><a data-h="sh_c_3_6_豆豆鞋,船鞋,平底鞋"   href="/blogs/category/豆豆鞋/">豆豆鞋</a></p>
-              <p><a data-h="sh_c_3_7_帆布鞋"   href="/blogs/category/运动鞋/">运动鞋</a></p>
-              <p><a data-h="sh_c_3_8_凉鞋,凉拖"   href="/blogs/category/凉鞋/">凉鞋</a></p>
-            </li>
-            <li>
-              <p class="fst-p"><a data-h="sh_c_4_0_包袋" href="/shopping/bags/">包袋</a></p>
-              <p><a data-h="sh_c_4_1_单肩包,机车包"   href="/blogs/category/单肩包/">单肩包</a></p>
-              <p><a data-h="sh_c_4_2_双肩包,背包,书包"   href="/blogs/category/双肩包/">双肩包</a></p>
-              <p><a data-h="sh_c_4_3_斜挎包,水桶包"   href="/blogs/category/斜挎包/">斜挎包</a></p>
-              <p><a data-h="sh_c_4_4_帆布包"   href="/blogs/category/帆布包/">帆布包</a></p>
-              <p><a data-h="sh_c_4_5_钱包"   href="/blogs/category/钱包/">钱包</a></p>
-              <p><a data-h="sh_c_4_6_手提包"   class="red"  href="/blogs/category/邮差包/">邮差包</a></p>
-              <p><a data-h="sh_c_4_7_化妆包,链条包,收纳包"   class="red"  href="/blogs/category/链条包/">链条包</a></p>
-              <p><a data-h="sh_c_4_8_手拿包,信封包,相机包"   href="/blogs/category/行李箱/">行李箱</a></p>
-            </li>
-            <li>
-              <p class="fst-p"><a data-h="sh_c_5_0_杂货" href="/shopping/mess/">杂货</a></p>
-              <h1><i>零食</i></h1>
-              <p><a data-h="sh_c_5_2_礼品,礼物"   href="/blogs/category/烛台/">烛台</a></p>
-              <p><a data-h="sh_c_5_3_zakka,杂货,布艺"   href="/blogs/category/盆栽/">盆栽</a></p>
-              <p><a data-h="sh_c_5_4_创意,相机,防尘塞,耳机,u盘"   href="/blogs/category/数码小物/">数码小物</a></p>
-              <p><a data-h="sh_c_5_5_手机壳,iphone壳,防尘塞,耳机"   href="/blogs/category/香薰小皂/">香薰小皂</a></p>
-              <p><a data-h="sh_c_5_6_文具,本子,笔袋,铅笔,便签"   href="/blogs/category/文具/">文具</a></p>
-              <p><a data-h="sh_c_5_7_雨伞,阳伞"   class="red"  href="/blogs/category/手工DIY/">手工DIY</a></p>
-              <p><a data-h="sh_c_5_8_眼妆,美妆,彩妆,指甲油,bb霜,护肤,保湿,手工皂,面膜,精油"   href="/blogs/category/美容护肤/">美容护肤</a></p>
-            </li>
-            <li class="lst-li">
-              <p class="fst-p"><a data-h="sh_c_6_0_家居" href="/shopping/home/">家居</a></p>
-              <p><a data-h="sh_c_6_1_收纳,首饰盒,化妆包"   href="/blogs/category/收纳整理/">收纳整理</a></p>
-              <p><a data-h="sh_c_6_2_抱枕,玩偶,靠垫"   href="/blogs/category/杯子/">杯子</a></p>
-              <p><a data-h="sh_c_6_3_时钟,闹钟"   class="red"  href="/blogs/category/厨房/">厨房</a></p>
-              <p><a data-h="sh_c_6_4_台灯,吊灯"   href="/blogs/category/卫浴/">卫浴</a></p>
-              <p><a data-h="sh_c_6_5_床品,枕头,床单,被子"   class="red"  href="/blogs/category/书柜/">书柜</a></p>
-              <p><a data-h="sh_c_6_6_水培,土培,多肉,盆栽"   href="/blogs/category/装饰/">装饰</a></p>
-              <p><a data-h="sh_c_6_7_杯子,马克杯,玻璃杯,咖啡杯,保温杯"   href="/blogs/category/灯具/">灯具</a></p>
-              <p><a data-h="sh_c_6_8_餐具,碗,茶具,盘子,筷子"   href="/blogs/category/餐具/">餐具</a></p>
-            </li>
-          </ul>
-          <div class="bottom"></div>
-          <em class="sh-lt"></em><em class="sh-rt"></em><em class="sh-lb"></em><em class="sh-rb"></em></div>
-      </div>
-      <!-- block end -->
-      <div class="ctg-menu-list block"><a name="pager-dym"></a>
-        <div class="pic_sect clr">
-          <ul>
-            <li class="first"><i>不限价格</i></li>
-            <li><a data-h="max_100" href="?max_price=100">0-100</a></li>
-            <li><a data-h="min_100" href="?min_price=100&max_price=200">100-200</a></li>
-            <li><a data-h="min_200" href="?min_price=200&max_price=300">200-300</a></li>
-            <li class="last"><a data-h="min_300" href="?min_price=300">>300</a></li>
-          </ul>
-        </div>
-      </div>
-      <!-- block end -->
-    </div>
-  </div>
-  <div class="layer layer-full oh">
-    <div class="tube">
-      <div id="fordymarea" class="block" data-spm="spm=2014.12553688.106.0">
-        <div class="dn"><a class="dymswitch-a" href="javascript:;">人气</a><a class="dymswitch-a" href="javascript:;">最新</a></div>
-        <div class="dymswitch-b">
-          <div class="pagecont blog-pp clr  masoned ">
-            <div data-id="74723973"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74723973/detail/"><img data-rootid="74723973" srcd="http://img2.duitang.com/uploads/item/201304/19/20130419223955_kwTKY.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74723973,"owner":1365101}'><a class="y" href="#">1</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">1</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">老字号纯手工麻仔宫廷花生酥糖果g经典原味四川特产&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74723973&ok=gw_7563576&to=http%3A//item.taobao.com/item.htm%3Fid%3D15913381167%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥9.9</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1365101/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201304/13/20130413124722_Gt5uj.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/1365101/">唐凌</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/people/1365101/">默认专辑</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74766564"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74766564/detail/"><img data-rootid="74766564" srcd="http://img2.duitang.com/uploads/item/201304/19/20130419225022_5tyUH.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74766564,"owner":1393729}'><a class="y" href="#">21</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">21</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">康熙来了强烈推荐台湾进口零食纯天然菜脯沙琪玛Mixx菜脯酥g&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74766564&ok=gw_7563752&to=http%3A//item.taobao.com/item.htm%3Fid%3D17769014276%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥1.39</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1393729/"><img width="24" height="24" src="/img/0/dfhead.gif" /></a>
-                    <p><a class="p" target="_blank" href="/people/1393729/">晗泪</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/2335101/">吃货</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74752101"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74752101/detail/"><img data-rootid="74752101" srcd="http://img2.duitang.com/uploads/item/201304/16/20130416154806_XV432.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74752101,"owner":578109}'><a class="y" href="#">20</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">20</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">风琴鱿鱼片(出口日本国)淡淡的一股清香超嫩g&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74752101&ok=gw_7505398&to=http%3A//item.taobao.com/item.htm%3Fid%3D3449935188%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥32.0</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/578109/"><img width="24" height="24" src="/img/0/dfhead.gif" /></a>
-                    <p><a class="p" target="_blank" href="/people/578109/">落跑的夏天</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1252415/">美食天上.美…</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74718055"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74718055/detail/"><img data-rootid="74718055" srcd="http://img4.duitang.com/uploads/item/201304/19/20130419222541_T2Phd.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74718055,"owner":1026239}'><a class="y" href="#">12</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">12</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">韩国进口好丽友巧克力夹心黄油曲奇饼干手工精制韩星最爱零食袋装&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74718055&ok=gw_7563263&to=http%3A//item.taobao.com/item.htm%3Fid%3D19644756232%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥4.8</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1026239/"><img width="24" height="24" src="/img/0/dfhead.gif" /></a>
-                    <p><a class="p" target="_blank" href="/people/1026239/">Lian恋</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1800545/">Food</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74781253"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74781253/detail/"><img data-rootid="74781253" srcd="http://img4.duitang.com/uploads/item/201304/21/20130421024135_MneK3.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74781253,"owner":1158940}'><a class="y" href="#">18</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">18</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">百草味休闲零食台湾特色小吃糕点凤梨酥g精品盒装&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74781253&ok=gw_7580249&to=http%3A//item.taobao.com/item.htm%3Fid%3D16671502096%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥16.0</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1158940/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201212/21/20121221164405_JtCAu.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/1158940/">宋夏</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1880594/">淘宝</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74779890"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74779890/detail/"><img data-rootid="74779890" srcd="http://img2.duitang.com/uploads/item/201304/19/20130419220055_xBWMw.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74779890,"owner":855215}'><a class="y" href="#">22</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">22</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">送儿童韩国零食海太HAITAI全水果味口水糖g(酸甜好滋味&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74779890&ok=gw_7562706&to=http%3A//item.taobao.com/item.htm%3Fid%3D12526990111%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥2.8</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/855215/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201207/31/20120731190918_iJ2Bv.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/855215/">黄妖孽_</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1614601/">淘不出手心❤</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74679781"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74679781/detail/"><img data-rootid="74679781" srcd="http://img4.duitang.com/uploads/item/201304/23/20130423171925_ReMXT.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74679781,"owner":1190034}'><a class="y" href="#">11</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">11</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">最新即食海鲜海产品果木碳烤深海章鱼足片鱿鱼足片鲜美味&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74679781&ok=gw_7613719&to=http%3A//item.taobao.com/item.htm%3Fid%3D8988301454%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥17.8</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1190034/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201301/08/20130108220512_m8PFz.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/1190034/">潶色小天真真真</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/people/1190034/">默认专辑</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74775686"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74775686/detail/"><img data-rootid="74775686" srcd="http://img4.duitang.com/uploads/item/201304/18/20130418213513_BkXAJ.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74775686,"owner":1165009}'><a class="y" href="#">13</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">13</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">手工饼干曲奇饼干牛油曲奇手工曲奇牛油坚果曲奇零食饼干&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74775686&ok=gw_7545939&to=http%3A//item.taobao.com/item.htm%3Fid%3D16458899533%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥28.0</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1165009/"><img width="24" height="24" src="/img/0/dfhead.gif" /></a>
-                    <p><a class="p" target="_blank" href="/people/1165009/">娃她妈妈</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/people/1165009/">默认专辑</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74739960"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74739960/detail/"><img data-rootid="74739960" srcd="http://img2.duitang.com/uploads/item/201304/16/20130416153431_4TMvm.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74739960,"owner":843222}'><a class="y" href="#">8</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">8</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">韩国进口零食饼干海太IVY杏仁酥饼杏仁薄脆饼干g代餐饼干&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74739960&ok=gw_7505058&to=http%3A//item.taobao.com/item.htm%3Fid%3D21453708464%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥5.8</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/843222/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201208/13/20120813071133_idxdX.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/843222/">扣儿糖</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1317036/">吃</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74776458"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74776458/detail/"><img data-rootid="74776458" srcd="http://img2.duitang.com/uploads/item/201304/16/20130416152635_HZZvU.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74776458,"owner":1165009}'><a class="y" href="#">22</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">22</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">日本进口年轮厚切蛋糕大师糕点小麦鸡蛋厚切蛋糕g&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74776458&ok=gw_7504874&to=http%3A//item.taobao.com/item.htm%3Fid%3D14462881066%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥35.0</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1165009/"><img width="24" height="24" src="/img/0/dfhead.gif" /></a>
-                    <p><a class="p" target="_blank" href="/people/1165009/">娃她妈妈</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/people/1165009/">默认专辑</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74651968"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74651968/detail/"><img data-rootid="74651968" srcd="http://img4.duitang.com/uploads/item/201304/19/20130419223256_h5ucW.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74651968,"owner":654278}'><a class="y" href="#">8</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">8</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">mart新口味古法孜然烧烤鱿鱼条现烤鱿鱼丝微辣海产品零食&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74651968&ok=gw_7563439&to=http%3A//item.taobao.com/item.htm%3Fid%3D15763178046%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥16.8</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/654278/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201301/12/20130112111128_iTVhR.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/654278/">有只小象Tom</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1118737/">yummy</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74772602"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:202px;"><a target="_blank" class="a" href="/people/mblog/74772602/detail/"><img data-rootid="74772602" srcd="http://img2.duitang.com/uploads/item/201207/18/20120718111347_cCL4C.thumb.200_0.jpeg" height="202"/></a>
-                  <div class="collbtn" data-favorite='{"id":74772602,"owner":1085834}'><a class="y" href="#">2494</a><a class="z" href="#">0</a><a class="x" href="#">14</a></div>
-                </div>
-                <div class="d"><span class="d1">2494</span><span class="d2">0</span><span class="d3">14</span></div>
-                <div class="g">日本京の飴工房 宇治抹茶 经典抹茶心水晶糖果 里面是真正的抹茶粉，所以这才是真正的抹茶糖果。&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74772602&ok=gw_3926440&to=http%3A//item.taobao.com/item.htm%3Fid%3D15041299926%26&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥48.0</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1085834/"><img width="24" height="24" src="/img/0/dfhead.gif" /></a>
-                    <p><a class="p" target="_blank" href="/people/1085834/">zyq9797</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/people/1085834/">默认专辑</a>&nbsp;专辑中</p>
-                  </li>
-                  <li ><a target="_blank" href="/people/1054602/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201211/03/20121103154035_cXBkm.thumb.24_24_c.jpeg" /></a>
-                    <p><a target="_blank" href="/people/1054602/">红豆酸奶娃</a> 看着就很想吃，好有夏天的感觉</p>
-                  </li>
-                  <li ><a target="_blank" href="/people/988257/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201210/02/20121002162320_cC3vR.thumb.24_24_c.jpeg" /></a>
-                    <p><a target="_blank" href="/people/988257/">馨叶晴</a> 抹茶~</p>
-                  </li>
-                  <li class="last"><a target="_blank" href="/people/940259/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201210/15/20121015181301_UYvLv.thumb.24_24_c.jpeg" /></a>
-                    <p><a target="_blank" href="/people/940259/">少然灬</a> 里面l绿绿的是茶叶吗?</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74781605"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74781605/detail/"><img data-rootid="74781605" srcd="http://img4.duitang.com/uploads/item/201304/19/20130419224546_esZYu.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74781605,"owner":1158940}'><a class="y" href="#">53</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">53</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">韩国进口棒棒糖美兰得LOLY萝莉水果味棒棒糖g美味零食&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74781605&ok=gw_7563683&to=http%3A//item.taobao.com/item.htm%3Fid%3D20196184386%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥5.8</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1158940/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201212/21/20121221164405_JtCAu.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/1158940/">宋夏</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1880594/">淘宝</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74781542"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74781542/detail/"><img data-rootid="74781542" srcd="http://img2.duitang.com/uploads/item/201304/19/20130419220131_NzucK.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74781542,"owner":1158940}'><a class="y" href="#">18</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">18</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">韩国进口饼干零食可拉奥CROWN奶油夹心蛋卷g韩国明星最爱&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74781542&ok=gw_7562722&to=http%3A//item.taobao.com/item.htm%3Fid%3D2521834152%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥5.8</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1158940/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201212/21/20121221164405_JtCAu.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/1158940/">宋夏</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1880594/">淘宝</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74724041"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74724041/detail/"><img data-rootid="74724041" srcd="http://img4.duitang.com/uploads/item/201304/21/20130421152305_vEeEU.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74724041,"owner":1365101}'><a class="y" href="#">17</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">17</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">正宗四川特产蜀道香麻辣猪肉脯g猪肉松/干零食品小吃&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74724041&ok=gw_7585631&to=http%3A//item.taobao.com/item.htm%3Fid%3D18062937389%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥9.9</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1365101/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201304/13/20130413124722_Gt5uj.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/1365101/">唐凌</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/people/1365101/">默认专辑</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74712363"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74712363/detail/"><img data-rootid="74712363" srcd="http://img2.duitang.com/uploads/item/201304/19/20130419230556_afvud.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74712363,"owner":893361}'><a class="y" href="#">10</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">10</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">韩国进口饼干可拉奥CROWN+低糖柠檬饼干g咸味饼干零食&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74712363&ok=gw_7564032&to=http%3A//item.taobao.com/item.htm%3Fid%3D19965140170%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥9.9</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/893361/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201301/11/20130111220214_teSLF.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/893361/">素颜的小丑</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/2188481/">2013的夏天</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74677887"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74677887/detail/"><img data-rootid="74677887" srcd="http://img4.duitang.com/uploads/item/201304/19/20130419220110_5fwvv.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74677887,"owner":808209}'><a class="y" href="#">24</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">24</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">韩国进口零食品可拉奥羊羹板栗羊羹+红豆羊羹条装补血明目&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74677887&ok=gw_7562711&to=http%3A//item.taobao.com/item.htm%3Fid%3D23218340729%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥6.5</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/808209/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201301/26/20130126212321_EzXtn.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/808209/">liangy426</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1671537/">甜点</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74767915"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74767915/detail/"><img data-rootid="74767915" srcd="http://img2.duitang.com/uploads/item/201304/16/20130416155757_8GNAL.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74767915,"owner":181761}'><a class="y" href="#">10</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">10</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">TJ泰国美味大哥花生豆大罐装－－芥末味g&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74767915&ok=gw_7505606&to=http%3A//item.taobao.com/item.htm%3Fid%3D1625852448%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥13.5</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/181761/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201111/27/20111127222311_zrWRK.thumb.24_24_c.jpg" /></a>
-                    <p><a class="p" target="_blank" href="/people/181761/">熬夜的猫</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/275126/">美食</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74651947"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74651947/detail/"><img data-rootid="74651947" srcd="http://img2.duitang.com/uploads/item/201304/16/20130416154429_dGxGi.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74651947,"owner":654278}'><a class="y" href="#">8</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">8</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">%天然健康宇航员都在吃乐滋冻干香蕉脆片g非油炸非膨化&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74651947&ok=gw_7505308&to=http%3A//item.taobao.com/item.htm%3Fid%3D14975313848%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥3.3</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/654278/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201301/12/20130112111128_iTVhR.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/654278/">有只小象Tom</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1118737/">yummy</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74766501"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74766501/detail/"><img data-rootid="74766501" srcd="http://img2.duitang.com/uploads/item/201304/16/20130416143645_CYfCx.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74766501,"owner":1393729}'><a class="y" href="#">12</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">12</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">悠酷迷你甜甜圈巧克力味g随手包小零食比张君雅划算哦&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74766501&ok=gw_7503654&to=http%3A//item.taobao.com/item.htm%3Fid%3D23823032219%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥0.6</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1393729/"><img width="24" height="24" src="/img/0/dfhead.gif" /></a>
-                    <p><a class="p" target="_blank" href="/people/1393729/">晗泪</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/2335101/">吃货</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74736541"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:155px;"><a target="_blank" class="a" href="/people/mblog/74736541/detail/"><img data-rootid="74736541" srcd="http://img2.duitang.com/uploads/item/201304/18/20130418213932_uZsJj.thumb.200_0.jpeg" height="155"/></a>
-                  <div class="collbtn" data-favorite='{"id":74736541,"owner":645711}'><a class="y" href="#">12</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">12</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">手工餅乾牛油曲奇手工曲奇零食餅乾香蔥芝士鹹香曲奇曲奇&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74736541&ok=gw_7546018&to=http%3A//item.taobao.com/item.htm%3Fid%3D16459023140%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥31.5</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/645711/"><img width="24" height="24" src="/img/0/dfhead.gif" /></a>
-                    <p><a class="p" target="_blank" href="/people/645711/">可颂猫</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1183783/">小物</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74625340"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74625340/detail/"><img data-rootid="74625340" srcd="http://img2.duitang.com/uploads/item/201304/19/20130419220153_YLTtM.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74625340,"owner":1065276}'><a class="y" href="#">7</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">7</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">韩国进口零食乐天LOTTE杏仁夹心巧克力豆g香脆好吃&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74625340&ok=gw_7562732&to=http%3A//item.taobao.com/item.htm%3Fid%3D2523120288%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥10.8</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/1065276/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201304/03/20130403170713_dmAxa.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/1065276/">橙橘里</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/2343521/">碎嘴已塞满</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74652098"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:200px;"><a target="_blank" class="a" href="/people/mblog/74652098/detail/"><img data-rootid="74652098" srcd="http://img2.duitang.com/uploads/item/201304/16/20130416155051_vBYZr.thumb.200_0.jpeg" height="200"/></a>
-                  <div class="collbtn" data-favorite='{"id":74652098,"owner":654278}'><a class="y" href="#">5</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">5</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">台湾进口零食爱天然天然洋芋卷g無添加的餅乾%无添加&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74652098&ok=gw_7505450&to=http%3A//item.taobao.com/item.htm%3Fid%3D17212323758%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥13.0</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/654278/"><img width="24" height="24" src="http://img2.duitang.com/uploads/people/201301/12/20130112111128_iTVhR.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/654278/">有只小象Tom</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1118737/">yummy</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div data-id="74752159"  class="dym" hasnext="">
-              <div class="j">
-                <div class="mbpho" style="height:135px;"><a target="_blank" class="a" href="/people/mblog/74752159/detail/"><img data-rootid="74752159" srcd="http://img2.duitang.com/uploads/item/201304/18/20130418213348_ahvM8.thumb.200_0.jpeg" height="135"/></a>
-                  <div class="collbtn" data-favorite='{"id":74752159,"owner":920181}'><a class="y" href="#">26</a><a class="z" href="#">0</a><a class="x" href="#">0</a></div>
-                </div>
-                <div class="d"><span class="d1">26</span><span class="d2">0</span><span class="d3">0</span></div>
-                <div class="g">丹麦童话抹茶曲奇纯手工制作牛油曲奇手工饼干曲奇饼干&nbsp;<a class="dymprice dib bl" href="/dj/go2/?mk=sh_p_74752159&ok=gw_7545918&to=http%3A//item.taobao.com/item.htm%3Fid%3D18787452039%26spm_d%3D3&spm=2014.12553688.106.0" target="_blank"><u class="_tb" title="去购买">￥29.5</u></a></div>
-                <ul>
-                  <li class="f"><a target="_blank" href="/people/920181/"><img width="24" height="24" src="http://img4.duitang.com/uploads/people/201301/23/20130123135556_xUcct.thumb.24_24_c.jpeg" /></a>
-                    <p><a class="p" target="_blank" href="/people/920181/">Grim-Reape</a>&nbsp;收集到&nbsp;<a target="_blank" href="/album/1474952/">E</a>&nbsp;专辑中</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <script>
-$('#fordymarea').attr('id','dym-area').find('div.pagecont').addClass('masoned').css("height",$(window).height())
-</script>
-          <div class="pager" unitcount="2400"></div>
-        </div>
-        <div class="dymswitch-b" style="display:none">
-          <div class="pagecont blog-pp clr masoned"></div>
-          <div class="pager"></div>
-        </div>
-      </div>
-      <!-- block end -->
-    </div>
-  </div>
-  <!-- content-in end -->
+<div class="shopCart"><a href="list.html">购物车</a></div>
+<div class="login"><a href="javascript:;" class="loginBtn">登录</a></div>
+<div class="reg"><a href="list.html">注册</a></div>
+<div class="loginWin">
+<i class="arrow "><b>◆</b><u>◆</u></i>
+<div class="unme"><label for="nav-username"></label><i>用户名/邮箱</i><input type="text" id="nav-username" name="login_name" placeholder="用户名/邮箱"></div>
+<div class="pswd"><label for="nav-password"></label><i>密码</i><input type="password" id="nav-password" name="pswd" placeholder="密码"></div>
+<div class="submit zoom">
+<input name="" type="button" value="" class="submitBtn" />
+<div class="u-chk zoom"><input class="chk" type="checkbox" name="remember" id="nav-remember" value="记住我"><label for="nav-remember">记住我</label><span>|&nbsp;</span><a href="/getpasswd/">忘记密码？</a></div>
 </div>
-<div id="footer" class="footer" >
-  <div class="realfoot footcont">
-    <div class="footct graylk">
-      <div class="frdlk"><a href="/keywords/">标签集</a><a id="sitehelp" href="/group/topic/17318/">帮助中心</a><a href="/about/">关于我们</a><a href="/group/topic/1778/">加入我们</a><a href="/declare/#noduty">免责声明</a><a class="redlk" href="/about/collectit/">堆糖收集工具</a></div>
-      &copy;Copyright by <u class="dib duitang-slogo">堆糖</u> 2010-2013 duitang.com, all rights reserved
-      <div class="dib duitang-copy">备案</div>
-      沪ICP备05034519号 </div>
-  </div>
+<div class="sites"><p>使用合作网站账号登录：</p><div class="clr"><a class="weibo" href="/connect/sina/?next=/shopping/">新浪微博</a><a class="qqsite" href="/connect/qq/?next=/shopping/">QQ</a><a class="taobao" href="/connect/taobao/?next=/shopping/">淘宝</a><a class="qqweib" href="/connect/qweibo/?next=/shopping/">腾讯微博</a><a class="douban" href="/connect/douban/?next=/shopping/">豆瓣</a></div></div>
 </div>
-<div id="win-house" class="h0">
-  <input id="al-grpid-avanat" type="hidden" name="group" value=""/>
 </div>
-<!-- asyncRequest请求 对应的form 表单集合地 -->
-<form id="form-hot" action="/blogs/category/?page=" page="1">
-  <input type="hidden" name="tags" value="零食"/>
-  <input type="hidden" name="_type" value=""/>
-  <input type="hidden" name="min_price" value=""/>
-  <input type="hidden" name="max_price" value=""/>
-  <input type="hidden" name="a" value=""/>
-  <input type="hidden" name="b" value=""/>
-  <input type="hidden" name="c" value=""/>
-  <input type="hidden" name="d" value=""/>
-  <input type="hidden" name="e" value=""/>
-  <input type="hidden" name="f" value=""/>
-  <input class="dn" type="checkbox" name="buyable" value="1" />
-  <input type="hidden" name="pgsource" value="sh_">
-</form>
-<form id="form-new" action="/blogs/category/?page=" page="1">
-</form>
-<script  src="../js/shop.js" ></script>
-<!--<div style="display:none">
-  <script src="http://s21.cnzz.com/stat.php?id=4835705&web_id=4835705" language="JavaScript"></script>
-  <script>
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcfab7a5bb736d6b1410950aee5835566' type='text/javascript'%3E%3C/script%3E"));
-</script>
-  <span id="form-token" class="dn"></span><span>d5c5994243</span></div>-->
+</div>
+      
+<div id="zSlider">
+	<div id="picshow">
+		<div id="picshow_img">
+			<ul>
+			  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/1.jpg"></a></li>
+			  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/2.jpg"></a></li>
+			  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/3.jpg"></a></li>
+			  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/4.jpg"></a></li>
+			  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/5.jpg"></a></li>
+			  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/6.jpg"></a></li>
+			</ul>
+		</div>
+		<div id="picshow_tx">
+			<ul>
+			  <li>
+				  <h3><a href="http://www.lanrentuku.com/" target="_blank">中国死飞店铺推介：上海死飞店FACTORY FIVE</a></h3>
+				  <p>上海第一家死飞精品店，由三个外国人与一中国人联合创办，主要经营客订个性单速车，帮助他们得到自己梦想中的车架。</p>
+			  </li>
+			  <li>
+				  <h3><a href="http://www.lanrentuku.com/" target="_blank">骑看世界：纯美的世界恬静的心冰岛骑游之旅</a></h3>
+				  <p>冰岛有“火山岛”、“雾岛”、“冰封的土地”、“冰与火之岛”之称。有想过在这里骑游吗？下面看看Ovegur的冰岛骑游之旅吧。</p>
+			  </li>
+			  <li>
+				  <h3><a href="http://www.lanrentuku.com/" target="_blank">空气糟糕透了！推荐几款实用的骑行防毒口罩</a></h3>
+				  <p>这几天，全国各地的空气糟糕透顶！北京空气污染指数又爆表了！！！经过资深车友的推荐及亲身体验，整理出几款超强防毒的骑行口罩。</p>
+			  </li>
+			  <li>
+				  <h3><a href="http://www.lanrentuku.com/" target="_blank">[组图]1200万像素带Wi-Fi 骑行记录仪Gopro Hero3评测</a></h3>
+				  <p>近年来户外骑行等运动录像盛行，Gopro这品牌可说功不可没，新版的Gopro Hero3具有1200万像素带Wi-Fi功能……</p>
+			  </li>
+			  <li>
+				  <h3><a href="http://www.lanrentuku.com/" target="_blank">张向东：南非无危险的骑行与有纠结的ubuntu(组图)</a></h3>
+				  <p>“我要从南骑到北，我还要从白骑到黑。我要人们都看到我，却不知道我是谁。爱上我你就不要后悔，总有一天我要远走高飞。”</p>
+			  </li>
+			  <li>
+				  <h3><a href="http://www.lanrentuku.com/" target="_blank">单车文化课堂⑥：学会撬胎补胎爆胎不再烦</a></h3>
+				  <p>外出骑行，不会总有一个修车老大爷在你扎胎后的不远处等着你，本期课堂教会你如何撬胎补胎，再碰上爆胎，你就可以淡定了。</p>
+			  </li>
+			</ul>
+		</div>
+	</div>
+	<div id="select_btn">
+		<ul>
+		  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/01.jpg"></a></li>
+		  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/02.jpg"></a></li>
+		  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/03.jpg"></a></li>
+		  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/04.jpg"></a></li>
+		  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/05.jpg"></a></li>
+		  <li><a href="http://www.lanrentuku.com/" target="_blank"><img src="images/06.jpg"></a></li>
+		</ul>
+	</div>	
+</div>
+
+<!-- 头部结构 -->
+
+<!-- 列表1 -->
+<div class="foodBox">
+<div class="foodL">
+
+<div class="ft"><h2>进口食品</h2><div class="submenu"><a href="list.html">巧克力</a>　<a href="list.html">西式糕点</a>　<a href="list.html">饼干</a>　<a href="list.html">糖果</a>　<a href="list.html">咖啡</a>　<a href="list.html">奶粉</a>　丨　<a href="list.html" class="orange">查看更多</a></div></div>
+<ul class="bd">
+<li><a href="list.html">
+	<div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+</ul>
+
+</div>
+<div class="foodR">
+
+
+<div class="ft bd-1"><h3>最新单品榜 TOP5</h3></div>
+<div class="bd">
+<ul class="top5">
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>1</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>2</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>3</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>4</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>5</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<!-- 列表1 -->
+
+
+
+
+<!-- 列表2 -->
+<div class="foodBox">
+<div class="foodL">
+
+<div class="ft"><h2>进口食品</h2><div class="submenu"><a href="list.html">巧克力</a>　<a href="list.html">西式糕点</a>　<a href="list.html">饼干</a>　<a href="list.html">糖果</a>　<a href="list.html">咖啡</a>　<a href="list.html">奶粉</a>　丨　<a href="list.html" class="orange">查看更多</a></div></div>
+<ul class="bd">
+<li><a href="list.html">
+	<div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+</ul>
+
+</div>
+<div class="foodR">
+
+
+<div class="ft bd-1"><h3>最新单品榜 TOP5</h3></div>
+<div class="bd">
+<ul class="top5">
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>1</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>2</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>3</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>4</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>5</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<!-- 列表2 -->
+
+
+
+<!-- 列表3 -->
+<div class="foodBox">
+<div class="foodL">
+
+<div class="ft"><h2>进口食品</h2><div class="submenu"><a href="list.html">巧克力</a>　<a href="list.html">西式糕点</a>　<a href="list.html">饼干</a>　<a href="list.html">糖果</a>　<a href="list.html">咖啡</a>　<a href="list.html">奶粉</a>　丨　<a href="list.html" class="orange">查看更多</a></div></div>
+<ul class="bd">
+<li><a href="list.html">
+	<div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+</ul>
+
+</div>
+<div class="foodR">
+
+
+<div class="ft bd-1"><h3>最新单品榜 TOP5</h3></div>
+<div class="bd">
+<ul class="top5">
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>1</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>2</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>3</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>4</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>5</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<!-- 列表3 -->
+
+<!-- 列表4 -->
+<div class="foodBox">
+<div class="foodL">
+
+<div class="ft"><h2>进口食品</h2><div class="submenu"><a href="list.html">巧克力</a>　<a href="list.html">西式糕点</a>　<a href="list.html">饼干</a>　<a href="list.html">糖果</a>　<a href="list.html">咖啡</a>　<a href="list.html">奶粉</a>　丨　<a href="list.html" class="orange">查看更多</a></div></div>
+<ul class="bd">
+<li><a href="list.html">
+	<div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+</ul>
+
+</div>
+<div class="foodR">
+
+
+<div class="ft bd-1"><h3>最新单品榜 TOP5</h3></div>
+<div class="bd">
+<ul class="top5">
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>1</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>2</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>3</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>4</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>5</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<!-- 列表4 -->
+
+<!-- 列表5 -->
+<div class="foodBox">
+<div class="foodL">
+
+<div class="ft"><h2>进口食品</h2><div class="submenu"><a href="list.html">巧克力</a>　<a href="list.html">西式糕点</a>　<a href="list.html">饼干</a>　<a href="list.html">糖果</a>　<a href="list.html">咖啡</a>　<a href="list.html">奶粉</a>　丨　<a href="list.html" class="orange">查看更多</a></div></div>
+<ul class="bd">
+<li><a href="list.html">
+	<div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+<li>
+<a href="list.html"><div class="shadow">
+		<i>糕点 /</i> <b>358个人在逛</b><br />
+		<p>糕点让生活更文艺</p>
+	</div>
+	<img src="images/propic.jpg" width="199" height="200" /></a></li>
+</ul>
+
+</div>
+<div class="foodR">
+
+
+<div class="ft bd-1"><h3>最新单品榜 TOP5</h3></div>
+<div class="bd">
+<ul class="top5">
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>1</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>2</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>3</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>4</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+<li>
+<div class="fpic"><a href="list.html"><img src="images/propic.jpg" width="199" height="200" /></a></div>
+<div class="ftext">
+<em>5</em>
+<p><a href="list.html">这里是介绍文字...</a></p>
+<span><a href="list.html">更多>></a></span>
+</div>
+</li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<!-- 列表5 -->
+
+<!-- 底部结构 -->
+
+<div class="footer">
+<div class="footBox">
+<div class="botMenu"><a href="list.html">关于我们</a> | <a href="list.html">加入我们</a> | <a href="list.html">免责声明</a> | <a href="list.html">帮助中心</a> | <a href="list.html">加入我们</a> | <a href="list.html">免责声明</a> | <a href="list.html">帮助中心</a></li>
+</ul>
+<ul class="link">
+	<li>友情链接：</li>
+	<li><a href="list.html">泡椒网</a></li>
+	<li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+</ul>
+<div class="copyright">©Copyright by 77美味 2010-2013 77chi.com, all rights reserved <span class="fr">备案号：浙ICP备05034519号</span></div>
+</div>
+</div>
+<!-- 底部结构 -->
 </body>
 </html>

@@ -19,4 +19,15 @@ public class UserInfoServiceImpl implements UserInfoService {
 		return userInfoDao.saveOrUpdateUserInfo(userInfo);
 	}
 
+	@Override
+	public UserInfo getUserInfoByOpenId(String openId) 
+	{
+		return userInfoDao.getUserInfoByOpenId(openId);
+	}
+
+	@Override
+	public UserInfo getUserInfoByEmail(String email) {
+		return userInfoDao.getUserInfoByEmail(email);
+	}
+
 }

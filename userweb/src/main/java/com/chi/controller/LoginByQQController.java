@@ -43,18 +43,27 @@ public class LoginByQQController extends UserBaseController {
             com.qq.connect.api.qzone.UserInfo qzoneUserInfo = new com.qq.connect.api.qzone.UserInfo(accessToken, openID);
             com.qq.connect.javabeans.qzone.UserInfoBean userInfoBean = qzoneUserInfo.getUserInfo();
 
-            UserInfo userInfo = new UserInfo();
-            userInfo.setAccessToken(accessToken);
-            userInfo.setAccountType(UserInfo.ACCOUNTTYPE_DEFAULT);
-            userInfo.setCreateTime(new Date());
-            userInfo.setOpenId(openID);
-            if(userInfoBean!=null){
-            	int gender = "男".equals(userInfoBean.getGender())==true?1:2;
-            	userInfo.setGender(gender);
-            	userInfo.setNickName(userInfoBean.getNickname());
-            	userInfo.setSourceType(UserInfo.SOURCETYPE_QQ);
+            UserInfo userInfo = userInfoService.getUserInfoByOpenId(openID);
+            if(userInfo == null)
+            {//没有注册过
+            	userInfo = new UserInfo();
+            	userInfo.setAccessToken(accessToken);
+            	userInfo.setAccountType(UserInfo.ACCOUNTTYPE_DEFAULT);
+            	userInfo.setCreateTime(new Date());
+            	userInfo.setOpenId(openID);
+            	if(userInfoBean!=null){
+            		int gender = "男".equals(userInfoBean.getGender())==true?1:2;
+            		userInfo.setGender(gender);
+            		userInfo.setNickName(userInfoBean.getNickname());
+            		userInfo.setSourceType(UserInfo.SOURCETYPE_QQ);
+            	}
+            	userInfoService.saveOrUpdateUserInfo(userInfo);
+            	
+            	//在注册页面获取openId作为隐藏字段，供注册时定位用户使用
+    			request.setAttribute("openId", openID);
+            	return "reg";
             }
-            userInfoService.saveOrUpdateUserInfo(userInfo);
+            
 		} catch (QQConnectException e) {
 			e.printStackTrace();
 		}

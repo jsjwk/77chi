@@ -32,7 +32,7 @@ public class RegisterController extends UserBaseController {
 	private static final Logger LOG = LoggerFactory.getLogger(RegisterController.class);
 
     /**
-     * 用户登录
+     * 用户注册
      */
     @RequestMapping("/reg.do")
     public String register(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, ApiException
@@ -40,18 +40,26 @@ public class RegisterController extends UserBaseController {
     	String email = request.getParameter("email");
     	String password = request.getParameter("password");
     	String repassword = request.getParameter("repassword");
+    	String openId = request.getParameter("openId");
     	if(StringUtils.isEmpty(email) || StringUtils.isEmpty(password)
     			|| !password.equals(repassword))
     	{
     		return "error";
     	}
     	
-    	UserInfo userInfo = new UserInfo();
-    	userInfo.setAccountType(UserInfo.ACCOUNTTYPE_DEFAULT);
-    	userInfo.setCreateTime(new Date());
+    	UserInfo userInfo = userInfoService.getUserInfoByOpenId(openId);
+    	if(userInfo == null)
+    	{
+    		userInfo = new UserInfo();
+    		userInfo.setSourceType(UserInfo.SOURCETYPE_REGISTER);
+    		userInfo.setNickName(email.substring(0, email.indexOf("@")));
+    		userInfo.setCreateTime(new Date());
+    	}else
+    	{//通过第三方登陆跳过来的注册
+    		userInfo.setUpdateTime(new Date());
+    	}
+    	
     	userInfo.setEmail(email);
-    	userInfo.setNickName(email.substring(0, email.indexOf("@")));
-    	userInfo.setSourceType(UserInfo.SOURCETYPE_REGISTER);
     	userInfo.setPassword(password);
     	userInfoService.saveOrUpdateUserInfo(userInfo);
     	return "index";

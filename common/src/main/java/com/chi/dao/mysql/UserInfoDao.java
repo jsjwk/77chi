@@ -11,4 +11,17 @@ public interface UserInfoDao {
 	 */
 	public boolean saveOrUpdateUserInfo(UserInfo userInfo);
 	
+	/**
+	 * 根据openId获取UserInfo
+	 * @param openId
+	 * @return
+	 */
+	UserInfo getUserInfoByOpenId(String openId);
+	
+	/**
+	 * 根据email获取UserInfo
+	 * @param openId
+	 * @return
+	 */
+	UserInfo getUserInfoByEmail(String email);
 }

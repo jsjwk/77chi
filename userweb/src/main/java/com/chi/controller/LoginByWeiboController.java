@@ -44,23 +44,32 @@ public class LoginByWeiboController extends UserBaseController {
 			Account am = new Account();
 			am.client.setToken(accessToken);
 			JSONObject uid = am.getUid();
-			System.out.println("============"+uid);
 			weibo4j.model.PostParameter[] postParameters = new PostParameter[]{new PostParameter("access_token", accessToken),new PostParameter("uid", uid.getString("uid"))};
 			weibo4j.http.Response weiboResponse = am.client.get("https://api.weibo.com/2/users/show.json",postParameters);
 			
-			UserInfo userInfo = new UserInfo();
-            userInfo.setAccessToken(accessToken);
-            userInfo.setAccountType(UserInfo.ACCOUNTTYPE_DEFAULT);
-            userInfo.setCreateTime(new Date());
-            userInfo.setOpenId(uid.getString("uid"));
-            if(weiboResponse!=null){
-            	weibo4j.org.json.JSONObject jSONObject = weiboResponse.asJSONObject();
-            	int gender = "m".equals(jSONObject.get("gender"))==true?1:2;
-            	userInfo.setGender(gender);
-            	userInfo.setNickName(jSONObject.getString("screen_name"));
-            	userInfo.setSourceType(UserInfo.SOURCETYPE_WEIBO);
-            }
-            userInfoService.saveOrUpdateUserInfo(userInfo);
+			String openId = uid.getString("uid");
+			UserInfo userInfo = userInfoService.getUserInfoByOpenId(openId);
+			if(userInfo == null)
+			{//没有注册过
+				userInfo = new UserInfo();
+				userInfo.setAccessToken(accessToken);
+				userInfo.setAccountType(UserInfo.ACCOUNTTYPE_DEFAULT);
+				userInfo.setCreateTime(new Date());
+				userInfo.setOpenId(openId);
+				if(weiboResponse!=null){
+					weibo4j.org.json.JSONObject jSONObject = weiboResponse.asJSONObject();
+					int gender = "m".equals(jSONObject.get("gender"))==true?1:2;
+					userInfo.setGender(gender);
+					userInfo.setNickName(jSONObject.getString("screen_name"));
+					userInfo.setSourceType(UserInfo.SOURCETYPE_WEIBO);
+				}
+				userInfoService.saveOrUpdateUserInfo(userInfo);
+				
+				//在注册页面获取openId作为隐藏字段，供注册时定位用户使用
+				request.setAttribute("openId", openId);
+				return "reg";
+			}
+			
 		} catch (weibo4j.model.WeiboException e) {
 			if (401 == e.getStatusCode()) {
 				LOG.info("Unable to get the access token.");
@@ -68,7 +77,7 @@ public class LoginByWeiboController extends UserBaseController {
 				e.printStackTrace();
 			}
 		}
-		return null;
+		return "index";
 	}
 	
 }

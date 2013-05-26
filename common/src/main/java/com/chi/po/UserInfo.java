@@ -49,7 +49,8 @@ public class UserInfo {
 	 */
 	private String accessToken;
 	/**
-	 * openId
+	 * QQ-openId
+	 * WEIBO-uid
 	 */
 	private String openId;
 	/**
