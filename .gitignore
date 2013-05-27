@@ -1,4 +1,4 @@
-/.settings
+/.settings/*
 /.project
 target
 .settings
@@ -32,3 +32,4 @@ target
 /userweb/weibo.log
 /admin/velocity.log
 /userweb/weibo.log.1
+/.settings
