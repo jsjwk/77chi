@@ -12,13 +12,20 @@ import com.chi.po.MongoTaobaokeItemVo;
  */
 
 public interface MongoTaobaokeItemDao {
-
+    
     /**
-     * 存入淘宝客商品基本信息
+     * 保存淘宝客商品基本信息
      * @param mongoTaobaokeItemVo
      * @return
      */
     boolean insertTaobaokeItemVo(MongoTaobaokeItemVo mongoTaobaokeItemVo);
+
+    /**
+     * 批量保存淘宝客商品基本信息
+     * @param mongoTaobaokeItemVo
+     * @return
+     */
+    boolean batchInsertTaobaokeItemVo(List<MongoTaobaokeItemVo> listMongoTaobaokeItemVo);
     
     /**
      * 所有的商品

@@ -49,6 +49,7 @@ public class MongoTaobaokeItemDetailDaoImpl extends BasicDAO<MongoTaobaokeItemDe
 	WriteResult wr = collection.insert(listBasicDBObject);
 	 */
 	
+	if(listTaobaokeItemDetailVo==null || listTaobaokeItemDetailVo.size()<=0) return false;
 	for (MongoTaobaokeItemDetailVo detailVo : listTaobaokeItemDetailVo)
 	{
 	    //save支持主键冲突自动更新

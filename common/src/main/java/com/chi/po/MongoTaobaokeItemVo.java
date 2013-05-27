@@ -35,6 +35,12 @@ public class MongoTaobaokeItemVo implements Serializable {
 	private int itemType;
 	
 	/**
+	 * 商品在77chi状态
+	 * 1-上线
+	 */
+	private int status;
+	
+	/**
 	 * 淘宝客商品
 	 */
 	private TaobaokeItem taobaokeItem;
@@ -113,25 +119,38 @@ public class MongoTaobaokeItemVo implements Serializable {
 		this.itemType = itemType;
 	}
 
+	public int getStatus()
+	{
+	    return status;
+	}
+
+	public void setStatus(int status)
+	{
+	    this.status = status;
+	}
+
 	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("TaobaokeItemVo [numIid=");
-		builder.append(numIid);
-		builder.append(", itemType=");
-		builder.append(itemType);
-		builder.append(", taobaokeItem=");
-		builder.append(taobaokeItem);
-		builder.append(", cid=");
-		builder.append(cid);
-		builder.append(", overseasItem=");
-		builder.append(overseasItem);
-		builder.append(", createTime=");
-		builder.append(createTime);
-		builder.append(", updateTime=");
-		builder.append(updateTime);
-		builder.append("]");
-		return builder.toString();
+	public String toString()
+	{
+	    StringBuilder builder = new StringBuilder();
+	    builder.append("MongoTaobaokeItemVo [numIid=");
+	    builder.append(numIid);
+	    builder.append(", itemType=");
+	    builder.append(itemType);
+	    builder.append(", status=");
+	    builder.append(status);
+	    builder.append(", taobaokeItem=");
+	    builder.append(taobaokeItem);
+	    builder.append(", cid=");
+	    builder.append(cid);
+	    builder.append(", overseasItem=");
+	    builder.append(overseasItem);
+	    builder.append(", createTime=");
+	    builder.append(createTime);
+	    builder.append(", updateTime=");
+	    builder.append(updateTime);
+	    builder.append("]");
+	    return builder.toString();
 	}
 
 }

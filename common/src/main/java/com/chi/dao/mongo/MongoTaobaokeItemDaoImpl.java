@@ -71,4 +71,15 @@ public class MongoTaobaokeItemDaoImpl extends BasicDAO<MongoTaobaokeItemVo, Long
 	return true;
     }
 
+    @Override
+    public boolean batchInsertTaobaokeItemVo(List<MongoTaobaokeItemVo> listMongoTaobaokeItemVo)
+    {
+	if(listMongoTaobaokeItemVo==null || listMongoTaobaokeItemVo.size()<=0) return false;
+	for (MongoTaobaokeItemVo mongoTaobaokeItemVo : listMongoTaobaokeItemVo)
+	{
+	    this.save(mongoTaobaokeItemVo);
+	}
+	return true;
+    }
+
 }
