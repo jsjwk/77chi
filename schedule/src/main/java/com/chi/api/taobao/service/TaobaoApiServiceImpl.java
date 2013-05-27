@@ -131,7 +131,6 @@ public class TaobaoApiServiceImpl implements TaobaoApiService {
 		getTaobaokeItemDetail(NumIids);
 	    }
 	}
-	System.out.println(detailResponse.getBody());
 	List<TaobaokeItemDetail> listTaobaokeItemDetail = detailResponse.getTaobaokeItemDetails();
 
 	return listTaobaokeItemDetail;
@@ -156,7 +155,6 @@ public class TaobaoApiServiceImpl implements TaobaoApiService {
 	    // 重试一次
 	    response = client.execute(req);
 	}
-	System.out.println(response.getBody());
 	List<ItemCat> listItemCat = response.getItemCats();
 
 	return listItemCat;
