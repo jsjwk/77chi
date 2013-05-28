@@ -81,13 +81,13 @@ public class TaobaoApiServiceImpl implements TaobaoApiService {
 		try
 		{
 		    Thread.sleep(1000);
+		    // 重试一次
+		    apiExceptionTryNum++;
+		    response = client.execute(req);
 		} catch (InterruptedException e1)
 		{
 		    e1.printStackTrace();
 		}
-		// 重试一次
-		apiExceptionTryNum++;
-		getTaobaokeItems(cid, pageNo, pageSize);
 	    }
 	}
 
@@ -122,13 +122,13 @@ public class TaobaoApiServiceImpl implements TaobaoApiService {
 		try
 		{
 		    Thread.sleep(1000);
+		    // 重试一次
+		    apiExceptionTryNum++;
+		    detailResponse = client.execute(detailRequest);
 		} catch (InterruptedException e1)
 		{
 		    e1.printStackTrace();
 		}
-		// 重试一次
-		apiExceptionTryNum++;
-		getTaobaokeItemDetail(NumIids);
 	    }
 	}
 	List<TaobaokeItemDetail> listTaobaokeItemDetail = detailResponse.getTaobaokeItemDetails();
