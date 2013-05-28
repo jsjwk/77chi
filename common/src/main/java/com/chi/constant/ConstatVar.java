@@ -4,7 +4,7 @@ public class ConstatVar {
 
 	//Test
 //	private static boolean platform = System.getProperty("os.name").toUpperCase().indexOf("WINDOWS") != -1;
-    private static boolean platform = System.getProperty("os.name").toUpperCase().indexOf("WINDOWS") == -1;
+    private static boolean platform = false;
     	
     	//消息常量
 	public static String MESSAGE = "message";
