@@ -6,8 +6,9 @@ body{color:#151515; background:#f7f7f7;}
 
 .logbox {width:650px;  margin:0 auto; border-radius:5px; _zoom:1; padding:20px 0 20px 0; font-size:14px;}
 .logbox .fl {float:left; width:380px;border-right:1px #ccc  dashed;height:320px;}
-.logbox .fl h1 { font-size:22px;line-height:60px; color:#666;font-family:"微软雅黑"; width:220px; background:url(../images/regpic.png) no-repeat 0 -155px; overflow:hidden; text-indent:-999em; padding:11px;}
-.logbox .fl .logintitle { background-position:0 -215px;}
+
+.logintitle { background:url(../images/regpic.png) no-repeat 0 -205px; width:270px; height:37px; margin-bottom:18px;}
+.regtitle { background:url(../images/regpic.png) no-repeat 0 -169px; width:270px; height:37px;margin-bottom:18px;}
 
 
 
@@ -59,8 +60,19 @@ body{color:#151515; background:#f7f7f7;}
 .on_changes li.active{ background:#CEE7FF;}
 
 .logbox .fl h3 { font-size:16px; font-family:"微软雅黑"; color:#666666; line-height:60px;}
-.btn_login {background:url(../images/regpic.png) no-repeat -138px -285px;width:138px; height:35px; border:0; font-size:14px; text-align:center; font-weight:bold; color:#fff; cursor:pointer; vertical-align:text-bottom}
-.btn_login:hover {background-position: -138px -320px; width:138px; height:35px;}
+.btn_login {
+	background:url(../images/regpic.png) no-repeat -131px -281px;
+	width:125px;
+	height:37px;
+	border:0;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	vertical-align:text-bottom
+}
+.btn_login:hover {background-position: -131px -318px; width:125px; height:37px;}
 
 .zctxt { }
 
