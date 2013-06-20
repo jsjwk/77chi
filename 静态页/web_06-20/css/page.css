@@ -1,0 +1,90 @@
+@charset "utf-8";
+.topNav { height:36px; background:url(../images/indexpic.png) repeat-x top; width:100%; position: relative; top:0px; left:0; min-width:960px; padding-top:6px; box-shadow:0px 2px 3px #efefef; z-index:999;}
+.topNav h1 { margin:0 auto; width:95px; height:28px; background:url(../images/indexpic.png) no-repeat center -47px;}
+.topNav h1 a { text-indent:-999px; display:block;}
+.topNav .navBox { position: absolute; top:0; right:0; height:36px; width:370px; padding-top:6px;}
+.searchBox { border:1px #d4d4d4 solid; width:150px; height:18px; float:left; background:#fff; padding:5px; margin-right:10px; display:inline;}
+.searchBox .sText {position: relative;overflow: hidden; width:120px; height:18px;float: left;}
+.searchBox .sText i {position: absolute;top: 4px;left: 36px;color: #B4B4B4;font-size: 14px;display: none;}
+.searchBox .sText input {height: 16px;width: 120x;border: none;line-height: 16px;background-color: white;font-size: 14px;}
+
+
+.searchBox .sBtn { float:right; width:18px; height:18px; background:url(../images/indexpic.png) no-repeat 0 -88px; border:0; cursor:pointer; }
+.shopCart { float:left; width:80px; height:23px; background:url(../images/indexpic.png) no-repeat -72px -86px; margin-left:10px; text-indent:30px; margin-top:3px; }
+.login,.reg{ float:left;overflow:hidden;height:23px; line-height:26px; font-size:14px; color:#5678a0;margin-top:3px;padding-left:12px;padding-right:10px;background:url(../images/indexpic.png) no-repeat left -118px; _width:30px;}
+.shopCart a,.login a,.reg a { display:block; height:23px; line-height:26px; font-size:14px; color:#5678a0; overflow:hidden; }
+.shopCart a:hover,.login a:hover,.reg a:hover {color:#f14382;}
+
+.loginWin {position: absolute; width:222px; height:213px; background:#fff;left: 140px; top:40px;border-radius: 3px;box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);zoom: 1;z-index: 9;border: 1px solid #D4D4D4; display:none;}
+.loginWin .arrow {position: absolute;top: -8px;left: 140px;width: 18px;height: 8px;overflow: hidden; z-index:9;}
+.loginWin .arrow  b {text-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);color: #D4D4D4; top:0;position: absolute;
+left: 0;line-height: 16px;font-size: 16px;font-style: normal;font-weight: normal;font-family: 'simsun'; z-index:1;}
+.loginWin .arrow  u {color: #FFF;position: absolute;left: 0;line-height: 16px;font-size: 16px;font-style: normal;font-weight: normal;font-family: 'simsun'; z-index:2; top:1px;}
+
+.loginWin .unme, .loginWin .pswd {position: relative;margin-top: 8px;border: 1px solid #E5E4E3;overflow: hidden; width:198px; height:30px;margin-left: 11px;}
+.unme label,.pswd label {background: url(../images/indexpic.png) no-repeat; float: left;margin-right: 6px;height: 30px;width: 30px;}
+.unme label { background-position: 9px -244px;}
+.pswd label { background-position: -20px -244px;}
+.unme i,.pswd i {position: absolute;top: 4px;left: 36px;color: #B4B4B4;font-size: 14px;display: none;}
+.unme input,.pswd input {float: left;padding: 7px 0;height: 16px;width: 162px;border: none;line-height: 16px;background-color: white;font-size: 14px;}
+.submit {margin-top: 10px;overflow: hidden;color: #606060;_zoom:1;}
+.submit .submitBtn { width:60px; height:32px; cursor:pointer; border:0; background:url(../images/indexpic.png) no-repeat; background-position:0 -168px; margin-left:10px;float:left;}
+
+.submit .u-chk {padding: 4px 0 0 0px;line-height: 25px;font-size: 12px;font-weight: normal; margin-left:80px; _margin-left:70px; overflow:hidden;_zoom:1;}
+.u-chk .chk {float:left;margin: 7px 4px 0 0;_margin-top: 2px; vertical-align:middle;}
+.u-chk label {float: left;margin: 0 4px 0 0;}
+.u-chk span {float: left;}
+.u-chk a { float:left; font-size:12px; margin-right:10px;_margin-right:0px;}
+.sites p {display: block;height: 30px;margin: 8px 0 0 0;padding: 8px 0 0 12px;border-top: 1px solid #efeeed;}
+.sites div.clr {padding: 0 0 14px;}
+.sites a {float: left;width: 32px;height: 32px;margin: 0 5px 0;text-indent: -9999px; background: url(../images/shareicon.png) no-repeat;}
+.sites a.weibo:link, .sites a.weibo:visited {margin-left: 11px;background-position: 0px 0px;}
+.sites a.qqsite:link, .sites a.qqsite:visited {background-position: -42px 0px;}
+.sites a.taobao:link, .sites a.taobao:visited {background-position: -84px 0px;}
+.sites a.qqweib:link, .sites a.qqweib:visited {background-position: -126px 0px;}
+.sites a.douban:link, .sites a.douban:visited {background-position: -168px 0px;}
+.sites a.weibo:hover {background-position: 0px -42px;}
+.sites a.qqsite:hover {background-position: -42px -42px;}
+.sites a.taobao:hover {background-position: -84px -42px;}
+.sites a.qqweib:hover {background-position: -126px -42px;}
+.sites a.douban:hover {background-position: -168px -42px;}
+
+.foodBox { margin:0 auto; margin-top:10px; border-top:1px #ccc solid; width:960px; overflow:hidden;_zoom:1; }
+.ft { border-top:5px #efefef solid; padding:5px 0 10px 0;overflow:hidden;_zoom:1;}
+.foodL { float:left; width:720px; }
+.foodR { float:right; width:240px;}
+.ft h2 {float:left;margin: 0;font-size: 25px;line-height:30px;color: #F14382;text-shadow: 2px 2px 0 #E6F4FF;font-family: '微软雅黑'; font-weight:normal; vertical-align:middle;}
+.ft h3 {float:left;margin: 0;font-size: 16px;line-height:30px;color: #F14382;text-shadow: 2px 2px 0 #E6F4FF;font-family: '微软雅黑'; font-weight:normal; vertical-align:middle; }
+
+.ft .submenu { float:left; line-height:35px;  margin-left:10px;}
+.ft .submenu a {font-size:14px;}
+
+.foodL .bd { overflow:hidden;_zoom:1;}
+.foodL .bd li { float:left; width:33.33%; text-align:center; margin-bottom:20px; position:relative;}
+.foodL .bd li .shadow { width:155px; height:50px; position:absolute; bottom:25px; background-color:#000;background: url(../images/picshow_bg.png); left:20px; color:#fff; text-align:left; line-height:25px; padding:5px 10px; z-index:9;}
+
+.foodL .bd li .shadow i { font-size:16px; font-weight:bold;}
+.foodL .bd li img { padding:10px; border:1px #ccc solid;}
+
+.top5 li { height:93px; border-bottom:1px #ccc solid;}
+.top5 li .fpic { padding:12px 5px; float:left; width:70px;}
+.top5 li .fpic img { width:60px; height:60px; padding:3px; border:1px #ccc solid;}
+.top5 li .ftext { margin-left:80px; padding:10px 0; line-height:23px;}
+.top5 li .ftext em { font-style:italic; color:#C00; font-size:16px;}
+.top5 li .ftext span,.top5 li .ftext span a { color:#888;}
+
+.footer { margin-top:10px; background: url(../images/indexpic.png) repeat-x 0 -277px #f8f8f8; padding-top:10px; line-height:30px;}
+.footBox { width:960px; margin:0 auto;}
+.link { overflow:hidden; _zoom:1; line-height:20px; margin:10px 0;}
+.link li { float:left; margin-right:10px;}
+.link li a { color:#888;}
+
+.copyright { color:#666;}
+
+
+
+
+ 
+
+
+

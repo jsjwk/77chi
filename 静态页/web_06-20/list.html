@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表页</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/index.css" />
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.js"></script> 
+<script type="text/javascript" src="js/jquery.infinitescroll.js"></script>
+<script src="js/script.js"></script>
+<!--[if IE 6]> 
+	<script type="text/javascript" src="js/png.js" ></script>
+	
+	<script type="text/javascript">
+	DD_belatedPNG.fix('.shadow,.topNav h1,.shopCart,.login,.reg,.sBtn,.shopCart span');
+	</script>
+	<![endif]-->
+    
+
+</head>
+
+<body>
+<!-- 头部结构 -->
+<div class="topBar">想获得更好的浏览体验，77吃建议你更新浏览器。推荐使用：Chrome　360极速　IE8　Firefox</div>
+
+<div class="topNav">
+
+<div class="tnavBox">
+	<h1><a href="index.html">77吃，美味的都在这里！</a></h1>
+	
+	<div class="navBox">
+	<dl class="reg">
+	<dt><a href="reg.html" title="注册" class="gray">注册</a></dt>
+	</dl>
+	
+	<dl class="login">
+	<dt>登录</dt>
+	<dd>
+<div class="unme"><label for="nav-username"></label><i>用户名/邮箱</i><input type="text" id="nav-username" name="login_name" placeholder="用户名/邮箱"></div>
+<div class="pswd"><label for="nav-password"></label><i>密码</i><input type="password" id="nav-password" name="pswd" placeholder="密码"></div>
+<div class="submit zoom">
+<input name="" type="button" value="登录" class="btn btn_login" />
+<div class="u-chk zoom"><input class="chk" type="checkbox" name="remember" id="nav-remember" value="记住我"><label for="nav-remember">记住我</label><span>|&nbsp;</span><a href="/getpasswd/">忘记密码？</a></div>
+</div>
+<div class="sites"><p>使用合作网站账号登录：</p><div class="clr"><a class="weibo" href="/connect/sina/?next=/shopping/">新浪微博</a><a class="qqsite" href="/connect/qq/?next=/shopping/">QQ</a><a class="taobao" href="/connect/taobao/?next=/shopping/">淘宝</a><a class="qqweib" href="/connect/qweibo/?next=/shopping/">腾讯微博</a><a class="douban" href="/connect/douban/?next=/shopping/">豆瓣</a></div><br />
+</div>
+    </dd>
+	</dl>
+    
+    <dl class="shopCart">
+	<dt><span>0</span>购物车<i></i></dt>
+	<dd>
+    <div class="noshop">购物车中还没有商品，赶紧选购吧！</div>
+</dd>
+	</dl>
+	
+</div>
+
+</div>
+
+</div>
+
+
+<div class="topMenu">
+<div class="menuBox">
+<ul class="navbar">
+<a href="index.html">首页</a>
+<a href="#" class="current">进口食品</a>
+<a href="list2.html">休闲零食</a>
+<a href="#">饮料</a>
+<a href="#">酒水</a>
+<a href="#">绿色瓜果</a>
+<a href="#">母婴食品</a>
+<a href="#">保健食品</a>
+</ul>
+
+<div class="searchBox"><div class="sText"></label><i>输入关键字</i><input type="text" id="nav-username" name="login_name" placeholder="输入关键字" autocomplete="off"></div>
+<input name="" type="button" class="sBtn"/>
+</div>
+</div>
+</div>
+<!-- 头部结构 -->
+
+
+<!-- 类别 -->
+<div class="typeList">
+				<ul class="clr">
+					<li>
+						<p class="fst-p"><a href="clothes">服装</a></p>
+							<p><a class="red" href="/blogs/category/防晒衫/">防晒衫</a></p>
+							<p><a href="/blogs/category/背心/">背心</a></p>
+							<p><a class="red" href="/blogs/category/短裤/">短裤</a></p>
+							<p><a href="/blogs/category/内衣内裤/">内衣内裤</a></p>
+							<p><a href="/blogs/category/半身裙/">半身裙</a></p>
+							<p><a href="/blogs/category/衬衫/">衬衫</a></p>
+							<p><a href="/blogs/category/短袖T/">短袖T</a></p>
+							<p><a href="/blogs/category/连衣裙/">连衣裙</a></p>
+					</li>
+					<li>
+						<p class="fst-p"><a href="accessories">配饰</a></p>
+							<p><a href="/blogs/category/发饰/">发饰</a></p>
+							<p><a class="red" href="/blogs/category/墨镜/">墨镜</a></p>
+							<p><a class="red" href="/blogs/category/连裤袜/">连裤袜</a></p>
+							<p><a href="/blogs/category/项链/">项链</a></p>
+							<p><a href="/blogs/category/戒指/">戒指</a></p>
+							<p><a href="/blogs/category/手链/">手链</a></p>
+							<p><a href="/blogs/category/手表/">手表</a></p>
+							<p><a href="/blogs/category/耳饰/">耳饰</a></p>
+					</li>
+					<li>
+						<p class="fst-p"><a href="shoes">鞋子</a></p>
+							<p><a class="red" href="/blogs/category/复古鞋/">复古鞋</a></p>
+							<p><a href="/blogs/category/平底鞋/">平底鞋</a></p>
+							<p><a href="/blogs/category/高跟鞋/">高跟鞋</a></p>
+							<p><a href="/blogs/category/人字拖/">人字拖</a></p>
+							<p><a class="red" href="/blogs/category/鱼嘴鞋/">鱼嘴鞋</a></p>
+							<p><a href="/blogs/category/豆豆鞋/">豆豆鞋</a></p>
+							<p><a href="/blogs/category/运动鞋/">运动鞋</a></p>
+							<p><a href="/blogs/category/凉鞋/">凉鞋</a></p>
+					</li>
+					<li>
+						<p class="fst-p"><a href="bags">包袋</a></p>
+							<p><a href="/blogs/category/单肩包/">单肩包</a></p>
+							<p><a href="/blogs/category/双肩包/">双肩包</a></p>
+							<p><a href="/blogs/category/斜挎包/">斜挎包</a></p>
+							<p><a href="/blogs/category/帆布包/">帆布包</a></p>
+							<p><a href="/blogs/category/钱包/">钱包</a></p>
+							<p><a class="red" href="/blogs/category/邮差包/">邮差包</a></p>
+							<p><a class="red" href="/blogs/category/链条包/">链条包</a></p>
+							<p><a href="/blogs/category/行李箱/">行李箱</a></p>
+					</li>
+					<li>
+						<p class="fst-p"><a href="mess">杂货</a></p>
+							<p><a class="red" href="/blogs/category/零食/">零食</a></p>
+							<p><a href="/blogs/category/雨具/">雨具</a></p>
+							<p><a href="/blogs/category/盆栽/">盆栽</a></p>
+							<p><a href="/blogs/category/数码小物/">数码小物</a></p>
+							<p><a href="/blogs/category/香薰小皂/">香薰小皂</a></p>
+							<p><a href="/blogs/category/文具/">文具</a></p>
+							<p><a class="red" href="/blogs/category/手工DIY/">手工DIY</a></p>
+							<p><a href="/blogs/category/美容护肤/">美容护肤</a></p>
+					</li>
+					<li class="lst-li">
+						<p class="fst-p"><a href="home">家居</a></p>
+							<p><a href="/blogs/category/收纳整理/">收纳整理</a></p>
+							<p><a href="/blogs/category/杯子/">杯子</a></p>
+							<p><a class="red" href="/blogs/category/厨房/">厨房</a></p>
+							<p><a href="/blogs/category/卫浴/">卫浴</a></p>
+							<p><a class="red" href="/blogs/category/书柜/">书柜</a></p>
+							<p><a href="/blogs/category/装饰/">装饰</a></p>
+							<p><a href="/blogs/category/灯具/">灯具</a></p>
+							<p><a href="/blogs/category/餐具/">餐具</a></p>
+					</li>
+				</ul>
+			</div>
+
+<!-- 类别 -->
+
+<!-- 筛选 -->
+
+<div class="localPrice">
+<div class="local"><a href="index.html">首页</a><i>&nbsp;&gt;&nbsp;</i><span>进口食品</span></div>
+<ul class="price">
+	<li class="first curr"><a href="#">不限价格</a></li>
+	<li><a href="#1">0-100</a></li>
+	<li><a href="#2">100-200</a></li>
+	<li><a href="#3">200-300</a></li>
+	<li class="last"><a href="#4">&gt;300</a></li>
+</ul>
+</div>
+
+<!-- 筛选 -->
+    <script type="text/javascript" > 
+    function item_masonry(){ 
+	$('.item img').load(function(){ 
+		$('.infinite_scroll').masonry({ 
+			itemSelector: '.masonry_brick',
+			columnWidth:226,
+			gutterWidth:18								
+		});		
+	});
+		
+	$('.infinite_scroll').masonry({ 
+		itemSelector: '.masonry_brick',
+		columnWidth:226,
+		gutterWidth:18								
+	});	
+}
+
+$(function(){
+
+	function item_callback(){ 
+		
+		$('.item').mouseover(function(){
+			$(this).css('box-shadow', '0 1px 5px rgba(35,25,25,0.5)');
+			$('.btns',this).show();
+		}).mouseout(function(){
+			$(this).css('box-shadow', '0 1px 3px rgba(34,25,25,0.2)');
+			$('.btns',this).hide();		 	
+		});
+		
+		item_masonry();	
+
+	}
+
+	item_callback();  
+
+	$('.item').fadeIn();
+
+	var sp = 1
+	
+	$(".infinite_scroll").infinitescroll({
+		navSelector  	: "#more",
+		nextSelector 	: "#more a",
+		itemSelector 	: ".item",
+		
+		loading:{
+			img: "images/masonry_loading_1.gif",
+			msgText: ' ',
+			finishedMsg: '这是最后面了',
+			finished: function(){
+				sp++;
+				if(sp>=10){ //到第10页结束事件
+					$("#more").remove();
+					$("#infscr-loading").hide();
+					$("#page").show();
+					$(window).unbind('.infscr');
+				}
+			}	
+		},errorCallback:function(){ 
+			$("#page").show();
+		}
+		
+	},function(newElements){
+		var $newElems = $(newElements);
+		$('.infinite_scroll').masonry('appended', $newElems, false);
+		$newElems.fadeIn();
+		item_callback();
+		return;
+	});
+
+});
+ 
+</script> 
+<div class="clearfix" id="main">
+  <div class="item_list infinite_scroll masonry">
+  
+  
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/001.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick">
+      <div class="showPic">
+      <a href="#"><img src="images/002.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/003.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/004.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/005.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/006.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+
+        <div class="showPic">
+      <a href="#"><img src="images/007.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/008.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/009.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/010.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/011.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/012.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/011.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/010.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/009.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick" >
+      <div class="showPic">
+      <a href="#"><img src="images/008.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end-->
+    
+    <div class="item masonry_brick masonry-brick">
+      <div class="showPic">
+      <a href="#"><img src="images/007.jpg" /></a>
+    </div>
+    <ul class="actionBox">
+    <li class="fav">0</li>
+    <li class="good">0</li>
+    <li class="comment">0</li>
+    </ul>
+    <div class="showInfo">
+    <div class="info">
+    	韩国单唯美花朵字母印花大飞袖休闲雪纺气质连衣裙 <i>￥45.0</i>
+    </div>
+    <div class="show">
+      <img src="images/photo.jpg" width="35" height="35" />
+      <div class="showtext"><a href="#">初诺~</a> 通过 <a href="#">淘宝网</a> 分享到 <a href="#">空间</a></div>
+      </div>
+    
+    </div>
+    </div>
+    <!--item end--> 
+    
+  </div>
+  <div id="more"><a href="2.html"></a></div>
+  <div id="page" class="page" style="display:none;">
+    <div class="page_num"> <span class="unprev"></span> <span class="current">1</span> <a href="#">&nbsp;2&nbsp;</a> <a href="#">&nbsp;3&nbsp;</a> <a href="#">&nbsp;4&nbsp;</a> <a href="#">&nbsp;5&nbsp;</a> <span class="etc"></span> <a href="#">12</a> <a href="#" class="next"></a> </div>
+  </div>
+</div>
+<div style="display:none;" id="gotopbtn" class="to_top"><a title="返回顶部" href="javascript:void(0);"></a></div>
+<!--演示内容结束-->
+
+
+<!-- 底部结构 -->
+<div class="footer">
+<div class="footBox">
+<div class="botMenu"><a href="list.html">关于我们</a> | <a href="list.html">加入我们</a> | <a href="list.html">免责声明</a> | <a href="list.html">帮助中心</a> | <a href="list.html">加入我们</a> | <a href="list.html">免责声明</a> | <a href="list.html">帮助中心</a></li>
+</ul>
+<ul class="link">
+	<li>友情链接：</li>
+	<li><a href="list.html">泡椒网</a></li>
+	<li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+    <li><a href="list.html">泡椒网</a></li>
+</ul>
+<div class="copyright">©Copyright by 77吃 2010-2013 77chi.com, all rights reserved <span class="fr">备案号：浙ICP备05034519号</span></div>
+</div>
+</div>
+<!-- 底部结构 -->
+</body>
+</html>
