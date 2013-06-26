@@ -183,3 +183,15 @@ dl.loginIn dd { width: 110px; border-radius:0 0 5px 5px;}
 
 .copyright { color:#666;}
 
+#content{
+	width:960px;
+	margin:5 auto;
+	background-color:#fff
+}
+#content{
+	_height:420px;
+	min-height:420px;
+	margin:0 auto;
+	padding-bottom:24px
+}
+
