@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>收件箱首页 - 77吃</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/a.css" />
+<link rel="stylesheet" href="css/msg.css" />
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.js"></script>
+<script type="text/javascript" src="js/jquery.infinitescroll.js"></script>
+<script src="js/script.js"></script>
+<!--[if IE 6]> 
+	<script type="text/javascript" src="js/png.js" ></script>
+	
+	<script type="text/javascript">
+	DD_belatedPNG.fix('.shadow,.topNav h1,.shopCart,.login,.reg,.sBtn,.shopCart span');
+	</script>
+	<![endif]-->
+</head>
+<body>
+<!-- 头部结构 -->
+<div class="topNav">
+  <div class="tnavBox">
+    <h1><a href="index.html">77吃，美味的都在这里！</a></h1>
+    <div class="navBox">
+      <dl class="reg">
+        <dt><a href="reg.html" title="注册" class="gray">注册</a></dt>
+      </dl>
+      <dl class="login">
+        <dt>登录</dt>
+        <dd>
+          <div class="unme">
+            <label for="nav-username"></label>
+            <i>用户名/邮箱</i>
+            <input type="text" id="nav-username" name="login_name" placeholder="用户名/邮箱">
+          </div>
+          <div class="pswd">
+            <label for="nav-password"></label>
+            <i>密码</i>
+            <input type="password" id="nav-password" name="pswd" placeholder="密码">
+          </div>
+          <div class="submit zoom">
+            <input name="" type="button" value="登录" class="btn btn_login" />
+            <div class="u-chk zoom">
+              <input class="chk" type="checkbox" name="remember" id="nav-remember" value="记住我">
+              <label for="nav-remember">记住我</label>
+              <span>|&nbsp;</span><a href="/getpasswd/">忘记密码？</a></div>
+          </div>
+          <div class="sites">
+            <p>使用合作网站账号登录：</p>
+            <div class="clr"><a class="weibo" href="/connect/sina/?next=/shopping/">新浪微博</a><a class="qqsite" href="/connect/qq/?next=/shopping/">QQ</a><a class="taobao" href="/connect/taobao/?next=/shopping/">淘宝</a><a class="qqweib" href="/connect/qweibo/?next=/shopping/">腾讯微博</a><a class="douban" href="/connect/douban/?next=/shopping/">豆瓣</a></div>
+            <br />
+          </div>
+        </dd>
+      </dl>
+      <dl class="shopCart">
+        <dt><span>0</span>购物车<i></i></dt>
+        <dd>
+          <div class="noshop">购物车中还没有商品，赶紧选购吧！</div>
+        </dd>
+      </dl>
+    </div>
+  </div>
+</div>
+<div class="topMenu">
+  <div class="menuBox">
+    <ul class="navbar">
+      <a href="index.html">首页</a> <a href="#" class="current">进口食品</a> <a href="list2.html">休闲零食</a> <a href="#">饮料</a> <a href="#">酒水</a> <a href="#">绿色瓜果</a> <a href="#">母婴食品</a> <a href="#">保健食品</a>
+    </ul>
+    <div class="searchBox">
+      <div class="sText">
+        </label>
+        <i>输入关键字</i>
+        <input type="text" id="nav-username" name="login_name" placeholder="输入关键字" autocomplete="off">
+      </div>
+      <input name="" type="button" class="sBtn"/>
+    </div>
+  </div>
+</div>
+<br/>
+<div id="content">
+  <div class="layer layer-1to5">
+    <div class="tube tube-a msg-list">
+      <div class="block">
+        <h4>与duitang的私信</h4>
+        <a class="back-a" href="inbox_index.html" target="_self" id="return_list">返回私信列表＞</a>
+        <div class="msg-line"></div>
+        <div class="msg-reply clr" id="msg-reply" style="height: 100px;">
+          <div class="msg-text pr l">
+            <form id="send-mail" method="post" action="/letter/msg/send/" onsubmit="return false;">
+              <!-- data-sendto='{"id":"","name":""}' -->
+              <input type="hidden" name="action" value="sendmsg">
+              <input type="hidden" name="name" value="duitang">
+              <label for="txa-reply" style="display:none;">发送</label>
+              <textarea id="txa-message" name="msg" class="msg-txa" style="overflow: hidden; height: 57px;"></textarea>
+              <div class="msg-subtn pa"><a class="abtn" target="_self" href="javascript:;">
+                <button type="submit"><u>发送</u></button>
+                </a></div>
+              <b class="msg-arrow-r pa"></b>
+              <input type="hidden" id="Mess-toid" name="user_id" value="1">
+            </form>
+          </div>
+          <div class="right-avatar r"><a href="/people/1726441815/"><img src="http://img4.duitang.com/uploads/people/201305/01/20130501224431_vfEmS.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+        </div>
+        <div id="msglist">
+          <div style="" class="me-msg-item com-msg-item clr" id="new_messages2328900">
+            <div class="right-avatar r"><a href="/people/1455579/"><img src="http://img4.duitang.com/uploads/people/201305/01/20130501224431_vfEmS.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+            <div class="msg-contentr msg-forsome pr">
+              <div class="msg-conn">
+                <p id="new_msg2328900">佛挡杀佛</p>
+                <span><i id="new_time2328900">2013-6-29 上午8:59:15</i><u><a class="graylk" href="javascript:;" data-confirm="/people/msg/del/2328900/" id="new_del2328900">删除</a></u></span></div>
+              <b class="msg-arrow-r msg-foright pa"></b></div>
+          </div>
+          <div style="" class="me-msg-item com-msg-item clr" id="new_messages2328898">
+            <div class="right-avatar r"><a href="/people/1455579/"><img src="http://img4.duitang.com/uploads/people/201305/01/20130501224431_vfEmS.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+            <div class="msg-contentr msg-forsome pr">
+              <div class="msg-conn">
+                <p id="new_msg2328898">发撒旦法</p>
+                <span><i id="new_time2328898">2013-6-29 上午8:59:13</i><u><a class="graylk" href="javascript:;" data-confirm="/people/msg/del/2328898/" id="new_del2328898">删除</a></u></span></div>
+              <b class="msg-arrow-r msg-foright pa"></b></div>
+          </div>
+          <div style="" class="me-msg-item com-msg-item clr" id="new_messages2328896">
+            <div class="right-avatar r"><a href="/people/1455579/"><img src="http://img4.duitang.com/uploads/people/201305/01/20130501224431_vfEmS.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+            <div class="msg-contentr msg-forsome pr">
+              <div class="msg-conn">
+                <p id="new_msg2328896">方芳芳</p>
+                <span><i id="new_time2328896">2013-6-29 上午8:59:10</i><u><a class="graylk" href="javascript:;" data-confirm="/people/msg/del/2328896/" id="new_del2328896">删除</a></u></span></div>
+              <b class="msg-arrow-r msg-foright pa"></b></div>
+          </div>
+          <div style="" class="me-msg-item com-msg-item clr" id="new_messages2328894">
+            <div class="right-avatar r"><a href="/people/1455579/"><img src="http://img4.duitang.com/uploads/people/201305/01/20130501224431_vfEmS.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+            <div class="msg-contentr msg-forsome pr">
+              <div class="msg-conn">
+                <p id="new_msg2328894">佛挡杀佛</p>
+                <span><i id="new_time2328894">2013-6-29 上午8:59:01</i><u><a class="graylk" href="javascript:;" data-confirm="/people/msg/del/2328894/" id="new_del2328894">删除</a></u></span></div>
+              <b class="msg-arrow-r msg-foright pa"></b></div>
+          </div>
+          <div style="" class="me-msg-item com-msg-item clr" id="new_messages2328891">
+            <div class="right-avatar r"><a href="/people/1455579/"><img src="http://img4.duitang.com/uploads/people/201305/01/20130501224431_vfEmS.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+            <div class="msg-contentr msg-forsome pr">
+              <div class="msg-conn">
+                <p id="new_msg2328891">地方</p>
+                <span><i id="new_time2328891">2013-6-29 上午8:58:58</i><u><a class="graylk" href="javascript:;" data-confirm="/people/msg/del/2328891/" id="new_del2328891">删除</a></u></span></div>
+              <b class="msg-arrow-r msg-foright pa"></b></div>
+          </div>
+          <div style="" class="me-msg-item com-msg-item clr" id="new_messages2328889">
+            <div class="right-avatar r"><a href="/people/1455579/"><img src="http://img4.duitang.com/uploads/people/201305/01/20130501224431_vfEmS.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+            <div class="msg-contentr msg-forsome pr">
+              <div class="msg-conn">
+                <p id="new_msg2328889">多发所发生</p>
+                <span><i id="new_time2328889">2013-6-29 上午8:58:55</i><u><a class="graylk" href="javascript:;" data-confirm="/people/msg/del/2328889/" id="new_del2328889">删除</a></u></span></div>
+              <b class="msg-arrow-r msg-foright pa"></b></div>
+          </div>
+          <div class="me-msg-item com-msg-item clr">
+            <div class="right-avatar r"><a href="/people/1726441815/"><img src="http://img4.duitang.com/uploads/people/201305/01/20130501224431_vfEmS.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+            <div class="msg-contentr msg-forsome pr">
+              <div class="msg-conn">
+                <p>okok</p>
+                <span><i>2013-05-19 07:48:25</i><u><a href="javascript:;" data-confirm="/letter/msg/del/2236619/" class="graylk">删除</a></u></span></div>
+              <b class="msg-arrow-r msg-foright pa"></b></div>
+          </div>
+          <div class="re-msg-item com-msg-item clr">
+            <div class="left-avatar l"><a href="/people/1723893259/"><img src="http://cdn.duitang.com/uploads/people/201111/03/20111103170757_tkPCB.thumb.48_48_c.jpeg" width="48" height="48"></a></div>
+            <div class="msg-contentl msg-forsome pr">
+              <div class="msg-conn">
+                <p></p>
+                <div style="line-height:1.8;color:#333;font-size:12px;">
+                  <h1><b>Jason_Jly 你好，</b></h1>
+                  <p style="margin:8px 0 0">欢迎来到堆糖！在这里你可以发现、收集、分享你感兴趣的事物，堆出你的美好生活！</p>
+                  <p style="margin:8px 0 0">为了更好地开始你的堆糖之旅，你可以：</p>
+                  <p style="margin:8px 0 0"><a target="_blank" href="/topics/">1、发现更多美好</a></p>
+                  <p style="margin:8px 0 0"><a target="_blank" href="/about/collectit/">2、使用简单快捷的抓图方式——堆糖工具</a></p>
+                  <p style="margin:8px 0 0"><a target="_blank" href="/explore/people/tag/">3、寻找喜好相投的糖友</a></p>
+                  <p style="margin:8px 0 0"><a target="_blank" href="/group/">4、加入或创建喜爱的小组</a></p>
+                  <p style="margin:8px 0 0"><a target="_blank" href="/comein/">5、邀请你的好友一起堆糖</a></p>
+                  <p style="margin:8px 0 0"><a target="_blank" href="/leave/message/">6、堆糖意见建议箱</a></p>
+                  <p style="margin:8px 0 0">谢谢你对堆糖的支持，若有疑问请看<a target="_blank" href="/about/help/">堆糖使用说明</a>。也欢迎关注我们的新浪微博<a target="_blank" href="http://weibo.com/duitang">@堆糖网</a>。</p>
+                  <p style="margin:8px 0 0">愿你在堆糖玩得愉快^^</p>
+                  <p style="margin:8px 0 0"><b>堆糖团队</b></p>
+                  <p style="margin:8px 0 0">&nbsp;</p>
+                </div>
+                <p></p>
+                <span><i>2013-05-01 22:44:31</i><u><a href="javascript:;" data-confirm="/letter/msg/del/2197636/" class="graylk">删除</a></u></span></div>
+              <b class="msg-arrow-l pa"></b></div>
+          </div>
+        </div>
+        <div style="margin-top:20px;">
+          <div class="msglast"></div>
+          <div class="pbr">
+            <form id="gopage" method="post" action="/letter/thread/1549425/%d/20/" target="_self" onsubmit="this.action=this.action.replace(/(\%|\%25)d\b/ig,$('#G-iptpageid').val() || 1)">
+              <div style="display:none">
+                <input type="hidden" name="csrfmiddlewaretoken" value="d0bb19d2779e3eac0257a8c4b4589b4b">
+              </div>
+              <ul class="dib">
+                <li class="pbrw">(共 2 消息)</li>
+                <li class="nlk dn"><a class="pre" href="javascript:;">&nbsp;</a></li>
+                <li class="cur">1</li>
+                <li class="nlk dn"><a class="nxt nxtw" href="javascript:;">下一页</a></li>
+                <li class="pbrw">共 <span id="G-totalpagenum">1</span> 页</li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tube tube-b mr0">
+      <div class="block">
+        <div class="sidenav">
+          <ul class="mtctr mnav-top">
+            <li><a href="/comments/list/1/20/"><u>我的提醒</u></a></li>
+          </ul>
+          <ul class="mtctr">
+            <li><a href="/people/1455579/"><u>个人中心</u></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- content-in end -->
+</div>
+<!-- 底部结构 -->
+<div class="footer">
+<div class="footBox">
+  <div class="botMenu"><a href="list.html">关于我们</a> | <a href="list.html">加入我们</a> | <a href="list.html">免责声明</a> | <a href="list.html">帮助中心</a> | <a href="list.html">加入我们</a> | <a href="list.html">免责声明</a> | <a href="list.html">帮助中心</a>
+    </li>
+    </ul>
+    <div class="copyright">©Copyright by 77吃 2010-2013 77chi.com, all rights reserved <span class="fr">备案号：浙ICP备05034519号</span></div>
+  </div>
+</div>
+<!-- 底部结构 -->
+</body>
+</html>
