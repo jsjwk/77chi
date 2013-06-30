@@ -31,20 +31,31 @@ public class RegisterController extends UserBaseController {
 	private UserInfoService userInfoService;
 	private static final Logger LOG = LoggerFactory.getLogger(RegisterController.class);
 
+	
+	/**
+	 * 用户注册pre
+	 */
+	@RequestMapping("/preReg.do")
+	public String preRegister(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
+	{
+		return "reg";
+	}
+	
+	
     /**
      * 用户注册
      */
     @RequestMapping("/reg.do")
-    public String register(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, ApiException
+    public void register(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, ApiException
     {
-    	String email = request.getParameter("email");
-    	String password = request.getParameter("password");
-    	String repassword = request.getParameter("repassword");
+    	String email = request.getParameter("userMail");
+    	String password = request.getParameter("pas1");
     	String openId = request.getParameter("openId");
-    	if(StringUtils.isEmpty(email) || StringUtils.isEmpty(password)
-    			|| !password.equals(repassword))
+    	if(StringUtils.isEmpty(email) || StringUtils.isEmpty(password))
     	{
-    		return "error";
+    		LOG.info("参数不正确");
+    		response.sendRedirect("/error.jsp");
+    		return;
     	}
     	
     	UserInfo userInfo = userInfoService.getUserInfoByOpenId(openId);
@@ -62,7 +73,13 @@ public class RegisterController extends UserBaseController {
     	userInfo.setEmail(email);
     	userInfo.setPassword(password);
     	userInfoService.saveOrUpdateUserInfo(userInfo);
-    	return "index";
+    	
+    	
+    	//注册成功后自动登录
+    	request.getSession().setAttribute(UserConstatVar.LOGIN_SESSION_ID,userInfo);// 设置session
+    	
+    	response.sendRedirect("/index.do");
+    	return;
     }
 
 }

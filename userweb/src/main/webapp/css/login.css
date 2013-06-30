@@ -1,37 +1,80 @@
 @charset "utf-8";
 /*定义全局样式*/
-.header { height:120px; text-align:center; background:url(../images/logo.png) no-repeat center; padding-top:35px;}
-.header a { width:250px; height:85px; display:block; margin:0 auto; }
+body{color:#151515; background:#f7f7f7;}
+.header { height:120px; text-align:center; background:url(../images/regpic.png) no-repeat top center; padding-top:35px;}
+.header a { width:250px; height:85px; display:block; margin:0 auto; text-indent:-999em;}
 
-.logbox {width:620px; height:275px; background:url(../images/middlepic.png) no-repeat center; margin:0 auto; padding-top:25px; }
-.logbox .fl { width:275px; float:left; padding-left:35px;}
-.logbox .fl li { margin-top:16px;}
+.logbox {width:650px;  margin:0 auto; border-radius:5px; _zoom:1; padding:20px 0 20px 0; font-size:14px;}
+.logbox .fl {float:left; width:380px;border-right:1px #ccc  dashed;height:320px;}
 
-.logbox  h3 { font-size:16px; font-family:"微软雅黑"; color:#666666;}
-.logbox .fr { width:235px; float:right; padding-left:75px}
-
-.logbox .fr table { margin-top:30px; color:#666666; line-height:40px;}
-.logbox .fr table .ipttxt {width:220px; height:30px; border:#d4d4d4 1px solid; text-indent:5px; line-height:20px; _line-height:30px;  margin-bottom:10px; border-radius:5px; color:#ccc; font-size:14px; }
-.logbox .fr table input {vertical-align:middle;}
-
-.logbox .fr table a { color:#5678a0; text-decoration:underline;}
-
-.btnreg { text-align:center; margin-top:15px;}
-.btn_submit { background:url(../images/btn_submit.png) no-repeat; width:64px; height:30px; border:0; font-size:14px; text-align:center; font-weight:bold; color:#fff; cursor:pointer;}
+.logintitle { background:url(../images/regpic.png) no-repeat 0 -205px; width:270px; height:37px; margin-bottom:18px;}
+.regtitle { background:url(../images/regpic.png) no-repeat 0 -169px; width:270px; height:37px;margin-bottom:18px;}
 
 
 
+.logbox .fr { float:right; width:200px; padding-left:40px; }
+.logbox .fr li { margin-top:16px; }
+.logbox .fr li a { display:block; width:180px; height:40px; background:url(../images/regpic.png) no-repeat;}
+.logbox .fr li a.sina { background-position:0 -355px;}
+.logbox .fr li a.qq { background-position:0 -395px;}
+.logbox .fr li a.taobao { background-position:0 -435px;}
 
+.logbox .fr h3 { font-size:16px; font-family:"微软雅黑"; color:#666666; line-height:60px;}
 
+.btn_submit {
+	background:url(../images/regpic.png) no-repeat 0 -281px;
+	width:125px;
+	height:37px;
+	border:0;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	vertical-align: text-bottom
+}
+.btn_submit:hover { background-position:0 -318px;}
 
-.regbox{width:700px;  background:#fff; margin:0 auto; border:1px #ccc solid; border-radius:5px; overflow:hidden;_zoom:1; padding:20px 100px}
-.regbox .fl { float:left; width:500px;border-right:1px #ccc  dashed;height:350px;}
-.regbox .fl h1 { line-height:50px; color:#666;}
-.regbox .fl table {line-height:40px; font-size:14px; color:#636363;}
 
 .regbox .fl .ipttxt {width:250px; height:40px; border:#d4d4d4 2px solid; text-indent:5px; line-height:30px; _line-height:40px;  margin-bottom:15px; border-radius:5px; color:#ccc; font-size:14px;}
 
-.regbox input {vertical-align:middle;}
-.regbox .fr { float:right; width:159px; padding-left:40px; }
 
-.regbox .fr h3 { font-size:16px; font-family:"微软雅黑"; color:#666666;}
+.logbox .inputBox {position: relative;width:260px; height:33px; border:#d4d4d4 1px solid; text-indent:5px; line-height:20px; _line-height:30px; border-radius:5px; color:#ccc; font-size:14px; padding-left:10px; background:#fff;}
+.inputBox i{position: absolute;top: 6px;left: -42px;color: #777;font-size: 14px;}
+.inputBox input{float: left;padding: 4px 0;height: 25px;width: 240px;border: none;line-height: 25px;background-color: transparent;font-size: 14px;}
+.logbox .error { position:relative; float:left;color:#F24F4F; line-height:20px; margin-top:3px;text-indent:10px;}
+.logbox .serText {
+	color:#999;
+	line-height:20px;
+	margin:35px 0 20px 0;
+	clear:left;
+}
+.logbox .serText input { vertical-align:middle;}
+.logbox .subBtn { color:#999; line-height:50px;margin-top:5px;clear:left;}
+/*.logbox .red { color: #C00;/* background:url() no-repeat -180px -355px; text-indent:20px;}*/
+/*.logbox .blue { color: #06F; text-indent:20px;}*/
+.yesBox { height:30px; width:30px; position:absolute; top:5px; right:-35px;background:url(../images/regpic.png) no-repeat -180px -385px; display:none;}
+
+.on_changes{width:260px; position:absolute; top:42px; left:-1px; list-style:none; background:#FFF; border:1px solid #d4d4d4; display:none; z-index:9; border-radius:5px; font-size:12px; }
+.on_changes li{margin:2px 5px;padding:4px;color:#333;}
+.on_changes li.active{ background:#CEE7FF;}
+
+.logbox .fl h3 { font-size:16px; font-family:"微软雅黑"; color:#666666; line-height:60px;}
+.btn_login {
+	background:url(../images/regpic.png) no-repeat -131px -281px;
+	width:125px;
+	height:37px;
+	border:0;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+	color:#fff;
+	cursor:pointer;
+	vertical-align:text-bottom
+}
+.btn_login:hover {background-position: -131px -318px; width:125px; height:37px;}
+
+.zctxt { }
+
+a.zctxt:link,a.zctxt:visited{font-size:14px; color:#0099FF; line-height:30px; padding-left:3px; text-decoration:underline;}
+a.zctxt:hover{color:#ff6600;text-decoration:underline;}
