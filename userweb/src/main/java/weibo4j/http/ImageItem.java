@@ -56,6 +56,9 @@ public class ImageItem {
 		return contentType;
 	}
 
+	/*
+	 * 
+	 */
 	public static String getContentType(byte[] mapObj) throws IOException {
 
 		String type = "";
@@ -95,4 +98,5 @@ public class ImageItem {
 		}
 		return type;
 	}
+
 }

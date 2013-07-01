@@ -71,6 +71,7 @@ public class RegisterController extends UserBaseController {
     	}
     	
     	userInfo.setEmail(email);
+    	//TODO 密码明文保存
     	userInfo.setPassword(password);
     	userInfoService.saveOrUpdateUserInfo(userInfo);
     	

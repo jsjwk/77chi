@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>注册 - 77吃零食好吃又便宜</title>
+<title>登陆 - 77吃零食好吃又便宜</title>
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/login.css" />
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -27,16 +27,16 @@ $(function(){
 </head>
 <body>
 <div class="header">
-  <span> <a href="index.html" title="77吃首页">77吃首页</a> </span>
+  <h1> <a href="index.html" title="77吃首页">77吃首页</a> </h1>
 </div>
 <div class="logbox">
   <div class="fl">
-    <div class="regtitle"></div>
-    <form action="/reg.do" method="POST" id="regform" name="regform">
+  <div class="logintitle"></div>    
+    <form action="/login.do" method="POST" id="regform" name="regform">
       <div class="inputBox">
         <div></div>
         <i>邮箱</i>
-        <input type="text" id="userMail" name="userMail" placeholder="用于登录77吃" autocomplete="off">
+        <input type="text" id="userMail" name="userMail" placeholder="" autocomplete="off">
         <ul class="on_changes">
           <li email="">请选择邮箱类型</li>
           <li email="@qq.com"></li>
@@ -54,25 +54,25 @@ $(function(){
           <li email="@hotmail.com"></li>
           <li email="@yeah.net"></li>
         </ul>
-        <div class="yesBox"></div>
       </div>
       <div class="error"></div>
       <div class="inputBox" style="margin-top:30px;"> <i>密码</i>
-        <input type="password" id="pas1" name="pas1" placeholder="6~16个字符">
-        <div class="yesBox"></div>
+        <input type="password" id="pas1" name="pas1" placeholder="">
       </div>
       <div class="error"></div>
       <div class="serText">
         <input name="checkbox" type="checkbox" id="service" checked="checked" />
-        <label for="service"><a href="#" class="zctxt">接受77吃服务条款</a></label>
+        <label for="service"><span style="color:#777">&nbsp;记住登陆状态</a></span>
+        <a href="#" class="blue" style="position:relative; padding-left:100px; color:#777">忘记密码？</a>
       </div>
       <div class="subBtn">
-        <input name="btn_submit" type="submit" class="btn_submit" value="" onclick="return checkForm();"/>
-        <a href="#" class="blue" style="position:relative; padding-left:25px;">忘记密码？ 找回</a></div>
+        <input name="btn_login" type="submit" class="btn_login" value=""/>
+        <a href="/preReg.do" class="blue" style="position:relative; padding-left:30px;">没有账号？ 去注册</a>
+      </div>
     </form>
   </div>
   <div class="fr">
-    <h3>合作网站帐号登录并注册:</h3>
+    <h3>合作网站帐号登录:</h3>
     <ul>
       <li><a href="/preLogin.do?regMethod=weibo" title="新浪微博登录" class="sina"></a></li>
       <li><a href="/preLogin.do?regMethod=qq" title="QQ账号登录" class="qq"></a></li>
