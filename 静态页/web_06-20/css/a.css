@@ -1,4 +1,4 @@
-html, body {
+﻿html, body {
     min-height: 101%;
 }
 body, input, button, select, textarea, th, td {
@@ -4694,7 +4694,7 @@ a#__qqpin_btn:hover {
 .sh-tmh {
 position: relative;
 margin-top: 20px;
-z-index: 500;
+z-index: 0;
 }
 .tmh-items {
 margin-top: 24px;
