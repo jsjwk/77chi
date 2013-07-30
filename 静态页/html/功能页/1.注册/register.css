@@ -26,10 +26,6 @@ a {
 	height:85px;
 }
 
-.reg_md_top-logo{
-
-}
-
 .reg_md_btm{
 	height:400px;
 }
@@ -39,16 +35,37 @@ a {
 	width:659px;
 	float:left;
 	background-color: #F7F7F7;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #888;
+}
+
+.reg_md_btm_l #desc{
+	width: 214px;
+	height: 30px;
+	background-image: url(imgs/ad_login.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin: 19px auto 19px 35px;
+
+}
+
+.reg_md_btm_l #imgs{
+	width: 590px;
+	height: 296px;
+	background-image: url(imgs/ad_login.png);
+	background-repeat: no-repeat;
+	background-position: 0px -47px;
+	margin-top: 19px;
+	margin-right: auto;
+	margin-bottom: 19px;
+	margin-left: 35px;
 }
 
 .reg_md_btm_r{
 	height:400px;
 	width:340px;
-	float:left;
-	background-color: #00CCFF;
+	float:left;	
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #888;
 }
 
 a:link {
