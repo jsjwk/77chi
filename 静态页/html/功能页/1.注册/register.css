@@ -14,30 +14,36 @@ a {
 	font-size: 12px;
 	color: #333;
 }
-.reg_md {
+.md {
 	height: 485px;
 	width: 1000px;
-	background-color: #FFF;
 	margin:auto;
-	vertical-align:middle;
 }
 
-.reg_md_top{
+.md_top{
 	height:85px;
 }
 
-.reg_md_btm{
+.reg_logo{
+	background-image: url(imgs/logo_w.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	height: 67px;
+	width: 137px;
+}
+
+.md_c{
 	height:400px;
 }
 
-.reg_md_btm_l{
+.md_c_l{
 	height:400px;
 	width:659px;
 	float:left;
 	background-color: #F7F7F7;
 }
 
-.reg_md_btm_l #desc{
+.md_c_l #desc{
 	width: 224px;
 	height: 33px;
 	background-image: url(imgs/ad_login.jpg);
@@ -47,7 +53,7 @@ a {
 
 }
 
-.reg_md_btm_l #imgs{
+.md_c_l #imgs{
 	width: 590px;
 	height: 296px;
 	background-image: url(imgs/ad_login.jpg);
@@ -59,19 +65,47 @@ a {
 	margin-left: 35px;
 }
 
-.reg_md_btm_r{
+.md_c_r{
 	height:400px;
 	width:340px;
-	float:left;	
+	float:left;
 	border-left-width: 1px;
 	border-left-style: solid;
 	border-left-color: #888;
+	background-color: #fff;
 }
 
-.reg_md_btm_r h1{
-	color: #F88C52;
-	font-family: "Arial Black";
-	text-align: center;
+.md_c_r h1{
+	height: 27px;
+	width: 170px;
+	background-image: url(imgs/login_btn.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-indent: -9999px;
+	margin:22px auto;
+}
+
+.md_c_r .error{
+	height: 19px;
+	width: 119px;
+	margin:5px 38px;
+	font-family: "宋体";
+	font-size: 15px;
+	color: #FF4D4D;
+	visibility:hidden;
+}
+
+.md_c_r input{
+	height: 38px;
+	width: 269px;
+	background-image: url(imgs/login_btn.png);
+	background-repeat: no-repeat;
+	background-position: 0px -27px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	margin:0px auto 20px 38px;
 }
 
 a:link {
