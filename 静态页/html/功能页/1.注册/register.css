@@ -92,20 +92,32 @@ a {
 	font-family: "宋体";
 	font-size: 15px;
 	color: #FF4D4D;
-	visibility:hidden;
+	visibility:visible;
 }
 
-.md_c_r input{
+.md_c_r .i{
 	height: 38px;
+	width: 269px;
+	margin:0px auto 20px 38px;	
+	font-family: "宋体";
+	font-size: 15px;
+	color: 444;
+}
+
+.md_c_r i{
+	position:absolute;
+	margin:10px;
+	font-style: normal;	
+}
+.md_c_r input{
+	height: 36px;
 	width: 269px;
 	background-image: url(imgs/login_btn.png);
 	background-repeat: no-repeat;
 	background-position: 0px -27px;
-	border-top-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 0px;
-	border-left-width: 0px;
-	margin:0px auto 20px 38px;
+	border-width: 0px;
+	text-indent: 10px;
+
 }
 
 a:link {
