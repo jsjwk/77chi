@@ -102,22 +102,29 @@ a {
 	font-family: "宋体";
 	font-size: 15px;
 	color: 444;
+	background: url(imgs/login_btn.png)	no-repeat 0px -27px;
 }
 
 .md_c_r i{
 	position:absolute;
 	margin:10px;
-	font-style: normal;	
+	font-style: normal;		
 }
 .md_c_r input{
-	height: 36px;
-	width: 269px;
-	background-image: url(imgs/login_btn.png);
-	background-repeat: no-repeat;
-	background-position: 0px -27px;
-	border-width: 0px;
-	text-indent: 10px;
-
+	width: 245px;
+	/*margin:5px 10px;*/
+	outline: 0;
+	background-position: center;	
+	position: relative;
+	top: 2px;
+	left: 2px;
+	height: 18px;
+	padding: 10px 0 10px 5px;
+	line-height: 18px;
+	border: none;
+	background: none;
+	font-family: Verdana,Tahoma,Arial;
+	font-size: 16px;
 }
 
 a:link {
@@ -134,3 +141,5 @@ a:active {
 	text-decoration: none;
 	color: #333;
 }﻿
+
+
