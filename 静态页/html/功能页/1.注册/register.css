@@ -85,46 +85,64 @@ a {
 	margin:22px auto;
 }
 
-.md_c_r .error{
+.login{
+	width: 269px;margin: 0 auto;
+}
+
+.login .error{
 	height: 19px;
 	width: 119px;
-	margin:5px 38px;
+	margin:5px;
 	font-family: "宋体";
 	font-size: 15px;
 	color: #FF4D4D;
 	visibility:visible;
 }
 
-.md_c_r .i{
+.login .i{
 	height: 38px;
 	width: 269px;
-	margin:0px auto 20px 38px;	
+	margin:0px auto 20px auto;	
 	font-family: "宋体";
 	font-size: 15px;
 	color: 444;
 	background: url(imgs/login_btn.png)	no-repeat 0px -27px;
 }
 
-.md_c_r i{
+.i i{
 	position:absolute;
-	margin:10px;
+	margin:11px;
 	font-style: normal;		
 }
-.md_c_r input{
+.i input{
 	width: 245px;
-	/*margin:5px 10px;*/
 	outline: 0;
 	background-position: center;	
 	position: relative;
 	top: 2px;
 	left: 2px;
 	height: 18px;
-	padding: 10px 0 10px 5px;
+	padding: 9px 10px;
 	line-height: 18px;
 	border: none;
 	background: none;
-	font-family: Verdana,Tahoma,Arial;
+	font-family: Tahoma,Arial;
 	font-size: 16px;
+}
+
+.l{
+	width: 245px;
+	height:40px;
+	margin:25px 0;
+}
+
+#login_btn{
+	width: 132px;
+	height: 40px;	
+	background: url(imgs/login_btn.png)	no-repeat 0px -143px;
+	border: none;
+	float: left;
+	cursor:pointer;
 }
 
 a:link {
@@ -141,5 +159,3 @@ a:active {
 	text-decoration: none;
 	color: #333;
 }﻿
-
-

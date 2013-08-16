@@ -18,17 +18,16 @@ $(".md").css("margin-top",margin_top);
 
 /*帐号密码清空*/
 function empty_input(){
-var d = $("#un, #ps");
-d.focusin(function(i) {
+
+$('.login input').focus(function() {
 	$(this).siblings("i").css("display", "none");
 	/*更换背景*/
 	$(this).parent(".i").css("background-position","0px -66px");
 });
-d.focusout(function(i) {
-	/*if ($.trim(this.value) == "") {
+$('.login input').blur(function() {
+	if ($.trim(this.value) == "") {
 		$(this).siblings("i").css("display", "block");	
-	}*/
-	change_dis(this.value);
+	}
 	/*更换背景*/
 	$(this).parent(".i").css("background-position","0px -27px");
 });
@@ -36,16 +35,10 @@ d.focusout(function(i) {
 
 /*初始化输入框*/
 function init_input(){
-	var v = $("#un").val();
-	change_dis(v);
-	v = $("#pw").val();
-	change_dis(v);
-}
-
-function change_dis(v){
-	if($.trim(v)==""){
-		$(this).siblings("i").css("display", "block");	
+	/*IE下按F5,文本框不会被清空,密码框会被清空; Chrome都会清空.*/
+	if ($.trim($("#un").val()) == "") {
+		$("#un").siblings("i").css("display", "block");	
 	}else{
-		$(this).siblings("i").css("display", "none");	
+		$("#un").siblings("i").css("display", "none");	
 	}
 }
